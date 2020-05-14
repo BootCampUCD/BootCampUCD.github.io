@@ -10,11 +10,11 @@
 
 //  * * * LINK TO DATABASE * * *
 
-//const { Client } = require("pg");
-//var connectionString = "postgres://postgres:postgres@localhost:5432/project_2";
-//const client = new Client({
-//  connectionString: connectionString,
-//});
+const { Client } = require("pg");
+var connectionString = "postgres://postgres:postgres@localhost:5432/project_2";
+const client = new Client({
+  connectionString: connectionString,
+});
 
 // * * * END OF LINK TO DATABASE * * *
 //
