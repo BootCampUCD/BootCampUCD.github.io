@@ -19,9 +19,9 @@ const client = new Client({
 // * * * END OF LINK TO DATABASE * * *
 //
 // dataFile1 = "https://bootcampucd.github.io/us-zip-code-latitude-and-longitude.geojson";
-dataFile2 = "https://bootcampucd.github.io/P3-State-Lat-Long.geojson";
+//dataFile2 = "https://bootcampucd.github.io/P3-State-Lat-Long.geojson";
 
-d3.json(dataFile2, function (d) {
+d3.json(connectionString, function (d) {
   createFeatures1(d);
   console.log("line 20: " + d);
 });
