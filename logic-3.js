@@ -11,7 +11,7 @@
 //  * * * LINK TO DATABASE * * *
 
 const { Client } = Require("pg");
-var connectionString = "postgres://postgres:postgres@localhost:5432/project_2.sql";
+var connectionString = "https://bootcampucd.github.io/project_2.sql";
 const client = new Client({
   connectionString: connectionString,
 });
