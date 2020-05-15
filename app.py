@@ -36,7 +36,8 @@ Base.prepare(engine,reflect = True)
 @app.route("/")
 def index():
     """Return the homepage."""
-    return render_template("https://BootCampUCD.github.io/logic-3.js")
+    return render_template("https://BootCampUCD.github.io/index-P3-1.html
+")
 
     
 # Run the application
