@@ -2,7 +2,7 @@
 // Performing data manipulation within a function.
 
 d3.json(
-  "https://github.com/BootCampUCD/BootCampUCD.github.io/samples.json"
+  "https://github.com/BootCampUCD.github.io/samples.json"
 ).then(function (data) {
   var nameNum = data.names;
   var metaData = data.metadata;
