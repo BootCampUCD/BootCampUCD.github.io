@@ -1,7 +1,7 @@
 // Pulling the data from a file via local web hosting.
 // Performing data manipulation within a function.
 
-d3.json("samples.json").then(function (data) {
+d3.json("https://bootcampucd.github.io/samples.json").then(function (data) {
   var nameNum = data.names;
   var metaData = data.metadata;
   var samplesData = data.samples;
