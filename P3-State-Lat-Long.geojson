@@ -19,7 +19,7 @@
     "UR":0.026,
     "UR_Pop":4908621,
     "Percent_D":0.001870825,
-    "Deaths":9173,
+    "Deaths":485,
     "Population_D":4903185
     }
   },
@@ -41,7 +41,7 @@
     "UR":0.061,
     "UR_Pop":734002,
     "Percent_D":0.000516715,
-    "Deaths":378,
+    "Deaths":0,
     "Population_D":731545
     }
   },
@@ -63,7 +63,7 @@
     "UR":0.046,
     "UR_Pop":7378494,
     "Percent_D":0.001592176,
-    "Deaths":11589,
+    "Deaths":679,
     "Population_D":7278717
     }
   },
@@ -85,7 +85,7 @@
     "UR":0.036,
     "UR_Pop":3038999,
     "Percent_D":0.000739611,
-    "Deaths":2232,
+    "Deaths":98,
     "Population_D":3017804
     }
   },
@@ -107,7 +107,7 @@
     "UR":0.039,
     "UR_Pop":39937489,
     "Percent_D":0.001687807,
-    "Deaths":66689,
+    "Deaths":3208,
     "Population_D":39512223
     }
   },
@@ -129,7 +129,7 @@
     "UR":0.025,
     "UR_Pop":5845526,
     "Percent_D":0.004327165,
-    "Deaths":24919,
+    "Deaths":1192,
     "Population_D":5758736
     }
   },
@@ -151,7 +151,7 @@
     "UR":0.037,
     "UR_Pop":3563077,
     "Percent_D":0.019383573,
-    "Deaths":69108,
+    "Deaths":3339,
     "Population_D":3565287
     }
   },
@@ -173,7 +173,7 @@
     "UR":0.039,
     "UR_Pop":982895,
     "Percent_D":0.004893383,
-    "Deaths":4765,
+    "Deaths":286,
     "Population_D":973764
     }
   },
@@ -195,7 +195,7 @@
     "UR":0.053,
     "UR_Pop":720687,
     "Percent_D":0.009642238,
-    "Deaths":6805,
+    "Deaths":null,
     "Population_D":705749
     }
   },
@@ -217,7 +217,7 @@
     "UR":0.03,
     "UR_Pop":21992985,
     "Percent_D":0.001965989,
-    "Deaths":42225,
+    "Deaths":1964,
     "Population_D":21477737
     }
   },
@@ -239,7 +239,7 @@
     "UR":0.032,
     "UR_Pop":10736059,
     "Percent_D":0.003532496,
-    "Deaths":37506,
+    "Deaths":1598,
     "Population_D":10617423
     }
   },
@@ -261,7 +261,7 @@
     "UR":0.026,
     "UR_Pop":1412687,
     "Percent_D":0.000356671,
-    "Deaths":505,
+    "Deaths":17,
     "Population_D":1415872
     }
   },
@@ -283,7 +283,7 @@
     "UR":0.029,
     "UR_Pop":1826156,
     "Percent_D":0.001124749,
-    "Deaths":2010,
+    "Deaths":73,
     "Population_D":1787065
     }
   },
@@ -305,7 +305,7 @@
     "UR":0.037,
     "UR_Pop":12659682,
     "Percent_D":0.006062901,
-    "Deaths":76828,
+    "Deaths":4129,
     "Population_D":12671821
     }
   },
@@ -327,7 +327,7 @@
     "UR":0.032,
     "UR_Pop":6745354,
     "Percent_D":0.005034893,
-    "Deaths":33896,
+    "Deaths":1596,
     "Population_D":6732219
     }
   },
@@ -349,7 +349,7 @@
     "UR":0.026,
     "UR_Pop":3179849,
     "Percent_D":0.0016773,
-    "Deaths":5292,
+    "Deaths":346,
     "Population_D":3155070
     }
   },
@@ -371,7 +371,7 @@
     "UR":0.032,
     "UR_Pop":2910357,
     "Percent_D":0.001581361,
-    "Deaths":4607,
+    "Deaths":194,
     "Population_D":2913314
     }
   },
@@ -393,7 +393,7 @@
     "UR":0.043,
     "UR_Pop":4499692,
     "Percent_D":0.001775869,
-    "Deaths":7934,
+    "Deaths":334,
     "Population_D":4467673
     }
   },
@@ -415,7 +415,7 @@
     "UR":0.049,
     "UR_Pop":4645184,
     "Percent_D":0.0139206,
-    "Deaths":64714,
+    "Deaths":2413,
     "Population_D":4648794
     }
   },
@@ -437,7 +437,7 @@
     "UR":0.029,
     "UR_Pop":1345790,
     "Percent_D":0.001277328,
-    "Deaths":1717,
+    "Deaths":70,
     "Population_D":1344212
     }
   },
@@ -459,7 +459,7 @@
     "UR":0.035,
     "UR_Pop":6083116,
     "Percent_D":0.005693156,
-    "Deaths":34419,
+    "Deaths":1773,
     "Population_D":6045680
     }
   },
@@ -481,7 +481,7 @@
     "UR":0.028,
     "UR_Pop":6976597,
     "Percent_D":0.015528466,
-    "Deaths":107030,
+    "Deaths":5705,
     "Population_D":6892503
     }
   },
@@ -503,7 +503,7 @@
     "UR":0.039,
     "UR_Pop":10045029,
     "Percent_D":0.012137052,
-    "Deaths":121211,
+    "Deaths":4881,
     "Population_D":9986857
     }
   },
@@ -525,7 +525,7 @@
     "UR":0.033,
     "UR_Pop":5700671,
     "Percent_D":0.001968214,
-    "Deaths":11100,
+    "Deaths":700,
     "Population_D":5639632
     }
   },
@@ -547,7 +547,7 @@
     "UR":0.057,
     "UR_Pop":2989260,
     "Percent_D":0.003176252,
-    "Deaths":9453,
+    "Deaths":510,
     "Population_D":2976149
     }
   },
@@ -569,7 +569,7 @@
     "UR":0.033,
     "UR_Pop":6169270,
     "Percent_D":0.001741375,
-    "Deaths":11539,
+    "Deaths":591,
     "Population_D":6626371
     }
   },
@@ -591,7 +591,7 @@
     "UR":0.034,
     "UR_Pop":1086759,
     "Percent_D":0.00048373,
-    "Deaths":517,
+    "Deaths":18,
     "Population_D":1068778
     }
   },
@@ -613,7 +613,7 @@
     "UR":0.031,
     "UR_Pop":1952570,
     "Percent_D":0.001061824,
-    "Deaths":2054,
+    "Deaths":122,
     "Population_D":1934408
     }
   },
@@ -635,7 +635,7 @@
     "UR":0.038,
     "UR_Pop":3139658,
     "Percent_D":0.002641749,
-    "Deaths":8137,
+    "Deaths":362,
     "Population_D":3080156
     }
   },
@@ -657,7 +657,7 @@
     "UR":0.026,
     "UR_Pop":1371246,
     "Percent_D":0.001898933,
-    "Deaths":2582,
+    "Deaths":171,
     "Population_D":1359711
     }
   },
@@ -679,7 +679,7 @@
     "UR":0.035,
     "UR_Pop":8936574,
     "Percent_D":0.02554978,
-    "Deaths":226938,
+    "Deaths":10249,
     "Population_D":8882190
     }
   },
@@ -701,7 +701,7 @@
     "UR":0.047,
     "UR_Pop":2096640,
     "Percent_D":0.001900012,
-    "Deaths":3984,
+    "Deaths":253,
     "Population_D":2096829
     }
   },
@@ -723,7 +723,7 @@
     "UR":0.04,
     "UR_Pop":19440469,
     "Percent_D":0.03190014,
-    "Deaths":834561,
+    "Deaths":27456,
     "Population_D":26161672
     }
   },
@@ -745,7 +745,7 @@
     "UR":0.037,
     "UR_Pop":10611862,
     "Percent_D":0.001185822,
-    "Deaths":12437,
+    "Deaths":652,
     "Population_D":10488084
     }
   },
@@ -767,7 +767,7 @@
     "UR":0.024,
     "UR_Pop":761723,
     "Percent_D":0.000965801,
-    "Deaths":736,
+    "Deaths":9,
     "Population_D":762062
     }
   },
@@ -789,7 +789,7 @@
     "UR":0.042,
     "UR_Pop":11747694,
     "Percent_D":0.002591645,
-    "Deaths":30294,
+    "Deaths":1610,
     "Population_D":11689100
     }
   },
@@ -811,7 +811,7 @@
     "UR":0.034,
     "UR_Pop":3954821,
     "Percent_D":0.001874414,
-    "Deaths":7417,
+    "Deaths":288,
     "Population_D":3956971
     }
   },
@@ -833,7 +833,7 @@
     "UR":0.037,
     "UR_Pop":4301089,
     "Percent_D":0.000859229,
-    "Deaths":3624,
+    "Deaths":137,
     "Population_D":4217737
     }
   },
@@ -855,7 +855,7 @@
     "UR":0.045,
     "UR_Pop":12820878,
     "Percent_D":0.006127876,
-    "Deaths":78449,
+    "Deaths":4403,
     "Population_D":12801989
     }
   },
@@ -877,7 +877,7 @@
     "UR":0,
     "UR_Pop":0,
     "Percent_D":0.008332382,
-    "Deaths":8827,
+    "Deaths":489,
     "Population_D":1059361
     }
   },
@@ -899,7 +899,7 @@
     "UR":0.023,
     "UR_Pop":5210095,
     "Percent_D":0.001513193,
-    "Deaths":7791,
+    "Deaths":380,
     "Population_D":5148714
     }
   },
@@ -921,7 +921,7 @@
     "UR":0.032,
     "UR_Pop":903027,
     "Percent_D":0.000740398,
-    "Deaths":655,
+    "Deaths":44,
     "Population_D":884659
     }
   },
@@ -943,7 +943,7 @@
     "UR":0.033,
     "UR_Pop":6897576,
     "Percent_D":0.001039657,
-    "Deaths":7100,
+    "Deaths":295,
     "Population_D":6829174
     }
   },
@@ -965,7 +965,7 @@
     "UR":0.035,
     "UR_Pop":29472295,
     "Percent_D":0.000909888,
-    "Deaths":26383,
+    "Deaths":1305,
     "Population_D":28995881
     }
   },
@@ -987,7 +987,7 @@
     "UR":0.023,
     "UR_Pop":3282115,
     "Percent_D":0.000492832,
-    "Deaths":1580,
+    "Deaths":78,
     "Population_D":3205958
     }
   },
@@ -1009,7 +1009,7 @@
     "UR":0.023,
     "UR_Pop":628061,
     "Percent_D":0.002895884,
-    "Deaths":1807,
+    "Deaths":53,
     "Population_D":623989
     }
   },
@@ -1031,7 +1031,7 @@
     "UR":0.026,
     "UR_Pop":8626207,
     "Percent_D":0.002117036,
-    "Deaths":18070,
+    "Deaths":1002,
     "Population_D":8535519
     }
   },
@@ -1053,7 +1053,7 @@
     "UR":0.043,
     "UR_Pop":7797095,
     "Percent_D":0.004145035,
-    "Deaths":31564,
+    "Deaths":1000,
     "Population_D":7614893
     }
   },
@@ -1075,7 +1075,7 @@
     "UR":0.05,
     "UR_Pop":1778070,
     "Percent_D":0.000679632,
-    "Deaths":1218,
+    "Deaths":65,
     "Population_D":1792147
     }
   },
@@ -1097,7 +1097,7 @@
     "UR":0.034,
     "UR_Pop":5851754,
     "Percent_D":0.001853349,
-    "Deaths":10791,
+    "Deaths":453,
     "Population_D":5822434
     }
   },
@@ -1119,7 +1119,7 @@
     "UR":0.037,
     "UR_Pop":567025,
     "Percent_D":0.000302371,
-    "Deaths":175,
+    "Deaths":7,
     "Population_D":578759
     }
   }
