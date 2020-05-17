@@ -4,43 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Popultion Charts</title>
+    <title>Population Comparison Chart</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
-    <!-- <style>
-      .col-md-5 {
-        display: inline-block;
-        /* margin-right: 20px;
-        width: auto;
-        height: auto; */
-        /* background-color: #bf5700;
-        color: #343f47; */
-      }
-    </style> -->
+    <style> -->
+    /* .col-md-5 { /* display: inline-block; */ /* margin-right: 20px; */ /*
+    width: auto; */ /* height: auto; */ */ /* background-color: #bf5700; */ /*
+    color: #343f47; */ */ /* } */
+    <!-- </style>
   </head>
 
   <body>
     <div class="container">
       <div class="row">
         <div class="col-md-12 jumbotron text-center">
-          <h1>Population Charts</h1>
-          <p>Comparing Total Population to Specific Environmental Events</p>
-          <br/>
-          <p>Population vs COVID Deaths</p>
+          <h2>Population Chart Comparison</h2>
+          <h4>Total Population Compared to a Specific Environmental Event</h4>
+          <em>
+            <em></em>
+            (Total Population vs COVID-19 Deaths)</em>
+          </h4>
         </div>
       </div>
       <div class="row">
         <div class="col-md-2">
           <div class="well">
-            <h5>Test Subject ID No.:</h5>
+            <h5>Year of Data Comparison:</h5>
             <select id="selDataset" onchange="optionChanged(this.value)">
             </select>
           </div>
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <h3 class="panel-title">Demographic Info</h3>
+              <h3 class="panel-title">Population/Event Information</h3>
             </div>
             <div
               id="sample-metadata"
@@ -48,8 +45,7 @@
               class="panel-body"
             >
               <h4 id="demoInfodata">
-                The selected year's data will display here after
-                choosing the year from the drop down option above.
+                Each Year's Population Data Will Display Here.
               </h4>
             </div>
           </div>
@@ -71,7 +67,14 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="https://bootcampucd.github.io/app-P3.js"></script>
-    <script type="text/javascript" src="https://bootcampucd.github.io/samples.json"></script>
+    <script src="http://127.0.0.1:5501/JS/app-P3.js"></script>
+    <script
+      type="text/javascript"
+      src="http://127.0.0.1:5501/Data/P3-unemployment.json"
+    ></script>
+    <script
+    type="text/javascript"
+    src="http://127.0.0.1:5501/Data/P3-State-Lat-Long-json-conversion.json"
+  ></script>
   </body>
 </html>
