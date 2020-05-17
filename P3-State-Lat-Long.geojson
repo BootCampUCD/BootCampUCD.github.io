@@ -1,1127 +1,1127 @@
 {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-86.79113, 32.806671]
-      },
-      "properties": {
-        "State": "Alabama",
-        "Initials": "AL",
-        "Abbrev": "Ala.",
-        "BLS-State-Code": "ST0100000000000",
-        "Pop_1990": 4040389,
-        "Pop_2000": 4447207,
-        "Pop_2010": 4780138,
-        "Pop_2018": 4887871,
-        "UR": 0.026,
-        "UR_Pop": 4908621,
-        "Percent_D": " 0.00009892 ",
-        "Deaths": 485,
-        "Population_D": 4903185
-      }
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.79113,32.806671 ]
     },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-152.404419, 61.370716]
-      },
-      "properties": {
-        "State": "Alaska",
-        "Initials": "AK",
-        "Abbrev": "Alaska",
-        "BLS-State-Code": "ST0200000000000",
-        "Pop_1990": 550043,
-        "Pop_2000": 626933,
-        "Pop_2010": 710249,
-        "Pop_2018": 737438,
-        "UR": 0.061,
-        "UR_Pop": 734002,
-        "Percent_D": " -   ",
-        "Deaths": 0,
-        "Population_D": 731545
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-111.431221, 33.729759]
-      },
-      "properties": {
-        "State": "Arizona",
-        "Initials": "AZ",
-        "Abbrev": "Ariz.",
-        "BLS-State-Code": "ST0400000000000",
-        "Pop_1990": 3665339,
-        "Pop_2000": 5130247,
-        "Pop_2010": 6392288,
-        "Pop_2018": 7171646,
-        "UR": 0.046,
-        "UR_Pop": 7378494,
-        "Percent_D": " 0.00009329 ",
-        "Deaths": 679,
-        "Population_D": 7278717
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-92.373123, 34.969704]
-      },
-      "properties": {
-        "State": "Arkansas",
-        "Initials": "AR",
-        "Abbrev": "Ark.",
-        "BLS-State-Code": "ST0500000000000",
-        "Pop_1990": 2350624,
-        "Pop_2000": 2673293,
-        "Pop_2010": 2916028,
-        "Pop_2018": 3013825,
-        "UR": 0.036,
-        "UR_Pop": 3038999,
-        "Percent_D": " 0.00003247 ",
-        "Deaths": 98,
-        "Population_D": 3017804
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-119.681564, 36.116203]
-      },
-      "properties": {
-        "State": "California",
-        "Initials": "CA",
-        "Abbrev": "Calif.",
-        "BLS-State-Code": "ST0600000000000",
-        "Pop_1990": 29811427,
-        "Pop_2000": 33871653,
-        "Pop_2010": 37254523,
-        "Pop_2018": 39557045,
-        "UR": 0.039,
-        "UR_Pop": 39937489,
-        "Percent_D": " 0.00008119 ",
-        "Deaths": 3208,
-        "Population_D": 39512223
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-105.311104, 39.059811]
-      },
-      "properties": {
-        "State": "Colorado",
-        "Initials": "CO",
-        "Abbrev": "Colo.",
-        "BLS-State-Code": "ST0800000000000",
-        "Pop_1990": 3294473,
-        "Pop_2000": 4302086,
-        "Pop_2010": 5029316,
-        "Pop_2018": 5695564,
-        "UR": 0.025,
-        "UR_Pop": 5845526,
-        "Percent_D": " 0.00020699 ",
-        "Deaths": 1192,
-        "Population_D": 5758736
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-72.755371, 41.597782]
-      },
-      "properties": {
-        "State": "Connecticut",
-        "Initials": "CT",
-        "Abbrev": "Conn.",
-        "BLS-State-Code": "ST0900000000000",
-        "Pop_1990": 3287116,
-        "Pop_2000": 3405650,
-        "Pop_2010": 3574147,
-        "Pop_2018": 3572665,
-        "UR": 0.037,
-        "UR_Pop": 3563077,
-        "Percent_D": " 0.00093653 ",
-        "Deaths": 3339,
-        "Population_D": 3565287
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-75.507141, 39.318523]
-      },
-      "properties": {
-        "State": "Delaware",
-        "Initials": "DE",
-        "Abbrev": "Del.",
-        "BLS-State-Code": "ST1000000000000",
-        "Pop_1990": 666168,
-        "Pop_2000": 783559,
-        "Pop_2010": 897934,
-        "Pop_2018": 967171,
-        "UR": 0.039,
-        "UR_Pop": 982895,
-        "Percent_D": " 0.00029371 ",
-        "Deaths": 286,
-        "Population_D": 973764
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-77.026817, 38.897438]
-      },
-      "properties": {
-        "State": "District of Columbia",
-        "Initials": "DC",
-        "Abbrev": "D.C.",
-        "BLS-State-Code": "ST1100000000000",
-        "Pop_1990": 606900,
-        "Pop_2000": 572086,
-        "Pop_2010": 601766,
-        "Pop_2018": 702455,
-        "UR": 0.053,
-        "UR_Pop": 720687,
-        "Percent_D": " -   ",
-        "Deaths": 0,
-        "Population_D": 705749
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-81.686783, 27.766279]
-      },
-      "properties": {
-        "State": "Florida",
-        "Initials": "FL",
-        "Abbrev": "Fla.",
-        "BLS-State-Code": "ST1200000000000",
-        "Pop_1990": 12938071,
-        "Pop_2000": 15982571,
-        "Pop_2010": 18804580,
-        "Pop_2018": 21299325,
-        "UR": 0.03,
-        "UR_Pop": 21992985,
-        "Percent_D": " 0.00009144 ",
-        "Deaths": 1964,
-        "Population_D": 21477737
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-83.643074, 33.040619]
-      },
-      "properties": {
-        "State": "Georgia",
-        "Initials": "GA",
-        "Abbrev": "Ga.",
-        "BLS-State-Code": "ST1300000000000",
-        "Pop_1990": 6478149,
-        "Pop_2000": 8186653,
-        "Pop_2010": 9688709,
-        "Pop_2018": 10519475,
-        "UR": 0.032,
-        "UR_Pop": 10736059,
-        "Percent_D": " 0.00015051 ",
-        "Deaths": 1598,
-        "Population_D": 10617423
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-157.498337, 21.094318]
-      },
-      "properties": {
-        "State": "Hawaii",
-        "Initials": "HI",
-        "Abbrev": "Hawaii",
-        "BLS-State-Code": "ST1500000000000",
-        "Pop_1990": 1108229,
-        "Pop_2000": 1211497,
-        "Pop_2010": 1360307,
-        "Pop_2018": 1420491,
-        "UR": 0.026,
-        "UR_Pop": 1412687,
-        "Percent_D": " 0.00001201 ",
-        "Deaths": 17,
-        "Population_D": 1415872
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-114.478828, 44.240459]
-      },
-      "properties": {
-        "State": "Idaho",
-        "Initials": "ID",
-        "Abbrev": "Idaho",
-        "BLS-State-Code": "ST1600000000000",
-        "Pop_1990": 1006734,
-        "Pop_2000": 1293957,
-        "Pop_2010": 1567657,
-        "Pop_2018": 1754208,
-        "UR": 0.029,
-        "UR_Pop": 1826156,
-        "Percent_D": " 0.00004085 ",
-        "Deaths": 73,
-        "Population_D": 1787065
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-88.986137, 40.349457]
-      },
-      "properties": {
-        "State": "Illinois",
-        "Initials": "IL",
-        "Abbrev": "Ill.",
-        "BLS-State-Code": "ST1700000000000",
-        "Pop_1990": 11430602,
-        "Pop_2000": 12419927,
-        "Pop_2010": 12831572,
-        "Pop_2018": 12741080,
-        "UR": 0.037,
-        "UR_Pop": 12659682,
-        "Percent_D": " 0.00032584 ",
-        "Deaths": 4129,
-        "Population_D": 12671821
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-86.258278, 39.849426]
-      },
-      "properties": {
-        "State": "Indiana",
-        "Initials": "IN",
-        "Abbrev": "Ind.",
-        "BLS-State-Code": "ST1800000000000",
-        "Pop_1990": 5544156,
-        "Pop_2000": 6080827,
-        "Pop_2010": 6484061,
-        "Pop_2018": 6691878,
-        "UR": 0.032,
-        "UR_Pop": 6745354,
-        "Percent_D": " 0.00023707 ",
-        "Deaths": 1596,
-        "Population_D": 6732219
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-93.210526, 42.011539]
-      },
-      "properties": {
-        "State": "Iowa",
-        "Initials": "IA",
-        "Abbrev": "Iowa",
-        "BLS-State-Code": "ST1900000000000",
-        "Pop_1990": 2776831,
-        "Pop_2000": 2926538,
-        "Pop_2010": 3046872,
-        "Pop_2018": 3156145,
-        "UR": 0.026,
-        "UR_Pop": 3179849,
-        "Percent_D": " 0.00010966 ",
-        "Deaths": 346,
-        "Population_D": 3155070
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-96.726486, 38.5266]
-      },
-      "properties": {
-        "State": "Kansas",
-        "Initials": "KS",
-        "Abbrev": "Kans.",
-        "BLS-State-Code": "ST2000000000000",
-        "Pop_1990": 2477588,
-        "Pop_2000": 2688925,
-        "Pop_2010": 2853126,
-        "Pop_2018": 2911505,
-        "UR": 0.032,
-        "UR_Pop": 2910357,
-        "Percent_D": " 0.00006659 ",
-        "Deaths": 194,
-        "Population_D": 2913314
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-84.670067, 37.66814]
-      },
-      "properties": {
-        "State": "Kentucky",
-        "Initials": "KY",
-        "Abbrev": "Ky.",
-        "BLS-State-Code": "ST2100000000000",
-        "Pop_1990": 3686892,
-        "Pop_2000": 4042193,
-        "Pop_2010": 4339333,
-        "Pop_2018": 4468402,
-        "UR": 0.043,
-        "UR_Pop": 4499692,
-        "Percent_D": " 0.00007476 ",
-        "Deaths": 334,
-        "Population_D": 4467673
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-91.867805, 31.169546]
-      },
-      "properties": {
-        "State": "Louisiana",
-        "Initials": "LA",
-        "Abbrev": "La.",
-        "BLS-State-Code": "ST2200000000000",
-        "Pop_1990": 4221826,
-        "Pop_2000": 4469035,
-        "Pop_2010": 4533485,
-        "Pop_2018": 4659978,
-        "UR": 0.049,
-        "UR_Pop": 4645184,
-        "Percent_D": " 0.00051906 ",
-        "Deaths": 2413,
-        "Population_D": 4648794
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-69.381927, 44.693947]
-      },
-      "properties": {
-        "State": "Maine",
-        "Initials": "ME",
-        "Abbrev": "Maine",
-        "BLS-State-Code": "ST2300000000000",
-        "Pop_1990": 1227928,
-        "Pop_2000": 1274779,
-        "Pop_2010": 1328369,
-        "Pop_2018": 1338404,
-        "UR": 0.029,
-        "UR_Pop": 1345790,
-        "Percent_D": " 0.00005208 ",
-        "Deaths": 70,
-        "Population_D": 1344212
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-76.802101, 39.063946]
-      },
-      "properties": {
-        "State": "Maryland",
-        "Initials": "MD",
-        "Abbrev": "Md.",
-        "BLS-State-Code": "ST2400000000000",
-        "Pop_1990": 4780753,
-        "Pop_2000": 5296647,
-        "Pop_2010": 5773798,
-        "Pop_2018": 6042718,
-        "UR": 0.035,
-        "UR_Pop": 6083116,
-        "Percent_D": " 0.00029327 ",
-        "Deaths": 1773,
-        "Population_D": 6045680
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-71.530106, 42.230171]
-      },
-      "properties": {
-        "State": "Massachusetts",
-        "Initials": "MA",
-        "Abbrev": "Mass.",
-        "BLS-State-Code": "ST2500000000000",
-        "Pop_1990": 6016425,
-        "Pop_2000": 6349364,
-        "Pop_2010": 6547790,
-        "Pop_2018": 6902149,
-        "UR": 0.028,
-        "UR_Pop": 6976597,
-        "Percent_D": " 0.00082771 ",
-        "Deaths": 5705,
-        "Population_D": 6892503
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-84.536095, 43.326618]
-      },
-      "properties": {
-        "State": "Michigan",
-        "Initials": "MI",
-        "Abbrev": "Mich.",
-        "BLS-State-Code": "ST2600000000000",
-        "Pop_1990": 9295287,
-        "Pop_2000": 9938823,
-        "Pop_2010": 9884117,
-        "Pop_2018": 9995915,
-        "UR": 0.039,
-        "UR_Pop": 10045029,
-        "Percent_D": " 0.00048874 ",
-        "Deaths": 4881,
-        "Population_D": 9986857
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-93.900192, 45.694454]
-      },
-      "properties": {
-        "State": "Minnesota",
-        "Initials": "MN",
-        "Abbrev": "Minn.",
-        "BLS-State-Code": "ST2700000000000",
-        "Pop_1990": 4375665,
-        "Pop_2000": 4919631,
-        "Pop_2010": 5303925,
-        "Pop_2018": 5611179,
-        "UR": 0.033,
-        "UR_Pop": 5700671,
-        "Percent_D": " 0.00012412 ",
-        "Deaths": 700,
-        "Population_D": 5639632
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-89.678696, 32.741646]
-      },
-      "properties": {
-        "State": "Mississippi",
-        "Initials": "MS",
-        "Abbrev": "Miss.",
-        "BLS-State-Code": "ST2800000000000",
-        "Pop_1990": 2575475,
-        "Pop_2000": 2844754,
-        "Pop_2010": 2968118,
-        "Pop_2018": 2986530,
-        "UR": 0.057,
-        "UR_Pop": 2989260,
-        "Percent_D": " 0.00017136 ",
-        "Deaths": 510,
-        "Population_D": 2976149
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-92.288368, 38.456085]
-      },
-      "properties": {
-        "State": "Missouri",
-        "Initials": "MO",
-        "Abbrev": "Mo.",
-        "BLS-State-Code": "ST2900000000000",
-        "Pop_1990": 5116901,
-        "Pop_2000": 5596564,
-        "Pop_2010": 5988952,
-        "Pop_2018": 6126452,
-        "UR": 0.033,
-        "UR_Pop": 6169270,
-        "Percent_D": " 0.00008919 ",
-        "Deaths": 591,
-        "Population_D": 6626371
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-110.454353, 46.921925]
-      },
-      "properties": {
-        "State": "Montana",
-        "Initials": "MT",
-        "Abbrev": "Mont.",
-        "BLS-State-Code": "ST3000000000000",
-        "Pop_1990": 799065,
-        "Pop_2000": 902200,
-        "Pop_2010": 989409,
-        "Pop_2018": 1062305,
-        "UR": 0.034,
-        "UR_Pop": 1086759,
-        "Percent_D": " 0.00001684 ",
-        "Deaths": 18,
-        "Population_D": 1068778
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-98.268082, 41.12537]
-      },
-      "properties": {
-        "State": "Nebraska",
-        "Initials": "NE",
-        "Abbrev": "Nebr.",
-        "BLS-State-Code": "ST3100000000000",
-        "Pop_1990": 1578417,
-        "Pop_2000": 1711230,
-        "Pop_2010": 1826305,
-        "Pop_2018": 1929268,
-        "UR": 0.031,
-        "UR_Pop": 1952570,
-        "Percent_D": " 0.00006307 ",
-        "Deaths": 122,
-        "Population_D": 1934408
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-117.055374, 38.313515]
-      },
-      "properties": {
-        "State": "Nevada",
-        "Initials": "NV",
-        "Abbrev": "Nev.",
-        "BLS-State-Code": "ST3200000000000",
-        "Pop_1990": 1201675,
-        "Pop_2000": 1998250,
-        "Pop_2010": 2700679,
-        "Pop_2018": 3034392,
-        "UR": 0.038,
-        "UR_Pop": 3139658,
-        "Percent_D": " 0.00011753 ",
-        "Deaths": 362,
-        "Population_D": 3080156
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-71.563896, 43.452492]
-      },
-      "properties": {
-        "State": "New Hampshire",
-        "Initials": "NH",
-        "Abbrev": "N.H.",
-        "BLS-State-Code": "ST3300000000000",
-        "Pop_1990": 1109252,
-        "Pop_2000": 1235807,
-        "Pop_2010": 1316464,
-        "Pop_2018": 1356458,
-        "UR": 0.026,
-        "UR_Pop": 1371246,
-        "Percent_D": " 0.00012576 ",
-        "Deaths": 171,
-        "Population_D": 1359711
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-74.521011, 40.298904]
-      },
-      "properties": {
-        "State": "New Jersey",
-        "Initials": "NJ",
-        "Abbrev": "N.J.",
-        "BLS-State-Code": "ST3400000000000",
-        "Pop_1990": 7747750,
-        "Pop_2000": 8414764,
-        "Pop_2010": 8791962,
-        "Pop_2018": 8908520,
-        "UR": 0.035,
-        "UR_Pop": 8936574,
-        "Percent_D": " 0.00115388 ",
-        "Deaths": 10249,
-        "Population_D": 8882190
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-106.248482, 34.840515]
-      },
-      "properties": {
-        "State": "New Mexico",
-        "Initials": "NM",
-        "Abbrev": "N.M.",
-        "BLS-State-Code": "ST3500000000000",
-        "Pop_1990": 1515069,
-        "Pop_2000": 1819017,
-        "Pop_2010": 2059180,
-        "Pop_2018": 2095428,
-        "UR": 0.047,
-        "UR_Pop": 2096640,
-        "Percent_D": " 0.00012066 ",
-        "Deaths": 253,
-        "Population_D": 2096829
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-74.948051, 42.165726]
-      },
-      "properties": {
-        "State": "New York",
-        "Initials": "NY",
-        "Abbrev": "N.Y.",
-        "BLS-State-Code": "ST3600000000000",
-        "Pop_1990": 17990778,
-        "Pop_2000": 18977026,
-        "Pop_2010": 19378124,
-        "Pop_2018": 19542209,
-        "UR": 0.04,
-        "UR_Pop": 19440469,
-        "Percent_D": " 0.00104947 ",
-        "Deaths": 27456,
-        "Population_D": 26161672
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-79.806419, 35.630066]
-      },
-      "properties": {
-        "State": "North Carolina",
-        "Initials": "NC",
-        "Abbrev": "N.C.",
-        "BLS-State-Code": "ST3700000000000",
-        "Pop_1990": 6632448,
-        "Pop_2000": 8046346,
-        "Pop_2010": 9535736,
-        "Pop_2018": 10383620,
-        "UR": 0.037,
-        "UR_Pop": 10611862,
-        "Percent_D": " 0.00006217 ",
-        "Deaths": 652,
-        "Population_D": 10488084
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-99.784012, 47.528912]
-      },
-      "properties": {
-        "State": "North Dakota",
-        "Initials": "ND",
-        "Abbrev": "N.D.",
-        "BLS-State-Code": "ST3800000000000",
-        "Pop_1990": 638800,
-        "Pop_2000": 642237,
-        "Pop_2010": 672576,
-        "Pop_2018": 760077,
-        "UR": 0.024,
-        "UR_Pop": 761723,
-        "Percent_D": " 0.00001181 ",
-        "Deaths": 9,
-        "Population_D": 762062
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-82.764915, 40.388783]
-      },
-      "properties": {
-        "State": "Ohio",
-        "Initials": "OH",
-        "Abbrev": "Ohio",
-        "BLS-State-Code": "ST3900000000000",
-        "Pop_1990": 10847115,
-        "Pop_2000": 11353336,
-        "Pop_2010": 11536757,
-        "Pop_2018": 11689442,
-        "UR": 0.042,
-        "UR_Pop": 11747694,
-        "Percent_D": " 0.00013774 ",
-        "Deaths": 1610,
-        "Population_D": 11689100
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-96.928917, 35.565342]
-      },
-      "properties": {
-        "State": "Oklahoma",
-        "Initials": "OK",
-        "Abbrev": "Okla.",
-        "BLS-State-Code": "ST4000000000000",
-        "Pop_1990": 3145576,
-        "Pop_2000": 3450451,
-        "Pop_2010": 3751583,
-        "Pop_2018": 3943079,
-        "UR": 0.034,
-        "UR_Pop": 3954821,
-        "Percent_D": " 0.00007278 ",
-        "Deaths": 288,
-        "Population_D": 3956971
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-122.070938, 44.572021]
-      },
-      "properties": {
-        "State": "Oregon",
-        "Initials": "OR",
-        "Abbrev": "Ore.",
-        "BLS-State-Code": "ST4100000000000",
-        "Pop_1990": 2842337,
-        "Pop_2000": 3421524,
-        "Pop_2010": 3831075,
-        "Pop_2018": 4190713,
-        "UR": 0.037,
-        "UR_Pop": 4301089,
-        "Percent_D": " 0.00003248 ",
-        "Deaths": 137,
-        "Population_D": 4217737
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-77.209755, 40.590752]
-      },
-      "properties": {
-        "State": "Pennsylvania",
-        "Initials": "PA",
-        "Abbrev": "Pa.",
-        "BLS-State-Code": "ST4200000000000",
-        "Pop_1990": 11882842,
-        "Pop_2000": 12280548,
-        "Pop_2010": 12702873,
-        "Pop_2018": 12807060,
-        "UR": 0.045,
-        "UR_Pop": 12820878,
-        "Percent_D": " 0.00034393 ",
-        "Deaths": 4403,
-        "Population_D": 12801989
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-71.51178, 41.680893]
-      },
-      "properties": {
-        "State": "Rhode Island",
-        "Initials": "RI",
-        "Abbrev": "R.I.",
-        "BLS-State-Code": "ST4400000000000",
-        "Pop_1990": 1003464,
-        "Pop_2000": 1048259,
-        "Pop_2010": 1052957,
-        "Pop_2018": 1057315,
-        "UR": 0,
-        "UR_Pop": 0,
-        "Percent_D": " 0.00046160 ",
-        "Deaths": 489,
-        "Population_D": 1059361
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-80.945007, 33.856892]
-      },
-      "properties": {
-        "State": "South Carolina",
-        "Initials": "SC",
-        "Abbrev": "S.C.",
-        "BLS-State-Code": "ST4500000000000",
-        "Pop_1990": 3486310,
-        "Pop_2000": 4012023,
-        "Pop_2010": 4625381,
-        "Pop_2018": 5084127,
-        "UR": 0.023,
-        "UR_Pop": 5210095,
-        "Percent_D": " 0.00007380 ",
-        "Deaths": 380,
-        "Population_D": 5148714
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-99.438828, 44.299782]
-      },
-      "properties": {
-        "State": "South Dakota",
-        "Initials": "SD",
-        "Abbrev": "S.D.",
-        "BLS-State-Code": "ST4600000000000",
-        "Pop_1990": 696004,
-        "Pop_2000": 754858,
-        "Pop_2010": 814198,
-        "Pop_2018": 882235,
-        "UR": 0.032,
-        "UR_Pop": 903027,
-        "Percent_D": " 0.00004974 ",
-        "Deaths": 44,
-        "Population_D": 884659
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-86.692345, 35.747845]
-      },
-      "properties": {
-        "State": "Tennessee",
-        "Initials": "TN",
-        "Abbrev": "Tenn.",
-        "BLS-State-Code": "ST4700000000000",
-        "Pop_1990": 4877203,
-        "Pop_2000": 5689427,
-        "Pop_2010": 6346286,
-        "Pop_2018": 6770010,
-        "UR": 0.033,
-        "UR_Pop": 6897576,
-        "Percent_D": " 0.00004320 ",
-        "Deaths": 295,
-        "Population_D": 6829174
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-97.563461, 31.054487]
-      },
-      "properties": {
-        "State": "Texas",
-        "Initials": "TX",
-        "Abbrev": "Tex.",
-        "BLS-State-Code": "ST4800000000000",
-        "Pop_1990": 16986335,
-        "Pop_2000": 20851028,
-        "Pop_2010": 25146114,
-        "Pop_2018": 28701845,
-        "UR": 0.035,
-        "UR_Pop": 29472295,
-        "Percent_D": " 0.00004501 ",
-        "Deaths": 1305,
-        "Population_D": 28995881
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-111.862434, 40.150032]
-      },
-      "properties": {
-        "State": "Utah",
-        "Initials": "UT",
-        "Abbrev": "Utah",
-        "BLS-State-Code": "ST4900000000000",
-        "Pop_1990": 1722850,
-        "Pop_2000": 2233183,
-        "Pop_2010": 2763891,
-        "Pop_2018": 3161105,
-        "UR": 0.023,
-        "UR_Pop": 3282115,
-        "Percent_D": " 0.00002433 ",
-        "Deaths": 78,
-        "Population_D": 3205958
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-72.710686, 44.045876]
-      },
-      "properties": {
-        "State": "Vermont",
-        "Initials": "VT",
-        "Abbrev": "Vt.",
-        "BLS-State-Code": "ST5000000000000",
-        "Pop_1990": 562758,
-        "Pop_2000": 608613,
-        "Pop_2010": 625744,
-        "Pop_2018": 626299,
-        "UR": 0.023,
-        "UR_Pop": 628061,
-        "Percent_D": " 0.00008494 ",
-        "Deaths": 53,
-        "Population_D": 623989
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-78.169968, 37.769337]
-      },
-      "properties": {
-        "State": "Virginia",
-        "Initials": "VA",
-        "Abbrev": "Va.",
-        "BLS-State-Code": "ST5100000000000",
-        "Pop_1990": 6189197,
-        "Pop_2000": 7079057,
-        "Pop_2010": 8001055,
-        "Pop_2018": 8517685,
-        "UR": 0.026,
-        "UR_Pop": 8626207,
-        "Percent_D": " 0.00011739 ",
-        "Deaths": 1002,
-        "Population_D": 8535519
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-121.490494, 47.400902]
-      },
-      "properties": {
-        "State": "Washington",
-        "Initials": "WA",
-        "Abbrev": "Wash.",
-        "BLS-State-Code": "ST5300000000000",
-        "Pop_1990": 4866669,
-        "Pop_2000": 5894281,
-        "Pop_2010": 6724540,
-        "Pop_2018": 7535591,
-        "UR": 0.043,
-        "UR_Pop": 7797095,
-        "Percent_D": " 0.00013132 ",
-        "Deaths": 1000,
-        "Population_D": 7614893
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-80.954453, 38.491226]
-      },
-      "properties": {
-        "State": "West Virginia",
-        "Initials": "WV",
-        "Abbrev": "W.Va.",
-        "BLS-State-Code": "ST5400000000000",
-        "Pop_1990": 1793477,
-        "Pop_2000": 1808193,
-        "Pop_2010": 1853001,
-        "Pop_2018": 1805832,
-        "UR": 0.05,
-        "UR_Pop": 1778070,
-        "Percent_D": " 0.00003627 ",
-        "Deaths": 65,
-        "Population_D": 1792147
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-89.616508, 44.268543]
-      },
-      "properties": {
-        "State": "Wisconsin",
-        "Initials": "WI",
-        "Abbrev": "Wis.",
-        "BLS-State-Code": "ST5500000000000",
-        "Pop_1990": 4891954,
-        "Pop_2000": 5363757,
-        "Pop_2010": 5687282,
-        "Pop_2018": 5813568,
-        "UR": 0.034,
-        "UR_Pop": 5851754,
-        "Percent_D": " 0.00007780 ",
-        "Deaths": 453,
-        "Population_D": 5822434
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-107.30249, 42.755966]
-      },
-      "properties": {
-        "State": "Wyoming",
-        "Initials": "WY",
-        "Abbrev": "Wyo.",
-        "BLS-State-Code": "ST5600000000000",
-        "Pop_1990": 453589,
-        "Pop_2000": 493786,
-        "Pop_2010": 563773,
-        "Pop_2018": 577737,
-        "UR": 0.037,
-        "UR_Pop": 567025,
-        "Percent_D": " 0.00001209 ",
-        "Deaths": 7,
-        "Population_D": 578759
-      }
+    "properties": {
+    "State":"Alabama",
+    "Initials":"AL",
+    "Abbrev":"Ala.",
+    "BLS-State-Code":"ST0100000000000",
+    "Pop_1990":4040389,
+    "Pop_2000":4447207,
+    "Pop_2010":4780138,
+    "Pop_2018":4887871,
+    "UR":0.026,
+    "UR_Pop":4908621,
+    "Percent_D":"0.00009892",
+    "Deaths":485,
+    "Population_D":4903185
     }
-  ]
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -152.404419,61.370716 ]
+    },
+    "properties": {
+    "State":"Alaska",
+    "Initials":"AK",
+    "Abbrev":"Alaska",
+    "BLS-State-Code":"ST0200000000000",
+    "Pop_1990":550043,
+    "Pop_2000":626933,
+    "Pop_2010":710249,
+    "Pop_2018":737438,
+    "UR":0.061,
+    "UR_Pop":734002,
+    "Percent_D":" -   ",
+    "Deaths":0,
+    "Population_D":731545
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.431221,33.729759 ]
+    },
+    "properties": {
+    "State":"Arizona",
+    "Initials":"AZ",
+    "Abbrev":"Ariz.",
+    "BLS-State-Code":"ST0400000000000",
+    "Pop_1990":3665339,
+    "Pop_2000":5130247,
+    "Pop_2010":6392288,
+    "Pop_2018":7171646,
+    "UR":0.046,
+    "UR_Pop":7378494,
+    "Percent_D":"0.00009329",
+    "Deaths":679,
+    "Population_D":7278717
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.373123,34.969704 ]
+    },
+    "properties": {
+    "State":"Arkansas",
+    "Initials":"AR",
+    "Abbrev":"Ark.",
+    "BLS-State-Code":"ST0500000000000",
+    "Pop_1990":2350624,
+    "Pop_2000":2673293,
+    "Pop_2010":2916028,
+    "Pop_2018":3013825,
+    "UR":0.036,
+    "UR_Pop":3038999,
+    "Percent_D":"0.00003247",
+    "Deaths":98,
+    "Population_D":3017804
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.681564,36.116203 ]
+    },
+    "properties": {
+    "State":"California",
+    "Initials":"CA",
+    "Abbrev":"Calif.",
+    "BLS-State-Code":"ST0600000000000",
+    "Pop_1990":29811427,
+    "Pop_2000":33871653,
+    "Pop_2010":37254523,
+    "Pop_2018":39557045,
+    "UR":0.039,
+    "UR_Pop":39937489,
+    "Percent_D":"0.00008119",
+    "Deaths":3208,
+    "Population_D":39512223
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -105.311104,39.059811 ]
+    },
+    "properties": {
+    "State":"Colorado",
+    "Initials":"CO",
+    "Abbrev":"Colo.",
+    "BLS-State-Code":"ST0800000000000",
+    "Pop_1990":3294473,
+    "Pop_2000":4302086,
+    "Pop_2010":5029316,
+    "Pop_2018":5695564,
+    "UR":0.025,
+    "UR_Pop":5845526,
+    "Percent_D":"0.00020699",
+    "Deaths":1192,
+    "Population_D":5758736
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.755371,41.597782 ]
+    },
+    "properties": {
+    "State":"Connecticut",
+    "Initials":"CT",
+    "Abbrev":"Conn.",
+    "BLS-State-Code":"ST0900000000000",
+    "Pop_1990":3287116,
+    "Pop_2000":3405650,
+    "Pop_2010":3574147,
+    "Pop_2018":3572665,
+    "UR":0.037,
+    "UR_Pop":3563077,
+    "Percent_D":"0.00093653",
+    "Deaths":3339,
+    "Population_D":3565287
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.507141,39.318523 ]
+    },
+    "properties": {
+    "State":"Delaware",
+    "Initials":"DE",
+    "Abbrev":"Del.",
+    "BLS-State-Code":"ST1000000000000",
+    "Pop_1990":666168,
+    "Pop_2000":783559,
+    "Pop_2010":897934,
+    "Pop_2018":967171,
+    "UR":0.039,
+    "UR_Pop":982895,
+    "Percent_D":"0.00029371",
+    "Deaths":286,
+    "Population_D":973764
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.026817,38.897438 ]
+    },
+    "properties": {
+    "State":"District of Columbia",
+    "Initials":"DC",
+    "Abbrev":"D.C.",
+    "BLS-State-Code":"ST1100000000000",
+    "Pop_1990":606900,
+    "Pop_2000":572086,
+    "Pop_2010":601766,
+    "Pop_2018":702455,
+    "UR":0.053,
+    "UR_Pop":720687,
+    "Percent_D":"0.000521432",
+    "Deaths":368,
+    "Population_D":705749
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.686783,27.766279 ]
+    },
+    "properties": {
+    "State":"Florida",
+    "Initials":"FL",
+    "Abbrev":"Fla.",
+    "BLS-State-Code":"ST1200000000000",
+    "Pop_1990":12938071,
+    "Pop_2000":15982571,
+    "Pop_2010":18804580,
+    "Pop_2018":21299325,
+    "UR":0.03,
+    "UR_Pop":21992985,
+    "Percent_D":"0.00009144",
+    "Deaths":1964,
+    "Population_D":21477737
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.643074,33.040619 ]
+    },
+    "properties": {
+    "State":"Georgia",
+    "Initials":"GA",
+    "Abbrev":"Ga.",
+    "BLS-State-Code":"ST1300000000000",
+    "Pop_1990":6478149,
+    "Pop_2000":8186653,
+    "Pop_2010":9688709,
+    "Pop_2018":10519475,
+    "UR":0.032,
+    "UR_Pop":10736059,
+    "Percent_D":"0.00015051",
+    "Deaths":1598,
+    "Population_D":10617423
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.498337,21.094318 ]
+    },
+    "properties": {
+    "State":"Hawaii",
+    "Initials":"HI",
+    "Abbrev":"Hawaii",
+    "BLS-State-Code":"ST1500000000000",
+    "Pop_1990":1108229,
+    "Pop_2000":1211497,
+    "Pop_2010":1360307,
+    "Pop_2018":1420491,
+    "UR":0.026,
+    "UR_Pop":1412687,
+    "Percent_D":"0.00001201",
+    "Deaths":17,
+    "Population_D":1415872
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.478828,44.240459 ]
+    },
+    "properties": {
+    "State":"Idaho",
+    "Initials":"ID",
+    "Abbrev":"Idaho",
+    "BLS-State-Code":"ST1600000000000",
+    "Pop_1990":1006734,
+    "Pop_2000":1293957,
+    "Pop_2010":1567657,
+    "Pop_2018":1754208,
+    "UR":0.029,
+    "UR_Pop":1826156,
+    "Percent_D":"0.00004085",
+    "Deaths":73,
+    "Population_D":1787065
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -88.986137,40.349457 ]
+    },
+    "properties": {
+    "State":"Illinois",
+    "Initials":"IL",
+    "Abbrev":"Ill.",
+    "BLS-State-Code":"ST1700000000000",
+    "Pop_1990":11430602,
+    "Pop_2000":12419927,
+    "Pop_2010":12831572,
+    "Pop_2018":12741080,
+    "UR":0.037,
+    "UR_Pop":12659682,
+    "Percent_D":"0.00032584",
+    "Deaths":4129,
+    "Population_D":12671821
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.258278,39.849426 ]
+    },
+    "properties": {
+    "State":"Indiana",
+    "Initials":"IN",
+    "Abbrev":"Ind.",
+    "BLS-State-Code":"ST1800000000000",
+    "Pop_1990":5544156,
+    "Pop_2000":6080827,
+    "Pop_2010":6484061,
+    "Pop_2018":6691878,
+    "UR":0.032,
+    "UR_Pop":6745354,
+    "Percent_D":"0.00023707",
+    "Deaths":1596,
+    "Population_D":6732219
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.210526,42.011539 ]
+    },
+    "properties": {
+    "State":"Iowa",
+    "Initials":"IA",
+    "Abbrev":"Iowa",
+    "BLS-State-Code":"ST1900000000000",
+    "Pop_1990":2776831,
+    "Pop_2000":2926538,
+    "Pop_2010":3046872,
+    "Pop_2018":3156145,
+    "UR":0.026,
+    "UR_Pop":3179849,
+    "Percent_D":"0.00010966",
+    "Deaths":346,
+    "Population_D":3155070
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.726486,38.5266 ]
+    },
+    "properties": {
+    "State":"Kansas",
+    "Initials":"KS",
+    "Abbrev":"Kans.",
+    "BLS-State-Code":"ST2000000000000",
+    "Pop_1990":2477588,
+    "Pop_2000":2688925,
+    "Pop_2010":2853126,
+    "Pop_2018":2911505,
+    "UR":0.032,
+    "UR_Pop":2910357,
+    "Percent_D":"0.00006659",
+    "Deaths":194,
+    "Population_D":2913314
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.670067,37.66814 ]
+    },
+    "properties": {
+    "State":"Kentucky",
+    "Initials":"KY",
+    "Abbrev":"Ky.",
+    "BLS-State-Code":"ST2100000000000",
+    "Pop_1990":3686892,
+    "Pop_2000":4042193,
+    "Pop_2010":4339333,
+    "Pop_2018":4468402,
+    "UR":0.043,
+    "UR_Pop":4499692,
+    "Percent_D":"0.00007476",
+    "Deaths":334,
+    "Population_D":4467673
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.867805,31.169546 ]
+    },
+    "properties": {
+    "State":"Louisiana",
+    "Initials":"LA",
+    "Abbrev":"La.",
+    "BLS-State-Code":"ST2200000000000",
+    "Pop_1990":4221826,
+    "Pop_2000":4469035,
+    "Pop_2010":4533485,
+    "Pop_2018":4659978,
+    "UR":0.049,
+    "UR_Pop":4645184,
+    "Percent_D":"0.00051906",
+    "Deaths":2413,
+    "Population_D":4648794
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -69.381927,44.693947 ]
+    },
+    "properties": {
+    "State":"Maine",
+    "Initials":"ME",
+    "Abbrev":"Maine",
+    "BLS-State-Code":"ST2300000000000",
+    "Pop_1990":1227928,
+    "Pop_2000":1274779,
+    "Pop_2010":1328369,
+    "Pop_2018":1338404,
+    "UR":0.029,
+    "UR_Pop":1345790,
+    "Percent_D":"0.00005208",
+    "Deaths":70,
+    "Population_D":1344212
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.802101,39.063946 ]
+    },
+    "properties": {
+    "State":"Maryland",
+    "Initials":"MD",
+    "Abbrev":"Md.",
+    "BLS-State-Code":"ST2400000000000",
+    "Pop_1990":4780753,
+    "Pop_2000":5296647,
+    "Pop_2010":5773798,
+    "Pop_2018":6042718,
+    "UR":0.035,
+    "UR_Pop":6083116,
+    "Percent_D":"0.00029327",
+    "Deaths":1773,
+    "Population_D":6045680
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.530106,42.230171 ]
+    },
+    "properties": {
+    "State":"Massachusetts",
+    "Initials":"MA",
+    "Abbrev":"Mass.",
+    "BLS-State-Code":"ST2500000000000",
+    "Pop_1990":6016425,
+    "Pop_2000":6349364,
+    "Pop_2010":6547790,
+    "Pop_2018":6902149,
+    "UR":0.028,
+    "UR_Pop":6976597,
+    "Percent_D":"0.00082771",
+    "Deaths":5705,
+    "Population_D":6892503
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.536095,43.326618 ]
+    },
+    "properties": {
+    "State":"Michigan",
+    "Initials":"MI",
+    "Abbrev":"Mich.",
+    "BLS-State-Code":"ST2600000000000",
+    "Pop_1990":9295287,
+    "Pop_2000":9938823,
+    "Pop_2010":9884117,
+    "Pop_2018":9995915,
+    "UR":0.039,
+    "UR_Pop":10045029,
+    "Percent_D":"0.00048874",
+    "Deaths":4881,
+    "Population_D":9986857
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.900192,45.694454 ]
+    },
+    "properties": {
+    "State":"Minnesota",
+    "Initials":"MN",
+    "Abbrev":"Minn.",
+    "BLS-State-Code":"ST2700000000000",
+    "Pop_1990":4375665,
+    "Pop_2000":4919631,
+    "Pop_2010":5303925,
+    "Pop_2018":5611179,
+    "UR":0.033,
+    "UR_Pop":5700671,
+    "Percent_D":"0.00012412",
+    "Deaths":700,
+    "Population_D":5639632
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.678696,32.741646 ]
+    },
+    "properties": {
+    "State":"Mississippi",
+    "Initials":"MS",
+    "Abbrev":"Miss.",
+    "BLS-State-Code":"ST2800000000000",
+    "Pop_1990":2575475,
+    "Pop_2000":2844754,
+    "Pop_2010":2968118,
+    "Pop_2018":2986530,
+    "UR":0.057,
+    "UR_Pop":2989260,
+    "Percent_D":"0.00017136",
+    "Deaths":510,
+    "Population_D":2976149
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.288368,38.456085 ]
+    },
+    "properties": {
+    "State":"Missouri",
+    "Initials":"MO",
+    "Abbrev":"Mo.",
+    "BLS-State-Code":"ST2900000000000",
+    "Pop_1990":5116901,
+    "Pop_2000":5596564,
+    "Pop_2010":5988952,
+    "Pop_2018":6126452,
+    "UR":0.033,
+    "UR_Pop":6169270,
+    "Percent_D":"0.00008919",
+    "Deaths":591,
+    "Population_D":6626371
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -110.454353,46.921925 ]
+    },
+    "properties": {
+    "State":"Montana",
+    "Initials":"MT",
+    "Abbrev":"Mont.",
+    "BLS-State-Code":"ST3000000000000",
+    "Pop_1990":799065,
+    "Pop_2000":902200,
+    "Pop_2010":989409,
+    "Pop_2018":1062305,
+    "UR":0.034,
+    "UR_Pop":1086759,
+    "Percent_D":"0.00001684",
+    "Deaths":18,
+    "Population_D":1068778
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -98.268082,41.12537 ]
+    },
+    "properties": {
+    "State":"Nebraska",
+    "Initials":"NE",
+    "Abbrev":"Nebr.",
+    "BLS-State-Code":"ST3100000000000",
+    "Pop_1990":1578417,
+    "Pop_2000":1711230,
+    "Pop_2010":1826305,
+    "Pop_2018":1929268,
+    "UR":0.031,
+    "UR_Pop":1952570,
+    "Percent_D":"0.00006307",
+    "Deaths":122,
+    "Population_D":1934408
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.055374,38.313515 ]
+    },
+    "properties": {
+    "State":"Nevada",
+    "Initials":"NV",
+    "Abbrev":"Nev.",
+    "BLS-State-Code":"ST3200000000000",
+    "Pop_1990":1201675,
+    "Pop_2000":1998250,
+    "Pop_2010":2700679,
+    "Pop_2018":3034392,
+    "UR":0.038,
+    "UR_Pop":3139658,
+    "Percent_D":"0.00011753",
+    "Deaths":362,
+    "Population_D":3080156
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.563896,43.452492 ]
+    },
+    "properties": {
+    "State":"New Hampshire",
+    "Initials":"NH",
+    "Abbrev":"N.H.",
+    "BLS-State-Code":"ST3300000000000",
+    "Pop_1990":1109252,
+    "Pop_2000":1235807,
+    "Pop_2010":1316464,
+    "Pop_2018":1356458,
+    "UR":0.026,
+    "UR_Pop":1371246,
+    "Percent_D":"0.00012576",
+    "Deaths":171,
+    "Population_D":1359711
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.521011,40.298904 ]
+    },
+    "properties": {
+    "State":"New Jersey",
+    "Initials":"NJ",
+    "Abbrev":"N.J.",
+    "BLS-State-Code":"ST3400000000000",
+    "Pop_1990":7747750,
+    "Pop_2000":8414764,
+    "Pop_2010":8791962,
+    "Pop_2018":8908520,
+    "UR":0.035,
+    "UR_Pop":8936574,
+    "Percent_D":"0.00115388",
+    "Deaths":10249,
+    "Population_D":8882190
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.248482,34.840515 ]
+    },
+    "properties": {
+    "State":"New Mexico",
+    "Initials":"NM",
+    "Abbrev":"N.M.",
+    "BLS-State-Code":"ST3500000000000",
+    "Pop_1990":1515069,
+    "Pop_2000":1819017,
+    "Pop_2010":2059180,
+    "Pop_2018":2095428,
+    "UR":0.047,
+    "UR_Pop":2096640,
+    "Percent_D":"0.00012066",
+    "Deaths":253,
+    "Population_D":2096829
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.948051,42.165726 ]
+    },
+    "properties": {
+    "State":"New York",
+    "Initials":"NY",
+    "Abbrev":"N.Y.",
+    "BLS-State-Code":"ST3600000000000",
+    "Pop_1990":17990778,
+    "Pop_2000":18977026,
+    "Pop_2010":19378124,
+    "Pop_2018":19542209,
+    "UR":0.04,
+    "UR_Pop":19440469,
+    "Percent_D":"0.00104947",
+    "Deaths":27456,
+    "Population_D":26161672
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.806419,35.630066 ]
+    },
+    "properties": {
+    "State":"North Carolina",
+    "Initials":"NC",
+    "Abbrev":"N.C.",
+    "BLS-State-Code":"ST3700000000000",
+    "Pop_1990":6632448,
+    "Pop_2000":8046346,
+    "Pop_2010":9535736,
+    "Pop_2018":10383620,
+    "UR":0.037,
+    "UR_Pop":10611862,
+    "Percent_D":"0.00006217",
+    "Deaths":652,
+    "Population_D":10488084
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -99.784012,47.528912 ]
+    },
+    "properties": {
+    "State":"North Dakota",
+    "Initials":"ND",
+    "Abbrev":"N.D.",
+    "BLS-State-Code":"ST3800000000000",
+    "Pop_1990":638800,
+    "Pop_2000":642237,
+    "Pop_2010":672576,
+    "Pop_2018":760077,
+    "UR":0.024,
+    "UR_Pop":761723,
+    "Percent_D":"0.00001181",
+    "Deaths":9,
+    "Population_D":762062
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.764915,40.388783 ]
+    },
+    "properties": {
+    "State":"Ohio",
+    "Initials":"OH",
+    "Abbrev":"Ohio",
+    "BLS-State-Code":"ST3900000000000",
+    "Pop_1990":10847115,
+    "Pop_2000":11353336,
+    "Pop_2010":11536757,
+    "Pop_2018":11689442,
+    "UR":0.042,
+    "UR_Pop":11747694,
+    "Percent_D":"0.00013774",
+    "Deaths":1610,
+    "Population_D":11689100
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.928917,35.565342 ]
+    },
+    "properties": {
+    "State":"Oklahoma",
+    "Initials":"OK",
+    "Abbrev":"Okla.",
+    "BLS-State-Code":"ST4000000000000",
+    "Pop_1990":3145576,
+    "Pop_2000":3450451,
+    "Pop_2010":3751583,
+    "Pop_2018":3943079,
+    "UR":0.034,
+    "UR_Pop":3954821,
+    "Percent_D":"0.00007278",
+    "Deaths":288,
+    "Population_D":3956971
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.070938,44.572021 ]
+    },
+    "properties": {
+    "State":"Oregon",
+    "Initials":"OR",
+    "Abbrev":"Ore.",
+    "BLS-State-Code":"ST4100000000000",
+    "Pop_1990":2842337,
+    "Pop_2000":3421524,
+    "Pop_2010":3831075,
+    "Pop_2018":4190713,
+    "UR":0.037,
+    "UR_Pop":4301089,
+    "Percent_D":"0.00003248",
+    "Deaths":137,
+    "Population_D":4217737
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.209755,40.590752 ]
+    },
+    "properties": {
+    "State":"Pennsylvania",
+    "Initials":"PA",
+    "Abbrev":"Pa.",
+    "BLS-State-Code":"ST4200000000000",
+    "Pop_1990":11882842,
+    "Pop_2000":12280548,
+    "Pop_2010":12702873,
+    "Pop_2018":12807060,
+    "UR":0.045,
+    "UR_Pop":12820878,
+    "Percent_D":"0.00034393",
+    "Deaths":4403,
+    "Population_D":12801989
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.51178,41.680893 ]
+    },
+    "properties": {
+    "State":"Rhode Island",
+    "Initials":"RI",
+    "Abbrev":"R.I.",
+    "BLS-State-Code":"ST4400000000000",
+    "Pop_1990":1003464,
+    "Pop_2000":1048259,
+    "Pop_2010":1052957,
+    "Pop_2018":1057315,
+    "UR":0,
+    "UR_Pop":0,
+    "Percent_D":"0.0004616",
+    "Deaths":489,
+    "Population_D":1059361
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.945007,33.856892 ]
+    },
+    "properties": {
+    "State":"South Carolina",
+    "Initials":"SC",
+    "Abbrev":"S.C.",
+    "BLS-State-Code":"ST4500000000000",
+    "Pop_1990":3486310,
+    "Pop_2000":4012023,
+    "Pop_2010":4625381,
+    "Pop_2018":5084127,
+    "UR":0.023,
+    "UR_Pop":5210095,
+    "Percent_D":"0.0000738",
+    "Deaths":380,
+    "Population_D":5148714
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -99.438828,44.299782 ]
+    },
+    "properties": {
+    "State":"South Dakota",
+    "Initials":"SD",
+    "Abbrev":"S.D.",
+    "BLS-State-Code":"ST4600000000000",
+    "Pop_1990":696004,
+    "Pop_2000":754858,
+    "Pop_2010":814198,
+    "Pop_2018":882235,
+    "UR":0.032,
+    "UR_Pop":903027,
+    "Percent_D":"0.00004974",
+    "Deaths":44,
+    "Population_D":884659
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.692345,35.747845 ]
+    },
+    "properties": {
+    "State":"Tennessee",
+    "Initials":"TN",
+    "Abbrev":"Tenn.",
+    "BLS-State-Code":"ST4700000000000",
+    "Pop_1990":4877203,
+    "Pop_2000":5689427,
+    "Pop_2010":6346286,
+    "Pop_2018":6770010,
+    "UR":0.033,
+    "UR_Pop":6897576,
+    "Percent_D":"0.0000432",
+    "Deaths":295,
+    "Population_D":6829174
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.563461,31.054487 ]
+    },
+    "properties": {
+    "State":"Texas",
+    "Initials":"TX",
+    "Abbrev":"Tex.",
+    "BLS-State-Code":"ST4800000000000",
+    "Pop_1990":16986335,
+    "Pop_2000":20851028,
+    "Pop_2010":25146114,
+    "Pop_2018":28701845,
+    "UR":0.035,
+    "UR_Pop":29472295,
+    "Percent_D":"0.00004501",
+    "Deaths":1305,
+    "Population_D":28995881
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.862434,40.150032 ]
+    },
+    "properties": {
+    "State":"Utah",
+    "Initials":"UT",
+    "Abbrev":"Utah",
+    "BLS-State-Code":"ST4900000000000",
+    "Pop_1990":1722850,
+    "Pop_2000":2233183,
+    "Pop_2010":2763891,
+    "Pop_2018":3161105,
+    "UR":0.023,
+    "UR_Pop":3282115,
+    "Percent_D":"0.00002433",
+    "Deaths":78,
+    "Population_D":3205958
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.710686,44.045876 ]
+    },
+    "properties": {
+    "State":"Vermont",
+    "Initials":"VT",
+    "Abbrev":"Vt.",
+    "BLS-State-Code":"ST5000000000000",
+    "Pop_1990":562758,
+    "Pop_2000":608613,
+    "Pop_2010":625744,
+    "Pop_2018":626299,
+    "UR":0.023,
+    "UR_Pop":628061,
+    "Percent_D":"0.00008494",
+    "Deaths":53,
+    "Population_D":623989
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -78.169968,37.769337 ]
+    },
+    "properties": {
+    "State":"Virginia",
+    "Initials":"VA",
+    "Abbrev":"Va.",
+    "BLS-State-Code":"ST5100000000000",
+    "Pop_1990":6189197,
+    "Pop_2000":7079057,
+    "Pop_2010":8001055,
+    "Pop_2018":8517685,
+    "UR":0.026,
+    "UR_Pop":8626207,
+    "Percent_D":"0.00011739",
+    "Deaths":1002,
+    "Population_D":8535519
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.490494,47.400902 ]
+    },
+    "properties": {
+    "State":"Washington",
+    "Initials":"WA",
+    "Abbrev":"Wash.",
+    "BLS-State-Code":"ST5300000000000",
+    "Pop_1990":4866669,
+    "Pop_2000":5894281,
+    "Pop_2010":6724540,
+    "Pop_2018":7535591,
+    "UR":0.043,
+    "UR_Pop":7797095,
+    "Percent_D":"0.00013132",
+    "Deaths":1000,
+    "Population_D":7614893
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.954453,38.491226 ]
+    },
+    "properties": {
+    "State":"West Virginia",
+    "Initials":"WV",
+    "Abbrev":"W.Va.",
+    "BLS-State-Code":"ST5400000000000",
+    "Pop_1990":1793477,
+    "Pop_2000":1808193,
+    "Pop_2010":1853001,
+    "Pop_2018":1805832,
+    "UR":0.05,
+    "UR_Pop":1778070,
+    "Percent_D":"0.00003627",
+    "Deaths":65,
+    "Population_D":1792147
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.616508,44.268543 ]
+    },
+    "properties": {
+    "State":"Wisconsin",
+    "Initials":"WI",
+    "Abbrev":"Wis.",
+    "BLS-State-Code":"ST5500000000000",
+    "Pop_1990":4891954,
+    "Pop_2000":5363757,
+    "Pop_2010":5687282,
+    "Pop_2018":5813568,
+    "UR":0.034,
+    "UR_Pop":5851754,
+    "Percent_D":"0.0000778",
+    "Deaths":453,
+    "Population_D":5822434
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -107.30249,42.755966 ]
+    },
+    "properties": {
+    "State":"Wyoming",
+    "Initials":"WY",
+    "Abbrev":"Wyo.",
+    "BLS-State-Code":"ST5600000000000",
+    "Pop_1990":453589,
+    "Pop_2000":493786,
+    "Pop_2010":563773,
+    "Pop_2018":577737,
+    "UR":0.037,
+    "UR_Pop":567025,
+    "Percent_D":"0.00001209",
+    "Deaths":7,
+    "Population_D":578759
+    }
+  }
+]
 }
