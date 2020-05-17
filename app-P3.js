@@ -141,7 +141,7 @@ d3.json(data1).then(function (datax) {
       console.log("deathNum: " + deathNum);
       console.log("statePop: " + statePop);
       var trace1 = {
-        name: "COVID Deaths Enhanced by 500 times for visual realtivity",
+        name: "COVID Deaths Enhanced 500 times for visual realtivity",
         type: "scatter",
         orientation: "v",
         x: states,
