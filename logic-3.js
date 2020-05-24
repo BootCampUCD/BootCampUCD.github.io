@@ -23,7 +23,7 @@
 // * * * END OF LINK TO DATABASE * * *
 //
 // dataFile1 = "../Data/us-zip-code-latitude-and-longitude.geojson";
-dataFile2 = "../Data/P3-State-Lat-Long.geojson";
+dataFile2 = "https://BootCampUCD.github.io/P3-State-Lat-Long.geojson";
 
 d3.json(dataFile2, function (d) {
   createFeatures1(d);
