@@ -34,13 +34,13 @@ d3.json(dataFile2, function (d) {
 // * * * GLOBAL VALUES * * *
 
 //change the default marker to a red marker consistent with emergency/earthquake
-L.Icon.Default.prototype.options.iconUrl = "../Images/population.png";
+L.Icon.Default.prototype.options.iconUrl = "https://BootCampUCD.github.io/population.png";
 L.Icon.Default.prototype.options.iconSize = [30, 30];
 
 //temporary changing the marker, however, couldn't get it to work like i wanted.
 var myIcon1 = L.Icon.extend({
   options: {
-    iconUrl: "../Images/jobs1.jpg",
+    iconUrl: "https://BootCampUCD.github.io/jobs1.jpg",
     iconSize: [35, 35],
     shadowSize: [50, 64],
     iconAnchor: [0, 0],
@@ -50,7 +50,7 @@ var myIcon1 = L.Icon.extend({
 
 //tying to be creative and funny here...couldn't get it to work
 var myIcon2 = L.Icon.extend({
-  iconUrl: "../Images/face.jpg",
+  iconUrl: "https://BootCampUCD.github.io/face.jpg",
 });
 
 // Base map layers.
