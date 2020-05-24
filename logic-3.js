@@ -9,30 +9,38 @@
 // * * * THIS CODE ABOVE WORKS * * *
 
 //  * * * LINK TO DATABASE * * *
+//  * * * database connection works, urlDB will display bjson formatted data
+//  * * * however, the format needs converting to geojson to work.
+//  * * * http://127.0.0.1:5000/StatesPop this address will display the db data.
 
-
+// var urlDB = "http://127.0.0.1:5000/StatesPop";
+// console.log(urlDB);
+// d3.json(urlDB, function (d) {
+// createFeatures1(d);
+// console.log(d);
+// });
 
 // * * * END OF LINK TO DATABASE * * *
-
-//dataFile1 = "https://bootcampucd.github.io/us-zip-code-latitude-and-longitude.geojson";
-dataFile2 = "https://bootcampucd.github.io/P3-State-Lat-Long.geojson";
-//dataFile3 = database link
+//
+// dataFile1 = "../Data/us-zip-code-latitude-and-longitude.geojson";
+dataFile2 = "../Data/P3-State-Lat-Long.geojson";
 
 d3.json(dataFile2, function (d) {
   createFeatures1(d);
-  console.log("line 20: " + d);
+  console.log("line 22: " + d);
+  // console.log(d);
 });
 
 // * * * GLOBAL VALUES * * *
 
 //change the default marker to a red marker consistent with emergency/earthquake
-L.Icon.Default.prototype.options.iconUrl = "https://bootcampucd.github.io/population.png";
+L.Icon.Default.prototype.options.iconUrl = "../Images/population.png";
 L.Icon.Default.prototype.options.iconSize = [30, 30];
 
 //temporary changing the marker, however, couldn't get it to work like i wanted.
 var myIcon1 = L.Icon.extend({
   options: {
-    iconUrl: "https://bootcampucd.github.io/jobs1.jpg",
+    iconUrl: "../Images/jobs1.jpg",
     iconSize: [35, 35],
     shadowSize: [50, 64],
     iconAnchor: [0, 0],
@@ -42,7 +50,7 @@ var myIcon1 = L.Icon.extend({
 
 //tying to be creative and funny here...couldn't get it to work
 var myIcon2 = L.Icon.extend({
-  iconUrl: "https://bootcampucd.github.io/face.jpg",
+  iconUrl: "../Images/face.jpg",
 });
 
 // Base map layers.
@@ -73,6 +81,7 @@ var myMap = L.map("map", {
   zoom: 3,
   layers: streetmap, //this map shows first with circles for population by State
 });
+
 // baseMaps
 var baseMaps = {
   // "Satellite View": skyView,
@@ -93,6 +102,7 @@ function createFeatures1(earthquakeData) {
   function eachLayersFeature1(feature1, layer1) {
     // add the details of the population when clicking the marker.
     // * * * This is Statistics for the Population layer icons * * *
+
     layer1.bindPopup(
       "<h3>" +
         feature1.properties.State +
@@ -129,24 +139,25 @@ function createFeatures1(earthquakeData) {
     console.log("latlng1: " + latlng1);
 
     // Amplified the circle by multiplying the population by a factor to proportionally adjust the circle diameter for visual purposes only.
-    var radius1 = feature1.properties.UR_Pop * 0.0025;
+    var radius1 = feature1.properties.UR_Pop * 0.00001;
     var circleStyle1 = {
-      fillOpacity: 1,
+      // fillOpacity: 1,
       color: "red",
-      // fillColor: "red",
+      fillColor: "red",
       radius: radius1,
     };
     // console.log("radiusx: " + radiusx);
     L.circle(latlng1, circleStyle1).addTo(myMap);
-    var markerX2 = L.marker(latlng1, { icon: myIcon1 }); //.on("click", { clickx });
-    markerX2.on("click", function (e) {
-      if (myMap.hasLayer(markerX2)) {
-        markerX2.remove(myMap);
-      } else {
-        markerX2.addTo(myMap);
-      }
-    });
-    // L.marker(latlng1, { icon: myIcon2 }).addTo(myMap);
+
+    // var markerX2 = L.marker(latlng1, { icon: myIcon1 }); //.on("click", { clickx });
+    // markerX2.on("click", function (e) {
+    //   if (myMap.hasLayer(markerX2)) {
+    //     markerX2.remove(myMap);
+    //   } else {
+    //     markerX2.addTo(myMap);
+    //   }
+    // };
+    // L.marker(latlng1, { icon: myIcon1 }).addTo(myMap);
   }
 
   // * * * END   This is Statistics for the Population layer icons * * *
@@ -195,14 +206,14 @@ function createFeatures1(earthquakeData) {
     //   radius: radiusx,
     // }).addTo(myMap);
     // layer2.bindPopup(L.marker(latlngx, { icon: myIcon }).addTo(myMap));
-    var markerX2 = L.marker(latlng2, { icon: myIcon1 }); //.on("click", { clickx });
-    markerX2.on("click", function (e) {
-      if (myMap.hasLayer(markerX2)) {
-        markerX2.remove(myMap);
-      } else {
-        markerX2.addTo(myMap);
-      }
-    });
+    // var markerX2 = L.marker(latlng2, { icon: myIcon1 }); //.on("click", { clickx });
+    // markerX2.on("click", function (e) {
+    //   if (myMap.hasLayer(markerX2)) {
+    //     markerX2.remove(myMap);
+    //   } else {
+    //     markerX2.addTo(myMap);
+    //   }
+    // });
     // L.circle(latlng2, circleStyle2).addTo(myMap).bindPopup({ myIcon2 });
   }
 
@@ -230,16 +241,16 @@ function createFeatures1(earthquakeData) {
     console.log("latlng3: " + latlng3);
 
     // Amplified the circle by multiplying the population by a factor to proportionally adjust the circle diameter for visual purposes only.
-    // var radius3 = feature3.properties.Pop_2018 * 0.002;
+    // var radius3 = feature3.properties.Deaths * 0.5;
     // console.log("Population: " + feature3.properties.Pop_2018);
     // var circleStyle3 = {
-    //   fillOpacity: 0.25,
-    //   color: "green",
-    //   fillColor: "orange",
+    //   fillOpacity: 1,
+    //   // color: "green",
+    //   fillColor: "yellow",
     //   radius: radius3,
     // };
     // console.log("radiusx: " + radiusx);
-
+    // L.circle(latlng3, circleStyle3).addTo(myMap);
     //* * * Different ways to draw a circle with different attributes * * *
     // layer2.bindPopup(L.circleMarker(latlngx, { radius: radiusx }).addTo(myMap));
     // L.circleMarker(L.latLng(latlngx), {
@@ -274,12 +285,53 @@ function createFeatures1(earthquakeData) {
 
   console.log("eq3: " + earthquakes3);
   // Sending our earthquakes layer to the createMap1 function
-  createMap1(earthquakes1, earthquakes2, earthquakes3);
+  createMap1(earthquakes1, earthquakes2);
   // createMap2(earthquakes2);
 }
 //* * * END OF FUNCTION "createFeature1" * * *
 
-function createMap1(marker1, marker2, marker3) {
+// * * * ON CLICK LAT/LONG IS IDENTIFIED AS A VALUE * * *
+
+function onMapClick1(e) {
+  alert("You clicked the map at " + e.latlng);
+}
+
+var popup = L.popup();
+function onMapClick2(e) {
+  popup
+    .setLatLng(e.latlng)
+    .setContent("You clicked the map at " + e.latlng.toString())
+    .openOn(myMap);
+}
+
+myMap.on("click", onMapClick2);
+
+// myMap.on("click", onMapClick1);
+
+// * * * END  ON CLICK LAT/LONG IS IDENTIFIED AS A VALUE * * *
+
+// * * * POLOGON
+
+// var mapboxAccessToken = API_KEY;
+// var map = L.map("map").setView([37.8, -96], 4);
+
+// dataFile3 = "../Data/us-states-geoJson.geojson";
+
+// L.tileLayer5(
+//   "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",
+//   {
+//     id: "mapbox.satellite",
+//     tileSize: 512,
+//     accessToken: API_KEY,
+//     zoomOffset: -1,
+//   }
+// ).addTo(myMap);
+
+// L.geoJson(statesData).addTo(myMap);
+
+// * * * END POLYGON  * * *
+
+function createMap1(marker1, marker2) {
   // created an overlay for specific data display.
   var overlayMaps = {
     "Population by State": marker1,
