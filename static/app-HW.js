@@ -1,6 +1,6 @@
 // Index Javascript <i class="fa fa-file
 
-const tableData = "https://BootCampUCD.github.io/static/data.js";
+const tableData = data;
 
 function uniqueDateInOrder(tableData) {
   let uniqueDate = new Array();
