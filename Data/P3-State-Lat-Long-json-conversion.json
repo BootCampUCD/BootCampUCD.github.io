@@ -1,0 +1,512 @@
+[
+  {
+    "State": "Alabama",
+    "Latitude": 32.806671,
+    "Longitude": -86.79113,
+    "Pop_1990": 4040389,
+    "Pop_2000": 4447207,
+    "Pop_2010": 4780138,
+    "Pop_2018": 4887871,
+    "parentOf": ""
+  },
+  {
+    "State": "Alaska",
+    "Latitude": 61.370716,
+    "Longitude": -152.404419,
+    "Pop_1990": 550043,
+    "Pop_2000": 626933,
+    "Pop_2010": 710249,
+    "Pop_2018": 737438,
+    "parentOf": ""
+  },
+  {
+    "State": "Arizona",
+    "Latitude": 33.729759,
+    "Longitude": -111.431221,
+    "Pop_1990": 3665339,
+    "Pop_2000": 5130247,
+    "Pop_2010": 6392288,
+    "Pop_2018": 7171646,
+    "parentOf": ""
+  },
+  {
+    "State": "Arkansas",
+    "Latitude": 34.969704,
+    "Longitude": -92.373123,
+    "Pop_1990": 2350624,
+    "Pop_2000": 2673293,
+    "Pop_2010": 2916028,
+    "Pop_2018": 3013825,
+    "parentOf": ""
+  },
+  {
+    "State": "California",
+    "Latitude": 36.116203,
+    "Longitude": -119.681564,
+    "Pop_1990": 29811427,
+    "Pop_2000": 33871653,
+    "Pop_2010": 37254523,
+    "Pop_2018": 39557045,
+    "parentOf": ""
+  },
+  {
+    "State": "Colorado",
+    "Latitude": 39.059811,
+    "Longitude": -105.311104,
+    "Pop_1990": 3294473,
+    "Pop_2000": 4302086,
+    "Pop_2010": 5029316,
+    "Pop_2018": 5695564,
+    "parentOf": ""
+  },
+  {
+    "State": "Connecticut",
+    "Latitude": 41.597782,
+    "Longitude": -72.755371,
+    "Pop_1990": 3287116,
+    "Pop_2000": 3405650,
+    "Pop_2010": 3574147,
+    "Pop_2018": 3572665,
+    "parentOf": ""
+  },
+  {
+    "State": "Delaware",
+    "Latitude": 39.318523,
+    "Longitude": -75.507141,
+    "Pop_1990": 666168,
+    "Pop_2000": 783559,
+    "Pop_2010": 897934,
+    "Pop_2018": 967171,
+    "parentOf": ""
+  },
+  {
+    "State": "District of Columbia",
+    "Latitude": 38.897438,
+    "Longitude": -77.026817,
+    "Pop_1990": 606900,
+    "Pop_2000": 572086,
+    "Pop_2010": 601766,
+    "Pop_2018": 702455,
+    "parentOf": ""
+  },
+  {
+    "State": "Florida",
+    "Latitude": 27.766279,
+    "Longitude": -81.686783,
+    "Pop_1990": 12938071,
+    "Pop_2000": 15982571,
+    "Pop_2010": 18804580,
+    "Pop_2018": 21299325,
+    "parentOf": ""
+  },
+  {
+    "State": "Georgia",
+    "Latitude": 33.040619,
+    "Longitude": -83.643074,
+    "Pop_1990": 6478149,
+    "Pop_2000": 8186653,
+    "Pop_2010": 9688709,
+    "Pop_2018": 10519475,
+    "parentOf": ""
+  },
+  {
+    "State": "Hawaii",
+    "Latitude": 21.094318,
+    "Longitude": -157.498337,
+    "Pop_1990": 1108229,
+    "Pop_2000": 1211497,
+    "Pop_2010": 1360307,
+    "Pop_2018": 1420491,
+    "parentOf": ""
+  },
+  {
+    "State": "Idaho",
+    "Latitude": 44.240459,
+    "Longitude": -114.478828,
+    "Pop_1990": 1006734,
+    "Pop_2000": 1293957,
+    "Pop_2010": 1567657,
+    "Pop_2018": 1754208,
+    "parentOf": ""
+  },
+  {
+    "State": "Illinois",
+    "Latitude": 40.349457,
+    "Longitude": -88.986137,
+    "Pop_1990": 11430602,
+    "Pop_2000": 12419927,
+    "Pop_2010": 12831572,
+    "Pop_2018": 12741080,
+    "parentOf": ""
+  },
+  {
+    "State": "Indiana",
+    "Latitude": 39.849426,
+    "Longitude": -86.258278,
+    "Pop_1990": 5544156,
+    "Pop_2000": 6080827,
+    "Pop_2010": 6484061,
+    "Pop_2018": 6691878,
+    "parentOf": ""
+  },
+  {
+    "State": "Iowa",
+    "Latitude": 42.011539,
+    "Longitude": -93.210526,
+    "Pop_1990": 2776831,
+    "Pop_2000": 2926538,
+    "Pop_2010": 3046872,
+    "Pop_2018": 3156145,
+    "parentOf": ""
+  },
+  {
+    "State": "Kansas",
+    "Latitude": 38.5266,
+    "Longitude": -96.726486,
+    "Pop_1990": 2477588,
+    "Pop_2000": 2688925,
+    "Pop_2010": 2853126,
+    "Pop_2018": 2911505,
+    "parentOf": ""
+  },
+  {
+    "State": "Kentucky",
+    "Latitude": 37.66814,
+    "Longitude": -84.670067,
+    "Pop_1990": 3686892,
+    "Pop_2000": 4042193,
+    "Pop_2010": 4339333,
+    "Pop_2018": 4468402,
+    "parentOf": ""
+  },
+  {
+    "State": "Louisiana",
+    "Latitude": 31.169546,
+    "Longitude": -91.867805,
+    "Pop_1990": 4221826,
+    "Pop_2000": 4469035,
+    "Pop_2010": 4533485,
+    "Pop_2018": 4659978,
+    "parentOf": ""
+  },
+  {
+    "State": "Maine",
+    "Latitude": 44.693947,
+    "Longitude": -69.381927,
+    "Pop_1990": 1227928,
+    "Pop_2000": 1274779,
+    "Pop_2010": 1328369,
+    "Pop_2018": 1338404,
+    "parentOf": ""
+  },
+  {
+    "State": "Maryland",
+    "Latitude": 39.063946,
+    "Longitude": -76.802101,
+    "Pop_1990": 4780753,
+    "Pop_2000": 5296647,
+    "Pop_2010": 5773798,
+    "Pop_2018": 6042718,
+    "parentOf": ""
+  },
+  {
+    "State": "Massachusetts",
+    "Latitude": 42.230171,
+    "Longitude": -71.530106,
+    "Pop_1990": 6016425,
+    "Pop_2000": 6349364,
+    "Pop_2010": 6547790,
+    "Pop_2018": 6902149,
+    "parentOf": ""
+  },
+  {
+    "State": "Michigan",
+    "Latitude": 43.326618,
+    "Longitude": -84.536095,
+    "Pop_1990": 9295287,
+    "Pop_2000": 9938823,
+    "Pop_2010": 9884117,
+    "Pop_2018": 9995915,
+    "parentOf": ""
+  },
+  {
+    "State": "Minnesota",
+    "Latitude": 45.694454,
+    "Longitude": -93.900192,
+    "Pop_1990": 4375665,
+    "Pop_2000": 4919631,
+    "Pop_2010": 5303925,
+    "Pop_2018": 5611179,
+    "parentOf": ""
+  },
+  {
+    "State": "Mississippi",
+    "Latitude": 32.741646,
+    "Longitude": -89.678696,
+    "Pop_1990": 2575475,
+    "Pop_2000": 2844754,
+    "Pop_2010": 2968118,
+    "Pop_2018": 2986530,
+    "parentOf": ""
+  },
+  {
+    "State": "Missouri",
+    "Latitude": 38.456085,
+    "Longitude": -92.288368,
+    "Pop_1990": 5116901,
+    "Pop_2000": 5596564,
+    "Pop_2010": 5988952,
+    "Pop_2018": 6126452,
+    "parentOf": ""
+  },
+  {
+    "State": "Montana",
+    "Latitude": 46.921925,
+    "Longitude": -110.454353,
+    "Pop_1990": 799065,
+    "Pop_2000": 902200,
+    "Pop_2010": 989409,
+    "Pop_2018": 1062305,
+    "parentOf": ""
+  },
+  {
+    "State": "Nebraska",
+    "Latitude": 41.12537,
+    "Longitude": -98.268082,
+    "Pop_1990": 1578417,
+    "Pop_2000": 1711230,
+    "Pop_2010": 1826305,
+    "Pop_2018": 1929268,
+    "parentOf": ""
+  },
+  {
+    "State": "Nevada",
+    "Latitude": 38.313515,
+    "Longitude": -117.055374,
+    "Pop_1990": 1201675,
+    "Pop_2000": 1998250,
+    "Pop_2010": 2700679,
+    "Pop_2018": 3034392,
+    "parentOf": ""
+  },
+  {
+    "State": "New Hampshire",
+    "Latitude": 43.452492,
+    "Longitude": -71.563896,
+    "Pop_1990": 1109252,
+    "Pop_2000": 1235807,
+    "Pop_2010": 1316464,
+    "Pop_2018": 1356458,
+    "parentOf": ""
+  },
+  {
+    "State": "New Jersey",
+    "Latitude": 40.298904,
+    "Longitude": -74.521011,
+    "Pop_1990": 7747750,
+    "Pop_2000": 8414764,
+    "Pop_2010": 8791962,
+    "Pop_2018": 8908520,
+    "parentOf": ""
+  },
+  {
+    "State": "New Mexico",
+    "Latitude": 34.840515,
+    "Longitude": -106.248482,
+    "Pop_1990": 1515069,
+    "Pop_2000": 1819017,
+    "Pop_2010": 2059180,
+    "Pop_2018": 2095428,
+    "parentOf": ""
+  },
+  {
+    "State": "New York",
+    "Latitude": 42.165726,
+    "Longitude": -74.948051,
+    "Pop_1990": 17990778,
+    "Pop_2000": 18977026,
+    "Pop_2010": 19378124,
+    "Pop_2018": 19542209,
+    "parentOf": ""
+  },
+  {
+    "State": "North Carolina",
+    "Latitude": 35.630066,
+    "Longitude": -79.806419,
+    "Pop_1990": 6632448,
+    "Pop_2000": 8046346,
+    "Pop_2010": 9535736,
+    "Pop_2018": 10383620,
+    "parentOf": ""
+  },
+  {
+    "State": "North Dakota",
+    "Latitude": 47.528912,
+    "Longitude": -99.784012,
+    "Pop_1990": 638800,
+    "Pop_2000": 642237,
+    "Pop_2010": 672576,
+    "Pop_2018": 760077,
+    "parentOf": ""
+  },
+  {
+    "State": "Ohio",
+    "Latitude": 40.388783,
+    "Longitude": -82.764915,
+    "Pop_1990": 10847115,
+    "Pop_2000": 11353336,
+    "Pop_2010": 11536757,
+    "Pop_2018": 11689442,
+    "parentOf": ""
+  },
+  {
+    "State": "Oklahoma",
+    "Latitude": 35.565342,
+    "Longitude": -96.928917,
+    "Pop_1990": 3145576,
+    "Pop_2000": 3450451,
+    "Pop_2010": 3751583,
+    "Pop_2018": 3943079,
+    "parentOf": ""
+  },
+  {
+    "State": "Oregon",
+    "Latitude": 44.572021,
+    "Longitude": -122.070938,
+    "Pop_1990": 2842337,
+    "Pop_2000": 3421524,
+    "Pop_2010": 3831075,
+    "Pop_2018": 4190713,
+    "parentOf": ""
+  },
+  {
+    "State": "Pennsylvania",
+    "Latitude": 40.590752,
+    "Longitude": -77.209755,
+    "Pop_1990": 11882842,
+    "Pop_2000": 12280548,
+    "Pop_2010": 12702873,
+    "Pop_2018": 12807060,
+    "parentOf": ""
+  },
+  {
+    "State": "Rhode Island",
+    "Latitude": 41.680893,
+    "Longitude": -71.51178,
+    "Pop_1990": 1003464,
+    "Pop_2000": 1048259,
+    "Pop_2010": 1052957,
+    "Pop_2018": 1057315,
+    "parentOf": ""
+  },
+  {
+    "State": "South Carolina",
+    "Latitude": 33.856892,
+    "Longitude": -80.945007,
+    "Pop_1990": 3486310,
+    "Pop_2000": 4012023,
+    "Pop_2010": 4625381,
+    "Pop_2018": 5084127,
+    "parentOf": ""
+  },
+  {
+    "State": "South Dakota",
+    "Latitude": 44.299782,
+    "Longitude": -99.438828,
+    "Pop_1990": 696004,
+    "Pop_2000": 754858,
+    "Pop_2010": 814198,
+    "Pop_2018": 882235,
+    "parentOf": ""
+  },
+  {
+    "State": "Tennessee",
+    "Latitude": 35.747845,
+    "Longitude": -86.692345,
+    "Pop_1990": 4877203,
+    "Pop_2000": 5689427,
+    "Pop_2010": 6346286,
+    "Pop_2018": 6770010,
+    "parentOf": ""
+  },
+  {
+    "State": "Texas",
+    "Latitude": 31.054487,
+    "Longitude": -97.563461,
+    "Pop_1990": 16986335,
+    "Pop_2000": 20851028,
+    "Pop_2010": 25146114,
+    "Pop_2018": 28701845,
+    "parentOf": ""
+  },
+  {
+    "State": "Utah",
+    "Latitude": 40.150032,
+    "Longitude": -111.862434,
+    "Pop_1990": 1722850,
+    "Pop_2000": 2233183,
+    "Pop_2010": 2763891,
+    "Pop_2018": 3161105,
+    "parentOf": ""
+  },
+  {
+    "State": "Vermont",
+    "Latitude": 44.045876,
+    "Longitude": -72.710686,
+    "Pop_1990": 562758,
+    "Pop_2000": 608613,
+    "Pop_2010": 625744,
+    "Pop_2018": 626299,
+    "parentOf": ""
+  },
+  {
+    "State": "Virginia",
+    "Latitude": 37.769337,
+    "Longitude": -78.169968,
+    "Pop_1990": 6189197,
+    "Pop_2000": 7079057,
+    "Pop_2010": 8001055,
+    "Pop_2018": 8517685,
+    "parentOf": ""
+  },
+  {
+    "State": "Washington",
+    "Latitude": 47.400902,
+    "Longitude": -121.490494,
+    "Pop_1990": 4866669,
+    "Pop_2000": 5894281,
+    "Pop_2010": 6724540,
+    "Pop_2018": 7535591,
+    "parentOf": ""
+  },
+  {
+    "State": "West Virginia",
+    "Latitude": 38.491226,
+    "Longitude": -80.954453,
+    "Pop_1990": 1793477,
+    "Pop_2000": 1808193,
+    "Pop_2010": 1853001,
+    "Pop_2018": 1805832,
+    "parentOf": ""
+  },
+  {
+    "State": "Wisconsin",
+    "Latitude": 44.268543,
+    "Longitude": -89.616508,
+    "Pop_1990": 4891954,
+    "Pop_2000": 5363757,
+    "Pop_2010": 5687282,
+    "Pop_2018": 5813568,
+    "parentOf": ""
+  },
+  {
+    "State": "Wyoming",
+    "Latitude": 42.755966,
+    "Longitude": -107.30249,
+    "Pop_1990": 453589,
+    "Pop_2000": 493786,
+    "Pop_2010": 563773,
+    "Pop_2018": 577737,
+    "parentOf": ""
+  }
+]
