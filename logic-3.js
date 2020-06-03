@@ -139,7 +139,7 @@ function createFeatures1(earthquakeData) {
     console.log("latlng1: " + latlng1);
 
     // Amplified the circle by multiplying the population by a factor to proportionally adjust the circle diameter for visual purposes only.
-    var radius1 = feature1.properties.UR_Pop * 0.00001;
+    var radius1 = feature1.properties.UR_Pop * 0.001;
     var circleStyle1 = {
       // fillOpacity: 1,
       color: "red",
