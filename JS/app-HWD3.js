@@ -7,7 +7,7 @@ var svgHeight = 800;
 
 // * * * boarder margins
 var margin = {
-  top: 255,
+  top: 155,
   right: 40,
   bottom: 60,
   left: 150,
