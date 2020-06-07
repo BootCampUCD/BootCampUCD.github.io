@@ -35,7 +35,7 @@ var random = parseInt(Math.ceil(Math.random() * 13));
 
 // LOAD THE DATA FROM CSV
 // Retrieve data from the CSV file and execute everything below
-d3.csv("data.csv")
+d3.csv("https://BootCampUCD.github.io/Data/data.csv")
   .then(function (data1, err) {
     if (err) throw err;
     data1;
