@@ -21,6 +21,15 @@ body {
   position: absolute;
 }
 
+#title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 6rem;
+  color: white;
+  margin: 0;
+}
+
 /*  "nav ul" Tag Characteristics */
 nav ul {
   position: absolute;
