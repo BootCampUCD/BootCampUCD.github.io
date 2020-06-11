@@ -103,8 +103,8 @@ h1 {
 
 /* Class definition called "content".  Small area contained within a "container" class.*/
 .content {
-  width: 730px;
-  padding: 50px;
+  width: 10px;
+  padding: 10px;
   margin-left: 151px;
   margin-top: 142px;
   background-color: aquamarine;
