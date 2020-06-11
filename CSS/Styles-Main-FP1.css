@@ -79,6 +79,7 @@ p {
   text-indent: 25px;
   background-image: url(https://BootCampUCD.github.io/Images/DigitalData.jpg);
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /*  "Heading 1" Web Page Characteristics.*/
