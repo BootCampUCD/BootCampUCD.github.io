@@ -77,6 +77,8 @@ p {
   font-size: 25px;
   word-wrap: break-word;
   text-indent: 25px;
+  background-image: url(https://BootCampUCD.github.io/Images/DigitalData.jpg);
+  background-repeat: no-repeat;
 }
 
 /*  "Heading 1" Web Page Characteristics.*/
