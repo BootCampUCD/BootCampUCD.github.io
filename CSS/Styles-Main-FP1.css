@@ -80,6 +80,7 @@ p {
   background-image: url(https://BootCampUCD.github.io/Images/DigitalData3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 /*  "Heading 1" Web Page Characteristics.*/
