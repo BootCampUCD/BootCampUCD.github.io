@@ -103,12 +103,12 @@ h1 {
 
 /* Class definition called "content".  Small area contained within a "container" class.*/
 .content {
-  width: 700px;
+  width: 1500px;
   padding: 25px;
-  margin-left: 151px;
-  margin-top: 142px;
+  margin-left: 151px; /* fixed to align boarder with logo boarder in the upper left corner
+  margin-top: 142px; /* fixed to align boarder with logo boarder in the upper left corner
   /* background-color: aquamarine; */
-  border: 1px solid yellow;
+  border: 1px solid white;
 }
 
 /*Class defined as "footer" which in contained within the class of "container.*/
@@ -116,7 +116,7 @@ h1 {
   clear: both;
   margin-left: 150px;
   font-size: 10px;
-  color: black;
+  color: white;
   position: relative;
   width: auto;
   height: 13px;
