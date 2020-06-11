@@ -112,6 +112,7 @@ h1 {
 
 /* Class definition called "content".  Small area contained within a "container" class.*/
 .content {
+  clear: both;
   width: 1200px;
   padding: 25px;
   margin-left: 151px; /* fixed to align boarder with logo boarder in the upper left corner*/
