@@ -73,7 +73,7 @@ nav a:hover {
 p {
   position: relative;
   text-align: left;
-  color: teal;
+  /* color: teal; */
   font-size: 25px;
   word-wrap: break-word;
   text-indent: 25px;
