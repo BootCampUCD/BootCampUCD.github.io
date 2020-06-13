@@ -1,5 +1,5 @@
 
-dataFile = "/Data/us-states.js";
+dataFile = "https://BootCampUCD.github.io/Data/us-states.js";
 
 var mapboxAccessToken = {API_KEY};
 var map = L.map('map').setView([37.8, -96], 4);
