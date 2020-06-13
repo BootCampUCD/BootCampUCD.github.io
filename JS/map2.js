@@ -1,17 +1,17 @@
+var dataFile = "../Data/P3-State-Lat-Long.geojson";
 
-dataFile = "https://BootCampUCD.github.io/Data/us-states.js";
+var mapboxAccessToken = { API_KEY };
+var map = L.map("map").setView([37.8, -96], 4);
 
-var mapboxAccessToken = {API_KEY};
-var map = L.map('map').setView([37.8, -96], 4);
-
-L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=' + mapboxAccessToken, {
-    id: 'mapbox/light-v9',
+L.tileLayer(
+  "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=" +
+    mapboxAccessToken,
+  {
+    id: "mapbox/light-v9",
     // attribution: ,
     tileSize: 512,
-    zoomOffset: -1
-    access_token: API_KEY,
-}).addTo(map);
+    zoomOffset: -1,
+  }
+).addTo(map);
 
 L.geoJson(dataFile).addTo(map);
-
-
