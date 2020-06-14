@@ -130,7 +130,7 @@ h1 {
 /* Class definition called "container".  Large area within other groups (e.g. paragraphs, footer, images,...etc.) will be managed.*/
 .container {
   position: absolute;
-  width: 250px;
+  width: 150px;
   height: 250px;
   margin-left: auto;
   margin-right: auto;
