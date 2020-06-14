@@ -82,12 +82,12 @@ nav a:hover {
 p {
   margin: 0 auto;
   position: relative;
-  text-align: left;
-  color: white;
+  /* text-align: left; */
+  /* color: white; */
   font-size: 45px;
-  word-wrap: break-word;
-  text-indent: 25px;
-  background-color: #cccccc;
+  /* word-wrap: break-word; */
+  /* text-indent: 25px; */
+  /* background-color: #cccccc; */
   background-image: url(https://BootCampUCD.github.io/Images/Globe7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
