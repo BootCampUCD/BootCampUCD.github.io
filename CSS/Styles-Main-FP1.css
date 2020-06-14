@@ -16,6 +16,15 @@ body {
   background-size: cover;
 }
 
+.transition-fade {
+  transition: 0.1s;
+  opacity: 1;
+}
+
+html.is-animating .tranisition-fade {
+  opacity: 0;
+}
+
 /*  Header Web Page Characteristics */
 #header {
   position: absolute;
