@@ -106,6 +106,7 @@ p {
 /*  Paragraph Web Page characteristics.*/
 .chart {
   margin: 0 auto;
+  margin-right: 200px;
   position: relative;
   margin-left: 151px;
   margin-top: 142px;
