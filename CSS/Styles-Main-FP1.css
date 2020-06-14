@@ -125,12 +125,12 @@ h1 {
 .content {
   float: left;
   clear: both;
-  width: 500px;
+  width: auto;
   padding: 25px;
   margin-left: 151px; /* fixed to align boarder with logo boarder in the upper left corner*/
   margin-top: 142px; /* fixed to align boarder with logo boarder in the upper left corner
   /* background-color: aquamarine; */
-  border: 1px solid white;
+  border: 2px solid white;
 }
 
 /*Class defined as "footer" which in contained within the class of "container.*/
