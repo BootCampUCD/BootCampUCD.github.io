@@ -84,7 +84,7 @@ nav a:hover::after {
 
 /*  "nav a" with a mouse "hover" characteristics that changes the color of the object to "blue".*/
 nav a:hover {
-  color: rgb(0, 0, 255);
+  color: yellow;
 }
 
 /*  Paragraph Web Page characteristics.*/
