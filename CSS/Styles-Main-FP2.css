@@ -98,11 +98,9 @@ p {
 .chart {
   margin: 0 auto;
   position: relative;
-  /* text-align: left; */
-  color: white;
-  /* font-size: 45px; */
-  /* word-wrap: break-word; */
-  /* text-indent: 25px; */
+  margin-left: 151px;
+  margin-top: 142px;
+  border: 1px solid white;
   background-color: #cccccc;
   /* background-image: url(https://BootCampUCD.github.io/Images/Globe7.jpg); */
   background-repeat: no-repeat;
