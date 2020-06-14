@@ -80,12 +80,14 @@ nav a:hover {
 
 /*  Paragraph Web Page characteristics.*/
 p {
+  margin: 0 auto;
   position: relative;
   text-align: left;
   color: white;
   font-size: 45px;
   word-wrap: break-word;
   text-indent: 25px;
+  background-color: #cccccc;
   background-image: url(https://BootCampUCD.github.io/Images/Globe7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,6 +114,7 @@ h1 {
 
 /* Class definition called "content".  Small area contained within a "container" class.*/
 .content {
+  float: left;
   clear: both;
   width: 1200px;
   padding: 25px;
