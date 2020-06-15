@@ -113,16 +113,16 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
     var chosenXAxis = "poverty"; //allows changing of data source comparison-not active
     var xLinearScale = d3
       .scaleLinear()
-      .style("stroke", "white")
       .domain([0, d3.max(data1, (d, i) => d.poverty) * 3]) //`d.${chosenXAxis}`
-      .range([0, width]); //manages the display width on the screen
+      .range([0, width]) //manages the display width on the screen
+      .style("stroke", "white");
 
     // Create y scale function
     var yLinearScale = d3
       .scaleLinear()
-      .style("stroke", "white")
       .domain([0, d3.max(data1, (d) => d.healthcare) * 3])
-      .range([height, 0]); //manages the display width on the screen
+      .range([height, 0]) //manages the display width on the screen
+      .style("stroke", "white");
 
     // Create initial axis functions
     var bottomAxis = d3.axisBottom(xLinearScale).style("stroke", "white");
