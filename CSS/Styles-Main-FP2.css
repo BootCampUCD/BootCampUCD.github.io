@@ -110,7 +110,7 @@ nav a:hover {
   position: relative;
   margin-left: 151px;
   margin-top: 142px;
-  border: 5px solid blue;
+  border: 2px solid yellow;
   background-color: #cccccc;
   background-image: url(https://BootCampUCD.github.io/Images/Globe7.jpg);
   background-repeat: no-repeat;
@@ -158,7 +158,7 @@ h1 {
   width: auto;
   height: 13px;
   background-color: none;
-  border: 1px solid yellow;
+  /* border: 2px solid yellow; */
   text-align: right;
 }
 
@@ -198,7 +198,7 @@ h1 {
 
 /* Class defined as "image3" which manages the specific image characteristics for the image to the right of the web page.*/
 .image3 {
-  border: 1px solid yellow;
+  border: 2px solid yellow;
   top: 50px;
   right: 50px;
   position: fixed;
@@ -212,7 +212,7 @@ h1 {
   width: 150px;
   top: 0;
   left: 0;
-  border: 1px solid yellow;
+  border: 2px solid yellow;
 }
 
 /* Class defined as "image2" which manages the specific image characteristics identified.*/
@@ -221,7 +221,7 @@ h1 {
   width: 150px;
   top: 0;
   left: 0;
-  border: 1px solid yellow;
+  border: 2px solid yellow;
 }
 
 /* Class defined as "overlay" which sets the default transparency to "invisible."*/
