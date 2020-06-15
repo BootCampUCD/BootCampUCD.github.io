@@ -133,7 +133,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .append("path")
       .data(data1)
       .attr("class", "line")
-      .attr("d", valueline);
+      .attr("d", bottomAxis);
 
     // append x axis line angle
     var xAxis = chartGroup
