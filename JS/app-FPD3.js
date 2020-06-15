@@ -178,10 +178,10 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .append("text")
       .attr("x", 0)
       .attr("y", 20)
-      .style("font", "25px times")
+      .classed("axis-text", true)
       .text("Poverty %")
-      .style("color", "white")
-      .style("font-weight", "bold");
+      .style("font", "25px times")
+      .style("color", "white");
 
     // * * * y-axis label
     chartGroup
