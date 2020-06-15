@@ -183,7 +183,6 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .append("text")
       .attr("x", 0)
       .attr("y", 20)
-      .style("color", "red")
       .style("font", "25px times")
       .text("Poverty %")
       .style("color", "red");
