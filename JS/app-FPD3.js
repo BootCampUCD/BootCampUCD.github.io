@@ -132,7 +132,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .append("g")
       .classed("x-axis", true)
       .attr("transform", `translate(0, ${height})`)
-      .style("stroke", "red");
+      .style("stroke", "red")
       .call(bottomAxis);
 
     // append y axis
