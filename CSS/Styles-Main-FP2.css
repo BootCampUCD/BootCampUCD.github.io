@@ -106,13 +106,13 @@ p {
 /*  Paragraph Web Page characteristics.*/
 .chart {
   margin: 0 auto;
-  margin-right: 200px;
+  margin-right: 500px;
   position: relative;
   margin-left: 151px;
   margin-top: 142px;
   border: 2px solid blue;
   background-color: #cccccc;
-  /* background-image: url(https://BootCampUCD.github.io/Images/Globe7.jpg); */
+  background-image: url(https://BootCampUCD.github.io/Images/Globe7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -130,6 +130,7 @@ h1 {
 /* Class definition called "container".  Large area within other groups (e.g. paragraphs, footer, images,...etc.) will be managed.*/
 .container {
   position: absolute;
+  padding: 25px;
   width: 150px;
   height: 250px;
   margin-left: auto;
