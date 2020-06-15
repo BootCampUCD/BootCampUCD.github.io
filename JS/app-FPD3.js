@@ -128,6 +128,13 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
     var bottomAxis = d3.axisBottom(xLinearScale);
     var leftAxis = d3.axisLeft(yLinearScale);
 
+    // Add the valueline path.
+    chartGroup
+      .append("path")
+      .data(data1)
+      .attr("class", "line")
+      .attr("d", valueline);
+
     // append x axis line angle
     var xAxis = chartGroup
       .append("g")
@@ -137,7 +144,11 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .call(bottomAxis);
 
     // append y axis
-    chartGroup.append("g").style("stroke", "white").call(leftAxis);
+    chartGroup
+      .append("g")
+      .style("stroke", "white")
+      .attr("class", "axisRed")
+      .call(leftAxis);
 
     // plot circles
     var circlesGroup = chartGroup
