@@ -126,7 +126,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
 
     // Create initial axis functions
     var bottomAxis = d3.axisBottom(xLinearScale).style("stroke", "white");
-    var leftAxis = d3.axisLeft(yLinearScale);
+    var leftAxis = d3.axisLeft(yLinearScale).style("stroke", "white");
 
     // append x axis line angle
     var xAxis = chartGroup
