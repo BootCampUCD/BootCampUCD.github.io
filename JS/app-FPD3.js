@@ -10,7 +10,7 @@ var margin = {
   top: 50,
   right: 50,
   bottom: 150,
-  left: 50,
+  left: 25,
 };
 
 // * * * display are adjusted by boarder margins
@@ -198,7 +198,9 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .classed("axis-text", true)
       .style("font", "25px times")
       .style("color", "blue")
-      .text("Healthcare %");
+      .text("Healthcare %")
+      .style("color", "red")
+      .style("font-weight", "bold");
 
     var circlesGroup = updateToolTip(poverty, circlesGroup);
   })
