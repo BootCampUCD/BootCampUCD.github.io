@@ -125,7 +125,7 @@ h1 {
 .content {
   float: center;
   clear: both;
-  width: 400px;
+  width: auto;
   padding: 25px;
   margin-left: 151px; /* fixed to align boarder with logo boarder in the upper left corner*/
   margin-top: 142px; /* fixed to align boarder with logo boarder in the upper left corner
