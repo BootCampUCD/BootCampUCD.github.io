@@ -193,8 +193,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .classed("axis-text", true)
       .text("Healthcare %")
       .style("font", "25px times")
-      .style("color", "white")
-      .style("font-weight", "bold");
+      .style("color", "white");
 
     var circlesGroup = updateToolTip(poverty, circlesGroup);
   })
