@@ -16,6 +16,24 @@ body {
   background-size: cover;
 }
 
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+.axisRed line {
+  stroke: red;
+}
+
+.axisRed path {
+  stroke: red;
+}
+
+.axisRed text {
+  fill: red;
+}
+
 .transition-fade {
   transition: 0.1s;
   opacity: 1;
