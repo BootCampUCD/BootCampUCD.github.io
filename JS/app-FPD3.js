@@ -191,10 +191,9 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .attr("x", 0 - height / 2)
       .attr("dy", "3em")
       .classed("axis-text", true)
-      .style("font", "25px times")
-      .style("color", "blue")
       .text("Healthcare %")
-      .style("color", "red")
+      .style("font", "25px times")
+      .style("color", "white")
       .style("font-weight", "bold");
 
     var circlesGroup = updateToolTip(poverty, circlesGroup);
