@@ -137,7 +137,11 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .call(bottomAxis);
 
     // append y axis
-    chartGroup.append("g").call(leftAxis);
+    chartGroup
+      .append("g")
+      .style("stroke", "white")
+      .style("font-weight", "bold")
+      .call(leftAxis);
 
     // plot circles
     var circlesGroup = chartGroup
