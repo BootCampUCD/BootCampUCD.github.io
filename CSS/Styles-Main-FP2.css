@@ -139,7 +139,7 @@ h1 {
 
 /* Class definition called "content".  Small area contained within a "container" class.*/
 .content {
-  float: left;
+  float: center;
   clear: both;
   width: 100px;
   padding: 25px;
