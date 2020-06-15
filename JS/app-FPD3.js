@@ -113,6 +113,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
     var chosenXAxis = "poverty"; //allows changing of data source comparison-not active
     var xLinearScale = d3
       .scaleLinear()
+      .style("color", "white")
       .domain([0, d3.max(data1, (d, i) => d.poverty) * 3]) //`d.${chosenXAxis}`
       .range([0, width]); //manages the display width on the screen
 
