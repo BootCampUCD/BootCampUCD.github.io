@@ -9,8 +9,8 @@ var svgHeight = 500;
 var margin = {
   top: 50,
   right: 50,
-  bottom: 150,
-  left: 25,
+  bottom: 175,
+  left: 75,
 };
 
 // * * * display are adjusted by boarder margins
