@@ -113,14 +113,14 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
     var chosenXAxis = "poverty"; //allows changing of data source comparison-not active
     var xLinearScale = d3
       .scaleLinear()
-      .style("color", "white")
+      .style("stroke", "white")
       .domain([0, d3.max(data1, (d, i) => d.poverty) * 3]) //`d.${chosenXAxis}`
       .range([0, width]); //manages the display width on the screen
 
     // Create y scale function
     var yLinearScale = d3
       .scaleLinear()
-      .style("color", "white")
+      .style("stroke", "white")
       .domain([0, d3.max(data1, (d) => d.healthcare) * 3])
       .range([height, 0]); //manages the display width on the screen
 
@@ -137,11 +137,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .call(bottomAxis);
 
     // append y axis
-    chartGroup
-      .append("g")
-      .style("stroke", "white")
-      .attr("class", "axisRed")
-      .call(leftAxis);
+    chartGroup.append("g").style("stroke", "white").call(leftAxis);
 
     // plot circles
     var circlesGroup = chartGroup
