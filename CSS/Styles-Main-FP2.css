@@ -137,16 +137,16 @@ h1 {
 }
 
 /* Class definition called "content".  Small area contained within a "container" class.*/
-.content {
-  float: center;
-  clear: both;
-  width: 400px;
-  padding: 25px;
-  margin-left: 151px; /* fixed to align boarder with logo boarder in the upper left corner*/
-  margin-top: 142px; /* fixed to align boarder with logo boarder in the upper left corner
-  /* background-color: aquamarine; */
-  border: 3px solid red;
-}
+/* .content { */
+/* float: center; */
+/* clear: both; */
+/* width: 400px; */
+/* padding: 25px; */
+/*margin-left: 151px; fixed to align boarder with logo boarder in the upper left corner
+  margin-top: 142px; /* fixed to align boarder with logo boarder in the upper left corner*/
+/* background-color: aquamarine; */
+/* border: 3px solid red; */
+/* } */
 
 /*Class defined as "footer" which in contained within the class of "container.*/
 .footer {
