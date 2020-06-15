@@ -88,7 +88,7 @@ nav a:hover {
 }
 
 /*  Paragraph Web Page characteristics.*/
-p {
+/* p {
   margin: 0 auto;
   position: relative;
   /* text-align: left; */
@@ -101,7 +101,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
+} */
 
 /*  Paragraph Web Page characteristics.*/
 .chart {
