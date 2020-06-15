@@ -106,7 +106,7 @@ nav a:hover {
 /*  Paragraph Web Page characteristics.*/
 .chart {
   margin: 0 auto;
-  margin-right: 700px;
+  /* margin-right: 700px; */
   position: relative;
   margin-left: 151px;
   margin-top: 142px;
