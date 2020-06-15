@@ -103,6 +103,11 @@ p {
   background-position: center;
 }
 
+h3 {
+  margin: 0 auto;
+  position: relative;
+}
+
 /*  "Heading 1" Web Page Characteristics.*/
 h1 {
   text-transform: capitalize;
