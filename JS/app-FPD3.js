@@ -185,7 +185,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .attr("y", 20)
       .style("font", "25px times")
       .text("Poverty %")
-      .style("color", "red")
+      .style("color", "white")
       .style("font-weight", "bold");
 
     // * * * y-axis label
