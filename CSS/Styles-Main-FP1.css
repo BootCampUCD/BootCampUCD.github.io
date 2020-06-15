@@ -130,7 +130,7 @@ h1 {
   margin-left: 151px; /* fixed to align boarder with logo boarder in the upper left corner*/
   margin-top: 142px; /* fixed to align boarder with logo boarder in the upper left corner
   /* background-color: aquamarine; */
-  border: 2px solid white;
+  border: 2px solid purple;
 }
 
 /*Class defined as "footer" which in contained within the class of "container.*/
