@@ -7,10 +7,10 @@ var svgHeight = 400;
 
 // * * * border margins
 var margin = {
-  top: 150,
+  top: 50,
   right: 50,
-  bottom: 200,
-  left: 175,
+  bottom: 100,
+  left: 150,
 };
 
 // * * * display are adjusted by boarder margins
@@ -180,7 +180,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .classed("axis-text", true)
       .text("Poverty %")
       .style("font", "25px times")
-      .style("stroke", "white");
+      .style("stroke", "red");
 
     // * * * y-axis label
     chartGroup
