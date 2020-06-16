@@ -24,6 +24,7 @@ var svg = d3
   .attr("width", svgWidth)
   .attr("height", svgHeight);
 
+// positions the chart
 var chartGroup = svg
   .append("g")
   .attr("transform", `translate(${margin.left}, ${margin.top})`);
