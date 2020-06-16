@@ -102,7 +102,7 @@ nav a:hover::after {
 
 /*  "nav a" with a mouse "hover" characteristics that changes the color of the object to "blue".*/
 nav a:hover {
-  color: blue;
+  color: white;
 }
 
 /*  Paragraph Web Page characteristics.*/
