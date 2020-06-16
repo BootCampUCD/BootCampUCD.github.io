@@ -129,8 +129,8 @@ nav a:hover {
   margin-left: 151px;
   margin-top: 142px;
   border: 2px solid yellow;
-  background-color: #cccccc;
-  /* background-image: url(https://BootCampUCD.github.io/Images/Globe7.jpg); */
+  /* background-color: #cccccc; */
+  background-image: url(https://BootCampUCD.github.io/Images/Globe7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
