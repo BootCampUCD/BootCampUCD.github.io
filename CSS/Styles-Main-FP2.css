@@ -140,7 +140,7 @@ nav a:hover {
 h1 {
   text-transform: capitalize;
   font-size: 18px;
-  color: white;
+  color: teal;
   font-style: oblique;
   font-weight: 700;
 }
