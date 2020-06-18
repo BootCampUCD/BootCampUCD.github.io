@@ -10,7 +10,7 @@ var margin = {
   top: 125,
   right: 50,
   bottom: 100,
-  left: 125,
+  left: 115,
 };
 
 // * * * display are adjusted by boarder margins
