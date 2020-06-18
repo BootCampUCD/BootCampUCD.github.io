@@ -143,14 +143,13 @@ h1 {
 .footer {
   clear: both;
   margin-left: 151px;
-  margin-right: auto;
   font-size: 10px;
   color: white;
   position: relative;
   width: auto;
   height: 13px;
   background-color: none;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   text-align: right;
 }
 
