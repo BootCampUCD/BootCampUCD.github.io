@@ -16,33 +16,6 @@ body {
   background-size: cover;
 }
 
-.line {
-  fill: none;
-  stroke: white;
-  stroke-width: 2px;
-}
-
-.axisRed line {
-  stroke: white;
-}
-
-.axisRed path {
-  stroke: white;
-}
-
-.axisRed text {
-  fill: red;
-}
-
-.transition-fade {
-  transition: 0.1s;
-  opacity: 1;
-}
-
-html.is-animating .tranisition-fade {
-  opacity: 0;
-}
-
 /*  Header Web Page Characteristics */
 #header {
   position: absolute;
