@@ -144,7 +144,7 @@ h1 {
   height: 13px;
   background-color: none;
   /* border: 1px solid white; */
-  text-align: right;
+  text-align: left;
 }
 
 /* Class defined as "nav_bar" which is contained within the Class "container".*/
