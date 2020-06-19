@@ -133,8 +133,8 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .classed("x-axis", true)
       .attr("transform", `translate(0, ${height})`)
       .style("stroke", "white")
-      .call(bottomAxis)
-      .style("stroke", "red");
+      .attr("color", "red")
+      .call(bottomAxis);
 
     // append y axis
     chartGroup.append("g").style("stroke", "white").call(leftAxis);
