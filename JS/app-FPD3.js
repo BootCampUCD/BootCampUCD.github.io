@@ -133,11 +133,15 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .classed("x-axis", true)
       .attr("transform", `translate(0, ${height})`)
       .style("stroke", "white")
-      .attr("color", "red")
+      .attr("color", "white")
       .call(bottomAxis);
 
     // append y axis
-    chartGroup.append("g").style("stroke", "white").call(leftAxis);
+    chartGroup
+      .append("g")
+      .style("stroke", "white")
+      .attr("color", "white")
+      .call(leftAxis);
 
     // plot circles
     var circlesGroup = chartGroup
