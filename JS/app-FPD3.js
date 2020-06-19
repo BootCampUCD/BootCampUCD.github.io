@@ -124,7 +124,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .range([height, 0]); //manages the display width on the screen
 
     // Create initial axis functions
-    var bottomAxis = d3.axisBottom(xLinearScale).style("stroke", "white");
+    var bottomAxis = d3.axisBottom(xLinearScale);
     var leftAxis = d3.axisLeft(yLinearScale);
 
     // append x axis line angle
