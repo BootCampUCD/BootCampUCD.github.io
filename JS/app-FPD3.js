@@ -3,7 +3,7 @@
 //-----------------------------------------
 // * * * size of display area
 var svgWidth = 900;
-var svgHeight = 500;
+var svgHeight = 400;
 
 // * * * border margins
 var margin = {
