@@ -1,6 +1,31 @@
 
 
 # Import Libraries
+
+# Visualization
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+# Feature Selection and Encoding
+from sklearn.feature_selection import RFE, RFECV
+from sklearn.svm import SVR
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import OneHotEncoder, LabelEncoder, label_binarize
+
+# Machine learning
+from sklearn import datasets, model_selection, tree, preprocessing, metrics, linear_model
+from sklearn.naive_bayes import GaussianNB
+from sklearn.linear_model import LinearRegression, LogisticRegression, Ridge, Lasso, SGDClassifier
+
+# Grid and Random Search
+import scipy.stats as st
+from scipy.stats import randint as sp_randint
+from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import RandomizedSearchCV
+
+# Managing Warnings
+import warnings
+
 import random
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
