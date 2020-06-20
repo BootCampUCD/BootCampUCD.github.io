@@ -122,7 +122,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
     var yLinearScale = d3
       .scaleLinear()
       .domain([0, d3.max(data1, (d) => d.healthcare) * 3])
-      .range([height, 0]); //manages the display height on the screen
+      .range([height + 50, 0]); //manages the display height on the screen
 
     // Create initial axis functions
     var bottomAxis = d3.axisBottom(xLinearScale);
