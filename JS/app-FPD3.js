@@ -180,7 +180,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .append("g")
       .attr(
         "transform",
-        `translate(${width * 0.75}, ${height + 50}) rotate (0)`
+        `translate(${width * 0.25}, ${height + 50}) rotate (0)`
       );
 
     // * * * x-axis label
@@ -189,7 +189,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .attr("x", 0)
       .attr("y", 20)
       .classed("axis-text", true)
-      .text("3-Poverty %")
+      .text(".25-Poverty %")
       .style("font", "35px times")
       .style("fill", "white")
       .style("stroke", "white");
