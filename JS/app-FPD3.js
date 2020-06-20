@@ -170,7 +170,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .attr("x", (d, i) => xLinearScale(poverty[i]))
       .attr("y", (d, i) => yLinearScale(healthcare[i]))
       .text((d, i) => abbr[i])
-      .style("color", "white")
+      .style("stroke", "white")
       .style("font-weight", "bold");
 
     // * * * x-axis labels
