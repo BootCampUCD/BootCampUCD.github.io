@@ -338,7 +338,7 @@ train_pred_rf, test_pred_rf, acc_rf, acc_cv_rf, probs_rf = fit_ml_algo(
 def index():
     "Still WORKING!!!"
     object = list(db.covid1a_db.find())
-    return render_template("../HTML/index-covid1.html", object=object)
+    return render_template("../index-covid1.html", object=object)
 
     # identifying the path to the web page
 
