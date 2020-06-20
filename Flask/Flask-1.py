@@ -51,7 +51,7 @@ data_df = data.drop(["County", "Confirmed cases", "Confirmed Deaths"], axis=1)
 data_df.head()
 
 # describe data
-data_df.describe()
+# ***data_df.describe()
 
 # Min-Max normalizes/scales any list
 
