@@ -28,7 +28,7 @@ db = client.statesInfo_db
 
 # (pandas read in csv)
 db.statesPop_db.drop()
-df = pd.read_csv("/Data/P3-State-Lat-Long.csv")
+df = pd.read_csv("C:\Users\mail2\Desktop\BootCamp_Python_Code\Final_Project-Clone\BootCampUCD.github.io\Data\P3-State-Lat-Long.csv")
 dfjson = json.loads(df.to_json(orient="records"))
 db.statesPop_db.insert_many(dfjson)
 
