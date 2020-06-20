@@ -189,7 +189,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .attr("x", 0)
       .attr("y", 20)
       .classed("axis-text", true)
-      .text("2-Poverty %")
+      .text("3-Poverty %")
       .style("font", "35px times")
       .style("fill", "white")
       .style("stroke", "white");
