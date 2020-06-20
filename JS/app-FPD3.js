@@ -228,7 +228,7 @@ function updateToolTip(poverty, circlesGroup) {
       toolTip
         .show(data)
         .style("font", "25px times")
-        .style("color", "blue")
+        .style("color", "white")
         .style("font-weight", "bold");
     })
     // When mouse moves off of the item data stops being displayed
