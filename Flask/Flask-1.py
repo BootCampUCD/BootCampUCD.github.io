@@ -318,7 +318,7 @@ def index():
     # identifying the path to the web page
 
 
-@app.route("/StatesPop")
+@app.route("/COVID")
 def people(input1, input2, input3):
     object = list(db.statesPop_db.find())
     return dumps(object)
