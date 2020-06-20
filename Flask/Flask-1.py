@@ -60,14 +60,14 @@ conn = "mongodb://localhost:27017"
 client = pymongo.MongoClient(conn)
 
 # connect to the database
-db = client.covid1_db
+db = client.covid1a_db
 "It WORKS!!!"
 
 # (pandas read in csv)
-db.covid1_db.drop()
+db.covid1a_db.drop()
 df = pd.read_csv("./Data/data1.csv")
 dfjson = json.loads(df.to_json(orient="records"))
-db.covid1_db.insert_many(dfjson)
+db.covid1a_db.insert_many(dfjson)
 
 # * * * ML Code * * *
 
@@ -337,7 +337,7 @@ train_pred_rf, test_pred_rf, acc_rf, acc_cv_rf, probs_rf = fit_ml_algo(
 @app.route("/")
 def index():
     "Still WORKING!!!"
-    object = list(db.covid1_db.find())
+    object = list(db.covid1a_db.find())
     return render_template("../HTML/index-covid1.html", object=object)
 
     # identifying the path to the web page
@@ -345,7 +345,7 @@ def index():
 
 @app.route("/COVID")
 def people(input1, input2, input3):
-    object = list(db.covid1_db.find())
+    object = list(db.covid1a_db.find())
     return dumps(object)
     # return render_template("../HTML/index-FPD3-ML.html", objectX=object)
 
