@@ -28,10 +28,14 @@ db = client.statesInfo_db
 
 # (pandas read in csv)
 db.statesPop_db.drop()
-df = pd.read_csv("./Data/P3-State-Lat-Long.csv")
+df = pd.read_csv("./Data/data1.csv")
 dfjson = json.loads(df.to_json(orient="records"))
 db.statesPop_db.insert_many(dfjson)
 
+# ML Code
+
+
+# END of ML Code
 
 # identifying the path to the web page
 @app.route("/")
