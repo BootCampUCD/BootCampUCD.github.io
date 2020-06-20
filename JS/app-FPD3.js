@@ -178,7 +178,10 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
     // * * * x-axis labels
     var labelsGroup = chartGroup
       .append("g")
-      .attr("transform", `translate(${width / 2}, ${height + 50}) rotate (0)`);
+      .attr(
+        "transform",
+        `translate(${width * 0.75}, ${height + 50}) rotate (0)`
+      );
 
     // * * * x-axis label
     var xaxisLabel = labelsGroup
