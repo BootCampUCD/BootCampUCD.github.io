@@ -115,7 +115,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
     var chosenXAxis = "poverty"; //allows changing of data source comparison-not active
     var xLinearScale = d3
       .scaleLinear()
-      .domain([0, d3.max(poverty)])
+      .domain([0, d3.max(poverty[])])
       // .domain([0, d3.max(data1, (d) => d.poverty)]) //`d.${chosenXAxis}`
       .range([0, width]); //manages the display width on the screen
     console.log(data1.length);
@@ -192,7 +192,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .attr("x", 0)
       .attr("y", 20)
       .classed("axis-text", true)
-      .text("XP-Poverty %")
+      .text("XX-Poverty %")
       .style("font", "35px times")
       .style("fill", "white")
       .style("stroke", "white");
