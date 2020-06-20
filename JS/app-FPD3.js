@@ -180,7 +180,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .append("g")
       .attr(
         "transform",
-        `translate(${width * 0.25}, ${height + 50}) rotate (0)`
+        `translate(${width * 0.35}, ${height + 50}) rotate (0)`
       );
 
     // * * * x-axis label
@@ -189,7 +189,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .attr("x", 0)
       .attr("y", 20)
       .classed("axis-text", true)
-      .text(".25-Poverty %")
+      .text(".35-Poverty %")
       .style("font", "35px times")
       .style("fill", "white")
       .style("stroke", "white");
@@ -199,10 +199,10 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .append("text")
       .attr("transform", "rotate(-90)")
       .attr("y", 0 - margin.left)
-      .attr("x", 0 - height + 150) //(height/2) or (height*.75)
+      .attr("x", 0 - height + 25) //(height/2) or (height*.75)
       .attr("dy", "3em")
       .classed("axis-text", true)
-      .text("150-Healthcare %")
+      .text("25-Healthcare %")
       .style("font", "35px times")
       .style("fill", "white")
       .style("stroke", "white");
