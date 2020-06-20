@@ -48,7 +48,7 @@ db.statesPop_db.insert_many(dfjson)
 # Retrieve and load data
 data = pd.read_csv("/Data/data1.csv")
 data_df = data.drop(["County", "Confirmed cases", "Confirmed Deaths"], axis=1)
-data_df.head()
+# ***data_df.head()
 
 # describe data
 # ***data_df.describe()
