@@ -147,7 +147,7 @@ confusion_matrix(y_test, prediction)
 def index():
     "Still WORKING!!!"
     object = list(db.statesInfo_db.find())
-    return render_template("index-P3-1.html", object=object)
+    return render_template("../HTML/index-FPD3-ML.html", object=object)
 
     # identifying the path to the web page
 
@@ -156,7 +156,7 @@ def index():
 def people(input1, input2, input3):
     object = list(db.statesPop_db.find())
     return dumps(object)
-    # return render_template("index-P3-2.html", objectX=object)
+    # return render_template("../HTML/index-FPD3-ML.html", objectX=object)
 
     # display the web page index.html with the data
     # return render_template("index.html")
