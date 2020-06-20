@@ -1,6 +1,7 @@
 
 
 # Import Libraries
+import random
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
@@ -46,12 +47,37 @@ db.statesPop_db.insert_many(dfjson)
 # * * * ML Code * * *
 
 # Retrieve and load data
-data = pd.read_csv("/Data/data1.csv")
-data_df = data.drop(["County", "Confirmed cases", "Confirmed Deaths"], axis=1)
-# ***data_df.head()
 
-# describe data
-# ***data_df.describe()
+data = pd.read_csv("data.csv")
+data_df = data.drop(["County", "Confirmed cases", "Confirmed Deaths"], axis=1)
+
+# Let’s plot the distribution of each feature
+
+
+def plot_distribution(data_df, cols=5, width=20, height=15, hspace=0.2, wspace=0.5):
+    plt.style.use('seaborn-whitegrid')
+    fig = plt.figure(figsize=(width, height))
+    fig.subplots_adjust(left=None, bottom=None, right=None,
+                        top=None, wspace=wspace, hspace=hspace)
+    rows = math.ceil(float(data_df.shape[1]) / cols)
+    for i, column in enumerate(data_df.columns):
+        ax = fig.add_subplot(rows, cols, i + 1)
+        ax.set_title(column)
+        if data_df.dtypes[column] == np.object:
+            g = sns.countplot(y=column, data=data_df)
+            substrings = [s.get_text()[:18] for s in g.get_yticklabels()]
+            g.set(yticklabels=substrings)
+            plt.xticks(rotation=25)
+        else:
+            g = sns.distplot(data_df[column])
+            plt.xticks(rotation=25)
+
+
+plot_distribution(data_df, cols=3, width=20,
+                  height=20, hspace=0.45, wspace=0.5)
+plt.savefig("Images/ml_features.png")
+
+# Feature Encoding: Machine Learning algorithms perform Linear Algebra on Matrices, which means all features need have numeric values. The process of converting Categorical Features into values is called Encoding. Let's perform both One-Hot and Label encoding.
 
 # Min-Max normalizes/scales any list
 
@@ -60,6 +86,11 @@ def normalize(input_data):
     return ((np.array(input_data) - min(input_data)) / (max(input_data) - min(input_data)))
 
 
+# One Hot Encodes all labels before Machine Learning
+one_hot_cols = data_df.columns.tolist()
+one_hot_cols.remove('State')
+data_enc = pd.get_dummies(data_df, columns=one_hot_cols)
+
 # Encode strings to integers using Label Encoding
 le = LabelEncoder()
 cols = ['State', 'FIPS', 'Population 2018', 'Median Household Income 2018 ($)', 'Unemployment Rate 2018 (%)', 'Poverty Rate 2018 (%)',
@@ -67,46 +98,174 @@ cols = ['State', 'FIPS', 'Population 2018', 'Median Household Income 2018 ($)', 
 for col in cols:
     data_df[col] = le.fit_transform(data_df[col])
 
-data_df.head()
-
 # Correlation among attributes
 corr = data_df.corr()
 plt.figure(figsize=(20, 10))
 sns.heatmap(corr, annot=True)
-plt.show()
+plt.savefig("Images/corr_attr.png")
 
-# Import StandardScaler to scale our continuous data
-scaler = StandardScaler()
-scaler.fit(data_df.drop('State', axis=1))
-scaled_features = scaler.transform(data_df.drop("State", axis=1))
-scaled_features
-data_feat = pd.DataFrame(scaled_features, columns=data_df.columns[:-1])
-data_feat.head()
 
-# Importing train test split for splitting into train and test datasets
+# Feature Importance: Random forest consists of a number of decision trees. Every node in the decision trees is a condition on a single feature, designed to split the dataset into two so that similar response values end up in the same set. The measure based on which the (locally) optimal condition is chosen is called impurity. When training a tree, it can be computed how much each feature decreases the weighted impurity in a tree. For a forest, the impurity decrease from each feature can be averaged and the features are ranked according to this measure. This is the feature importance measure exposed in sklearn’s Random Forest implementations.
 
-# Dividing predictors and predicted variables
-X = data_feat
-y = data_df['Deaths per 100K people']
+# Using Random Forest to gain an insight on Feature Importance
+feats = RandomForestClassifier()
+feats.fit(data_df.drop('State', axis=1), data_df['State'])
 
-# spliting the data into test (30 percent) and train sets (70 percent) with 101 random state
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.3, random_state=101)
+plt.style.use('seaborn-whitegrid')
+importance = feats.feature_importances_
+importance = pd.DataFrame(importance, index=data_df.drop(
+    'State', axis=1).columns, columns=["Importance"])
+importance.sort_values(by='Importance', ascending=True).plot(
+    kind='barh', figsize=(20, len(importance)/2))
+plt.savefig("Images/random_forest_feat.png")
 
-# Importing KNeighborsCLassifier
+
+# PCA: Principal component analysis (PCA) is a statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables into a set of values of linearly uncorrelated variables called principal components. This transformation is defined in such a way that the first principal component has the largest possible variance (that is, accounts for as much of the variability in the data as possible), and each succeeding component in turn has the highest variance possible under the constraint that it is orthogonal to the preceding components.
+
+# We can use PCA to reduce the number of features to use in our ML algorithms, and graphing the variance gives us an idea of how many features we really need to represent our dataset fully.
+
+# PCA's components graphed in 2D and 3D
+# Apply Scaling
+std_scaling = preprocessing.StandardScaler().fit(data_df.drop('State', axis=1))
+X = std_scaling.transform(data_df.drop('State', axis=1))
+y = data_df['State']
+
+# Formatting
+targets = [0, 1]
+colors = ['blue', 'red']
+lw = 2
+alpha = 0.3
+# 2 Components PCA
+plt.style.use('seaborn-whitegrid')
+plt.figure(2, figsize=(20, 8))
+
+plt.subplot(1, 2, 1)
+pca = PCA(n_components=2)
+X_r = pca.fit(X).transform(X)
+for color, i, target in zip(colors, [0, 1], targets):
+    plt.scatter(X_r[y == i, 0], X_r[y == i, 1],
+                color=color,
+                alpha=alpha,
+                lw=lw,
+                label=target)
+plt.legend(loc='best', shadow=False, scatterpoints=1)
+plt.title('1st 2 PCA directions')
+
+# 3 Components PCA
+ax = plt.subplot(1, 2, 2, projection='3d')
+
+pca = PCA(n_components=3)
+X_reduced = pca.fit(X).transform(X)
+for color, i, target_name in zip(colors, [0, 1], targets):
+    ax.scatter(X_reduced[y == i, 0], X_reduced[y == i, 1], X_reduced[y == i, 2],
+               color=color,
+               alpha=alpha,
+               lw=lw,
+               label=target_name)
+plt.legend(loc='best', shadow=False, scatterpoints=1)
+ax.set_title("1st 3 PCA directions")
+ax.set_xlabel("1st eigenvector")
+ax.set_ylabel("2nd eigenvector")
+ax.set_zlabel("3rd eigenvector")
+
+# rotate the axes
+ax.view_init(30, 10)
+plt.savefig("Images/PCA.png")
+
+# OPTIONS:
+# - data_enc
+# - data_df
+
+# Change the dataset to test how would the algorithms perform under a differently encoded dataset.
+
+selected_data = data_df
+
+# Splitting Data into Training and Testing Datasets: We need to split the data back into the training and testing datasets.
+
+# Splitting the Training and Test data sets
+train = selected_data.loc[0:2959, :]
+test = selected_data.loc[17:, :]
+
+# Removing Samples with Missing data: We could have removed rows with missing data during feature cleaning, but we're choosing to do it at this point. It's easier to do it this way, right after we split the data into Training and Testing. Otherwise we would have had to keep track of the number of deleted rows in our data and take that into account when deciding on a splitting boundary for our joined data.
+
+# Given missing fields are a small percentange of the overall dataset,
+# we have chosen to delete them.
+train = train.dropna(axis=0)
+test = test.dropna(axis=0)
+
+# Rename datasets before we conduct machine learning algorithims
+X_train_w_label = train
+X_train = train.drop(['State'], axis=1)
+y_train = train['State'].astype('int64')
+X_test = test.drop(['State'], axis=1)
+y_test = test['State'].astype('int64')
+
+# Machine Learning Algorithms: Data Review: Let's take one last peek at our data before we start running the Machine Learning algorithms.
+X_train.shape
+
+# Setting a random seed will guarantee we get the same results
+# every time we run our training and testing.
+
+
+random.seed(1)
+
+
+# The following algorithms are used:
+
+# KNN Logistic Regression Random Forest Naive Bayes Decision Tree
+# Function that runs the requested algorithm and returns the accuracy metrics
+def fit_ml_algo(algo, X_train, y_train, X_test, cv):
+    model = algo.fit(X_train, y_train)
+    test_pred = model.predict(X_test)
+    if (isinstance(algo, (LogisticRegression,
+                          KNeighborsClassifier,
+                          GaussianNB,
+                          DecisionTreeClassifier,
+                          RandomForestClassifier))):
+        probs = model.predict_proba(X_test)[:, 1]
+    else:
+        probs = "Not Available"
+    acc = round(model.score(X_test, y_test) * 100, 2)
+    train_pred = model_selection.cross_val_predict(algo,
+                                                   X_train,
+                                                   y_train,
+                                                   cv=cv,
+                                                   n_jobs=-1)
+    acc_cv = round(metrics.accuracy_score(y_train, train_pred) * 100, 2)
+    return train_pred, test_pred, acc, acc_cv, probs
+
+
+model = LogisticRegression(solver='liblinear', C=0.05,
+                           multi_class='ovr', random_state=0)
+
+model.fit(X_train, y_train)
+
+
+# ????LogisticRegression(C=0.05, class_weight=None, dual=False, fit_intercept=True, intercept_scaling=1, l1_ratio=None, max_iter=100, multi_class='ovr', n_jobs=None, penalty='l2', random_state=0, solver='liblinear', tol=0.0001, verbose=0, warm_start=False)
+
+# Logistic Regression - Random Search for Hyperparameters
+def report(results, n_top=5):
+    for i in range(1, n_top + 1):
+        samples = np.flatnonzero(results['rank_test_score'] == i)
+        for sample in samples:
+            print("Model with rank: {0}".format(i))
+            print("Mean validation score: {0:.3f} (std: {1:.3f})".format(
+                  results['mean_test_score'][sample],
+                  results['std_test_score'][sample]))
+            print("Parameters: {0}".format(results['params'][sample]))
+
+
+# Logistic Regression
+train_pred_log, test_pred_log, acc_log, acc_cv_log, probs_log = fit_ml_algo(
+    LogisticRegression(n_jobs=-1), X_train, y_train, X_test, 10)
+
+
+# K-Nearest Neighbors
+train_pred_knn, test_pred_knn, acc_knn, acc_cv_knn, probs_knn = fit_ml_algo(
+    KNeighborsClassifier(n_neighbors=3, n_jobs=-1), X_train, y_train, X_test, 10)
 
 # Specifying a variable to KNeighborsClassifier
 knc = KNeighborsClassifier()
-
-# Fitting on the training dataset
-knc.fit(X_train, y_train)
-
-# Predicting on test dataset
-pred = knc.predict(X_test)
-pred
-
-print(classification_report(y_test, pred))
-print(confusion_matrix(y_test, pred))
 
 # Ploting and checking error rate for different neighbors
 error_rate = []
@@ -116,30 +275,36 @@ for i in range(1, 40):
     knc.fit(X_train, y_train)
     pred_i = knc.predict(X_test)
     error_rate.append(np.mean(pred_i != y_test))
+
 plt.figure(figsize=(10, 6))
 plt.plot(range(1, 40), error_rate)
-data_df.info()
-sns.jointplot(x='Unemployment Rate 2018 (%)',
-              y='Poverty Rate 2018 (%)', data=data_df)
-unemp = pd.get_dummies(data_df['Unemployment Rate 2018 (%)'], drop_first=True)
-feats = ['State']
-final_data = pd.get_dummies(data_df, columns=feats, drop_first=True)
-final_data.head()
-X = final_data.drop('Unemployment Rate 2018 (%)', axis=1)
-y - final_data['Unemployment Rate 2018 (%)']
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.3, random_state=101)
-dtree = DecisionTreeClassifier()
-dtree.fit(X_train, y_train)
-pred = dtree.predict(X_test)
-print(classification_report(y_test, pred))
-confusion_matrix(y_test, pred)
-rtree = RandomForestClassifier()
-rtree.fit(X_train, y_train)
-prediction = rtree.predict(X_test)
-print(classification_report(y_test, prediction))
-confusion_matrix(y_test, prediction)
+plt.savefig("Images/KNN_err.png")
 
+# Decision Tree Classifier
+train_pred_dt, test_pred_dt, acc_dt, acc_cv_dt, probs_dt = fit_ml_algo(
+    DecisionTreeClassifier(), X_train, y_train, X_test, 10)
+
+# Random Forest Classifier - Random Search for Hyperparameters
+
+# Utility function to report best scores
+
+
+def report(results, n_top=5):
+    for i in range(1, n_top + 1):
+        samples = np.flatnonzero(results['rank_test_score'] == i)
+        for sample in samples:
+            print("Model with rank: {0}".format(i))
+            print("Mean validation score: {0:.3f} (std: {1:.3f})".format(
+                  results['mean_test_score'][sample],
+                  results['std_test_score'][sample]))
+            print("Parameters: {0}".format(results['params'][sample]))
+
+
+# Random Forest Classifier
+rfc = RandomForestClassifier(n_estimators=10, min_samples_leaf=2,
+                             min_samples_split=17, criterion='gini', max_features=8)
+train_pred_rf, test_pred_rf, acc_rf, acc_cv_rf, probs_rf = fit_ml_algo(
+    rfc, X_train, y_train, X_test, 10)
 
 # END of ML Code
 
