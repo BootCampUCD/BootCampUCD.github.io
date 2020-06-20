@@ -15,7 +15,8 @@ var margin = {
 
 // * * * display are adjusted by boarder margins
 var width = svgWidth - margin.left - margin.right;
-var height = svgHeight - margin.top - margin.bottom;
+// var height = svgHeight - margin.top - margin.bottom;
+var height = svgHeight - margin.bottom;
 
 // creat svg item and postiion it within the display boarder area
 var svg = d3
