@@ -2,8 +2,8 @@
 
 //-----------------------------------------
 // * * * size of display area
-var svgWidth = 800;
-var svgHeight = 400;
+var svgWidth = 900;
+var svgHeight = 600;
 
 // * * * border margins
 var margin = {
@@ -170,6 +170,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .attr("x", (d, i) => xLinearScale(poverty[i]))
       .attr("y", (d, i) => yLinearScale(healthcare[i]))
       .text((d, i) => abbr[i])
+      .style("fill", "white")
       .style("stroke", "white")
       .style("font-weight", "bold");
 
