@@ -101,7 +101,7 @@ nav a:hover {
 }
 
 /*  Paragraph Web Page characteristics.*/
-p.fade-in {
+p .fade-in {
   margin: 0 auto;
   position: relative;
   text-align: left;
