@@ -124,7 +124,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
     var yLinearScale = d3
       .scaleLinear()
       .domain([0, d3.max(data1, (d) => d.healthcare) * 3])
-      .range([height + 50, 0]); //manages the display height on the screen
+      .range([height + 5, 0]); //manages the display height on the screen
 
     // Create initial axis functions
     var bottomAxis = d3.axisBottom(xLinearScale);
@@ -205,7 +205,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .attr("x", 0 - height) //(height/2) or (height*.75)
       .attr("dy", "3em")
       .classed("axis-text", true)
-      .text("25-Healthcare %")
+      .text("5-Healthcare %")
       .style("font", "35px times")
       .style("fill", "white")
       .style("stroke", "white");
