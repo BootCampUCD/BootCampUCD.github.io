@@ -340,12 +340,12 @@ def index():
     object = list(db.covid_new.find())
     return render_template("indexFP.html", object=object)
 
-    # identifying the path to the web page
+# identifying the path to the web page
 
 
 @app.route("/COVID")
-def people(name):
-    object = list(db.covid1a_db.find({}))
+def names():
+    object = list(db.covid1a_db.find())
     return dumps(object)
     # return render_template("indexPF.html", object=object)
 
