@@ -343,7 +343,7 @@ def index():
 # identifying the path to the web page
 
 
-@app.route("/COVID")
+@app.route("/COVID", methods=["GET"])
 def names():
     object = list(db.covid1a_db.find())
     return dumps(object)
