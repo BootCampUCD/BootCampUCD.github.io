@@ -346,7 +346,7 @@ def index():
 @app.route("/COVID")
 def people(input1):
     # object = list(db.classDB.find())
-    object = list(db.covid1a_db.find())
+    object = list(db.covid1a_db.find("State String"))
     # return "does THIS work???"
     return dumps(object)
     # return render_template("../HTML/index-FPD3-ML.html", objectX=object)
