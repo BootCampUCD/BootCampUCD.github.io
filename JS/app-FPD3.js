@@ -3,11 +3,11 @@
 //-----------------------------------------
 // * * * size of display area
 var svgWidth = 900;
-var svgHeight = 600;
+var svgHeight = 400;
 
 // * * * border margins
 var margin = {
-  top: 25,
+  top: 0,
   right: 50,
   bottom: 175,
   left: 150,
@@ -204,7 +204,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .attr("x", 0 - height) //(height/2) or (height*.75)
       .attr("dy", "3em")
       .classed("axis-text", true)
-      .text("H-Healthcare %")
+      .text("0T-Healthcare %")
       .style("font", "35px times")
       .style("fill", "white")
       .style("stroke", "white");
