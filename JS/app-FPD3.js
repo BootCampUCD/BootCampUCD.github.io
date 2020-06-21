@@ -3,7 +3,7 @@
 //-----------------------------------------
 // * * * size of display area
 var svgWidth = 900;
-var svgHeight = 400;
+var svgHeight = 600;
 
 // * * * border margins
 var margin = {
@@ -119,11 +119,11 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       // .domain([0, d3.max(data1, (d) => d.poverty)]) //`d.${chosenXAxis}`
       .range([0, width]); //manages the display width on the screen
 
-    // Create y scale function
+    // Create y scale function from point of "zero"
     var yLinearScale = d3
       .scaleLinear()
       .domain([0, d3.max(data1, (d, i) => healthcare[i]) * 3])
-      .range([height + 25, 0]); //manages the display height on the screen
+      .range([height, 0]); //manages the display height on the screen
 
     // Create initial axis functions
     var bottomAxis = d3.axisBottom(xLinearScale);
@@ -204,7 +204,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .attr("x", 0 - height) //(height/2) or (height*.75)
       .attr("dy", "3em")
       .classed("axis-text", true)
-      .text("+25-Healthcare %")
+      .text("H-Healthcare %")
       .style("font", "35px times")
       .style("fill", "white")
       .style("stroke", "white");
