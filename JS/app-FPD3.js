@@ -16,7 +16,7 @@ var margin = {
 // * * * display are adjusted by boarder margins
 var width = svgWidth - margin.left - margin.right;
 // var height = svgHeight - margin.top - margin.bottom;
-var height = svgHeight - margin.bottom;
+var height = svgHeight;
 
 // creat svg item and postiion it within the display boarder area
 var svg = d3
@@ -118,7 +118,6 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .domain([0, d3.max(data1, (d, i) => poverty[i]) * 3])
       // .domain([0, d3.max(data1, (d) => d.poverty)]) //`d.${chosenXAxis}`
       .range([0, width]); //manages the display width on the screen
-    console.log(data1.length);
 
     // Create y scale function
     var yLinearScale = d3
