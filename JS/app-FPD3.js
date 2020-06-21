@@ -92,22 +92,22 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
     // defines several colors to change the circles' color upon refresh
     var color = d3
       .scaleQuantize()
-      .domain([0, 13]) //d3.max(data1, (d) => `d.${chosenXAxis}`))
+      .domain([0, 7]) //d3.max(data1, (d) => `d.${chosenXAxis}`))
       .range([
         "beige", //0
-        "blue", //1-transparent/clear
+        "blue", //1-transparent/clear-G
         "#5E4FA2", //2-purple
-        "#3288BD", //3-light blue
+        // "#3288BD", //3-light blue-N
         "#66C2A5", //4-light teal
-        "#ABDDA4", //5-light green
-        "#E6F598", //6-faded greenish/yellow
-        "#FFFFBF", //7-light faded yellow
-        "#FEE08B", //8-light yellow
-        "#FDAE61", //9-tan
+        // "#ABDDA4", //5-light green-N
+        // "#E6F598", //6-faded greenish/yellow-N
+        // "#FFFFBF", //7-light faded yellow-N
+        // "#FEE08B", //8-light yellow-N
+        // "#FDAE61", //9-tan-N
         "#F46D43", //10-orange?
         "#D53E4F", //11-cherry?
         "#9E0142", //12-maroon?
-        "#7f0000", //13-dark maroon?
+        "#7f0000", //13-dark maroon-G
       ]);
     console.log(random);
 
