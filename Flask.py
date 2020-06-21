@@ -65,7 +65,7 @@ db = client.covid_new
 
 # (pandas read in csv)
 db.covid1a_db.drop()
-df = pd.read_csv("Data/data1.csv")
+df = pd.read_csv("Data/data99.csv")
 dfjson = json.loads(df.to_json(orient="records"))
 db.covid1a_db.insert_many(dfjson)
 
@@ -344,10 +344,10 @@ def index():
 
 
 @app.route("/COVID")
-def people(input1):
+def people(name):
     object = list(db.covid1a_db.find({}))
     return dumps(object)
-    # return render_template("../HTML/index-FPD3-ML.html", objectX=object)
+    # return render_template("indexPF.html", object=object)
 
     # display the web page index.html with the data
     # return render_template("index.html")
