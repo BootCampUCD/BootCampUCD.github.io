@@ -9,7 +9,7 @@ var svgHeight = 400;
 var margin = {
   top: -20,
   right: 50,
-  bottom: 175,
+  bottom: 125,
   left: 150,
 };
 
@@ -204,7 +204,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .attr("x", 0 - height) //(height/2) or (height*.75)
       .attr("dy", "3em")
       .classed("axis-text", true)
-      .text("450-Healthcare %")
+      .text("B125-Healthcare %")
       .style("font", "35px times")
       .style("fill", "white")
       .style("stroke", "white");
