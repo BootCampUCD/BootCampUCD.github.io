@@ -118,7 +118,7 @@ data_enc = pd.get_dummies(data_df, columns=one_hot_cols)
 
 # Encode strings to integers using Label Encoding
 le = LabelEncoder()
-cols = ['State', 'FIPS', 'Population 2018', 'Median Household Income 2018 ($)', 'Unemployment Rate 2018 (%)', 'Poverty Rate 2018 (%)',
+cols = ['State', 'FIPS', 'Population_2018', 'Median Household Income 2018 ($)', 'Unemployment Rate 2018 (%)', 'Poverty Rate 2018 (%)',
         'Confirmed cases per 100K people', 'Deaths per 100K people', 'Mortality Rate (%)', 'White (%)', 'Black (%)', 'Native American (%)', 'Asian (%)', 'Hispanic (%)', 'Dropout (%)', 'High School Diploma (%)', 'Some College_Associate Degree (%)', 'Bachelor Degree or Higher (%)']
 for col in cols:
     data_df[col] = le.fit_transform(data_df[col])
@@ -345,9 +345,7 @@ def index():
 
 @app.route("/COVID")
 def people(input1):
-    # object = list(db.classDB.find())
-    object = list(db.covid1a_db.find("State"))
-    # return "does THIS work???"
+    object = list(db.covid1a_db.find({}))
     return dumps(object)
     # return render_template("../HTML/index-FPD3-ML.html", objectX=object)
 
