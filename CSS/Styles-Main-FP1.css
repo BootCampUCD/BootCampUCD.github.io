@@ -106,7 +106,7 @@ p {
   position: relative;
   text-align: left;
   color: blue;
-  text-shadow: 1px 1px 2px white, 0 0 25px blue, 0 0 5px darkblue;
+  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px darkblue;
   font-size: 35px;
   word-wrap: break-word;
   text-indent: 25px;
