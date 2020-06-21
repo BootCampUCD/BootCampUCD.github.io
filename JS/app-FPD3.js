@@ -182,7 +182,7 @@ d3.csv("https://BootCampUCD.github.io/Data/data.csv")
       .append("g")
       .attr(
         "transform",
-        `translate(${width * 0.35}, ${height + 50}) rotate (0)`
+        `translate(${width * 0.35}, ${height + 75}) rotate (0)`
       );
 
     // * * * x-axis label
