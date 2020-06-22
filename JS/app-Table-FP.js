@@ -30,7 +30,6 @@ console.log(tableData);
 //   return uniqueDate;
 // }
 // var dropDownDate = uniqueDateInOrder(tableData);
-console.log(tableData);
 var state = [];
 
 for (i = 0; i < tableData.length; i++) {
