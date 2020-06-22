@@ -83,7 +83,7 @@ function buildTable(dates, city, state, country, shape, duration, comments) {
   var table = d3.select("#ufo-table");
   var tbody = table.select("tbody");
   var trow;
-  for (var i = 0; i < dates.length; i++) {
+  for (var i = 0; i < state.length; i++) {
     trow = tbody.append("tr");
     trow.append("td").text(dates[i]);
     trow.append("td").text(city[i]);
