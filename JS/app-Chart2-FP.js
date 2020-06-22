@@ -3,10 +3,10 @@
 
 // var url = "http://127.0.0.1:5501/Python/app.py";
 
-// data1 = "https://BootCampUCD.github.io/Data/P3-State-Lat-Long.geojson";
+data1 = "https://BootCampUCD.github.io/Data/P3-State-Lat-Long.geojson";
 // data2 = "http://127.0.0.1:5501/Data/P3-unemployment.json";
 // data3 = "http://127.0.0.1:5432/Data/P3-State-Lat-Long.geojson".then();
-data4 = "https://BootCampUCD.github.io/Data/data.csv";
+// data4 = "https://BootCampUCD.github.io/Data/data.csv";
 
 function commas(x) {
   return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
@@ -27,7 +27,7 @@ function adjustX(x) {
 }
 
 // * * * This isolates the array of dictionaries into a list of States for the drop down * * *
-d3.json(data4).then(function (datax) {
+d3.json(data1).then(function (datax) {
   var displayStatus = 0;
   const states = [datax.features.length];
   const unEmpRate = [datax.features.length];
