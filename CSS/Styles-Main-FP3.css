@@ -135,7 +135,7 @@ h1 a:hover::after {
   display: block;
   height: 5px;
   width: 90%;
-  background-color: red;
+  background-color: blue;
   position: absolute;
   bottom: 0;
 }
