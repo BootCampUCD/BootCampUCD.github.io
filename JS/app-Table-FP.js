@@ -4,30 +4,32 @@ const tableData = d3.csv("https://BootCampUCD.github.io/Data/data.csv");
 
 // const tableData = data;
 
-function uniqueDateInOrder(tableData) {
-  let uniqueDate = new Array();
-  let match = false;
-  let count = 0;
-  for (x = 0; x < tableData.length; x++) {
-    for (y = 0; y < uniqueDate.length; y++) {
-      if (tableData[x].datetime == uniqueDate[y]) {
-        match = true;
-      }
-    }
-    count++;
-    if (match == false && count == 1) {
-      uniqueDate.push(tableData[x].datetime);
-    }
-    count = 0;
-    match = false;
-  }
-  uniqueDate.sort(function (a, b) {
-    return a - b;
-  });
+// function uniqueDateInOrder(tableData) {
+//   let uniqueDate = new Array();
+//   let match = false;
+//   let count = 0;
+//   for (x = 0; x < tableData.length; x++) {
+//     for (y = 0; y < uniqueDate.length; y++) {
+//       if (tableData[x].datetime == uniqueDate[y]) {
+//         match = true;
+//       }
+//     }
+//     count++;
+//     if (match == false && count == 1) {
+//       uniqueDate.push(tableData[x].datetime);
+//     }
+//     count = 0;
+//     match = false;
+//   }
+//   uniqueDate.sort(function (a, b) {
+//     return a - b;
+//   });
 
-  return uniqueDate;
-}
-var dropDownDate = uniqueDateInOrder(tableData);
+//   return uniqueDate;
+// }
+// var dropDownDate = uniqueDateInOrder(tableData);
+
+var dropDownDate = state;
 
 dropDownDate.forEach(addToDropdown);
 
@@ -45,7 +47,7 @@ d3.selectAll("#dropdown").on("change", function () {
     table.deleteRow(i);
   }
   let userInput = d3.select("#dropdown").property("value");
-  let filteredData = tableData.filter((i) => i.datetime === userInput);
+  let filteredData = tableData.filter((i) => i.state === userInput);
   getDatedata(filteredData);
 });
 
@@ -55,7 +57,7 @@ d3.selectAll("#th_date").on("change", function () {
     table.deleteRow(i);
   }
   let userInput = d3.select("#th_date").property("value");
-  let filteredData = tableData.filter((i) => i.datetime === userInput);
+  let filteredData = tableData.filter((i) => i.state === userInput);
   getDatedata(filteredData);
 });
 
