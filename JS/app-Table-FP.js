@@ -1,7 +1,6 @@
 // * * *  load data in from csv file
 
 const tableData = d3.csv("https://BootCampUCD.github.io/Data/data.csv");
-console.log(tableData.state);
 
 // const tableData = data;
 
@@ -32,6 +31,7 @@ console.log(tableData.state);
 
 for (i = 0; i < tableData.length; i++) {
   state.push(tableData[i].state);
+  console.log(state[i]);
 }
 
 var dropDownDate = state;
