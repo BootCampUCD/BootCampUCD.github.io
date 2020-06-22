@@ -1,5 +1,3 @@
-// Index Javascript <i class="fa fa-file
-
 const tableData = data;
 
 function uniqueDateInOrder(tableData) {
