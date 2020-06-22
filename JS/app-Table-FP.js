@@ -29,6 +29,8 @@ const tableData = d3.csv("https://BootCampUCD.github.io/Data/data.csv");
 // }
 // var dropDownDate = uniqueDateInOrder(tableData);
 
+var state = [];
+
 for (i = 0; i < tableData.length; i++) {
   state.push(tableData[i].state);
   console.log(state[i]);
