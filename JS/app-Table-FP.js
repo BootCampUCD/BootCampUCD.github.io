@@ -30,6 +30,10 @@ console.log(tableData);
 // }
 // var dropDownDate = uniqueDateInOrder(tableData);
 
+for (i = 0; i < tableData.length; i++) {
+  state.push(tableData[i].state);
+}
+
 var dropDownDate = state;
 
 dropDownDate.forEach(addToDropdown);
