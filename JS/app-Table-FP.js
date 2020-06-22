@@ -64,14 +64,14 @@ d3.selectAll("#th_date").on("change", function () {
     table.deleteRow(i);
   }
   let userInput = d3.select("#th_date").property("value");
-  let filteredData = tableData.filter((i) => i.state === userInput);
+  let filteredData = tableData.filter((i) => tableData.state[i] === userInput);
   getDatedata(filteredData);
 });
 
 function getDatedata(filteredData) {
   var dates = filteredData.map((x) => x.datetime);
   var city = filteredData.map((x) => x.city);
-  var state = filteredData.map((x) => x.state);
+  var state = filteredData.map((x) => state[x]);
   var country = filteredData.map((x) => x.country);
   var shape = filteredData.map((x) => x.shape);
   var duration = filteredData.map((x) => x.duration);
