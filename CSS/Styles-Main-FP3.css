@@ -16,6 +16,10 @@ body {
   background-size: cover;
 }
 
+form {
+  margin: 0 auto;
+}
+
 .fade-in {
   animation: fadeIn 5s;
 }
