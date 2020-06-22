@@ -2,7 +2,7 @@
 
 // const tableData = d3.csv("https://BootCampUCD.github.io/Data/data.csv");
 const tableData = d3.csv("https://BootCampUCD.github.io/Data/data99.csv");
-console.log(tableData);
+console.log("tableData: " + tableData);
 
 // const tableData = data;
 
