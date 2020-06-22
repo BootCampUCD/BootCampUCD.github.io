@@ -100,7 +100,7 @@ nav a:hover::after {
 }
 
 /*  "nav div dive a" with a mouse "hover" Characteristics that ocurrs after the object the mouse hovers overs.  In this case, a thin line is displayed under the object.*/
-nav div div a:hover::after {
+.navbar-brand:hover::after {
   content: "";
   display: block;
   height: 5px;
