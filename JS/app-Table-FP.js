@@ -1,6 +1,8 @@
 // * * *  load data in from csv file
 
-const tableData = d3.csv("https://BootCampUCD.github.io/Data/data.csv");
+// const tableData = d3.csv("https://BootCampUCD.github.io/Data/data.csv");
+const tableData = d3.csv("https://BootCampUCD.github.io/Data/data99.csv");
+console.log(tableData);
 
 // const tableData = data;
 
