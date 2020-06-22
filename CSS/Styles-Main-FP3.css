@@ -99,6 +99,17 @@ nav a:hover::after {
   bottom: 0;
 }
 
+/*  "nav div dive a" with a mouse "hover" Characteristics that ocurrs after the object the mouse hovers overs.  In this case, a thin line is displayed under the object.*/
+nav div div a:hover::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 90%;
+  background-color: blue;
+  position: absolute;
+  bottom: 0;
+}
+
 /*  "nav a" with a mouse "hover" characteristics that changes the color of the object to "blue".*/
 nav a:hover {
   color: white;
