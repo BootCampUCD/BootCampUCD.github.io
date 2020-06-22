@@ -1,3 +1,5 @@
+// * * *  load data in from csv file
+
 const tableData = data;
 
 function uniqueDateInOrder(tableData) {
