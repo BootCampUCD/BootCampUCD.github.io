@@ -1,3 +1,13 @@
+/*  Body Web Page Characteristics */
+body {
+  /* background-color: aquamarine; */
+  overflow-x: hidden;
+  font-weight: 400;
+  background-image: url(https://BootCampUCD.github.io/Images/CyberWorld.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #dropdown {
   color: blue;
 }
@@ -19,4 +29,3 @@ p {
   background-size: cover;
   background-position: center;
   padding: 25px;
-  
