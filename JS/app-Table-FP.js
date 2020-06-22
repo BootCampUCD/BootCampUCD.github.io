@@ -47,7 +47,7 @@ d3.selectAll("#dropdown").on("change", function () {
     table.deleteRow(i);
   }
   let userInput = d3.select("#dropdown").property("value");
-  let filteredData = tableData.filter((i) => state[i] === userInput);
+  let filteredData = tableData.filter((i) => tableData.state[i] === userInput);
   getDatedata(filteredData);
 });
 
