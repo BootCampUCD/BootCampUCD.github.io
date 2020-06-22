@@ -20,6 +20,32 @@ form {
   margin: 0 auto;
 }
 
+/*  "Heading 1" Web Page Characteristics.*/
+h1 {
+  text-transform: capitalize;
+  font-size: 18px;
+  color: teal;
+  font-style: oblique;
+  font-weight: 700;
+}
+
+/*  "Heading 2" Web Page Characteristics */
+h2 {
+  text-decoration-line: underline;
+  letter-spacing: 3px;
+  position: relative;
+  display: block;
+  text-align: right;
+  color: rgb(35, 35, 100);
+  margin-left: 232px;
+  margin-top: 35px;
+}
+
+h3 {
+  margin: 0 auto;
+  position: relative;
+}
+
 .fade-in {
   animation: fadeIn 5s;
 }
@@ -103,7 +129,7 @@ nav a:hover::after {
   bottom: 0;
 }
 
-/*  "nav div dive a" with a mouse "hover" Characteristics that ocurrs after the object the mouse hovers overs.  In this case, a thin line is displayed under the object.*/
+/*  "h1 a" with a mouse "hover" Characteristics that ocurrs after the object the mouse hovers overs.  In this case, a thin line is displayed under the object.*/
 h1 a:hover::after {
   content: "";
   display: block;
@@ -136,15 +162,6 @@ nav a:hover {
   background-position: center;
   padding: 25px;
 } */
-
-/*  "Heading 1" Web Page Characteristics.*/
-h1 {
-  text-transform: capitalize;
-  font-size: 18px;
-  color: teal;
-  font-style: oblique;
-  font-weight: 700;
-}
 
 /* Class definition called "container".  Large area within other groups (e.g. paragraphs, footer, images,...etc.) will be managed.*/
 .container {
@@ -252,22 +269,5 @@ h1 {
 .logo-image:hover .overlay {
   opacity: 1;
   background-color: none;
-  position: relative;
-}
-
-/*  "Heading 2" Web Page Characteristics */
-h2 {
-  text-decoration-line: underline;
-  letter-spacing: 3px;
-  position: relative;
-  display: block;
-  text-align: right;
-  color: rgb(35, 35, 100);
-  margin-left: 232px;
-  margin-top: 35px;
-}
-
-h3 {
-  margin: 0 auto;
   position: relative;
 }
