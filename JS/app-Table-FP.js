@@ -1,6 +1,8 @@
 // * * *  load data in from csv file
 
-const tableData = data;
+const tableData = d3.csv("https://BootCampUCD.github.io/Data/data.csv");
+
+// const tableData = data;
 
 function uniqueDateInOrder(tableData) {
   let uniqueDate = new Array();
