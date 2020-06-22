@@ -1,3 +1,11 @@
+/*  Universal Web Page Characteristics */
+* {
+  padding: 0;
+  margin: 0;
+  margin-top: 0;
+  font-family: sans-serif, Arial, Helvetica, sans-serif;
+}
+
 /*  Body Web Page Characteristics */
 body {
   /* background-color: aquamarine; */
@@ -8,10 +16,93 @@ body {
   background-size: cover;
 }
 
+.fade-in {
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.transition-fade {
+  transition: 0.1s;
+  opacity: 1;
+}
+
+html.is-animating .tranisition-fade {
+  opacity: 0;
+}
+
+/*  Header Web Page Characteristics */
+#header {
+  position: absolute;
+}
+
 #dropdown {
   color: blue;
 }
 
+#title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 6rem;
+  color: white;
+  margin: 0;
+}
+
+/*  "nav ul" Tag Characteristics */
+nav ul {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*  "nav li" Tag Characteristics */
+nav ul li {
+  display: inline-block;
+  font-weight: bold;
+}
+
+/*  "nav a" Tag Characteristics */
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+  background-color: none;
+  font-weight: bold;
+  color: white;
+  padding-right: 10px;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+/*  "nav a" with a mouse "hover" Characteristics that ocurrs after the object the mouse hovers overs.  I this case, a thin line is displayed under the object.*/
+nav a:hover::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 90%;
+  background-color: blue;
+  position: absolute;
+  bottom: 0;
+}
+
+/*  "nav a" with a mouse "hover" characteristics that changes the color of the object to "blue".*/
+nav a:hover {
+  color: white;
+}
 
 /*  Paragraph Web Page characteristics.*/
 p {
@@ -29,3 +120,139 @@ p {
   background-size: cover;
   background-position: center;
   padding: 25px;
+}
+
+/*  "Heading 1" Web Page Characteristics.*/
+h1 {
+  text-transform: capitalize;
+  font-size: 18px;
+  color: teal;
+  font-style: oblique;
+  font-weight: 700;
+}
+
+/* Class definition called "container".  Large area within other groups (e.g. paragraphs, footer, images,...etc.) will be managed.*/
+.container {
+  position: absolute;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Class definition called "content".  Small area contained within a "container" class.*/
+.content {
+  float: center;
+  clear: both;
+  width: auto;
+  /* padding: 25px; */
+  margin-left: 151px; /* fixed to align boarder with logo boarder in the upper left corner*/
+  margin-top: 142px; /* fixed to align boarder with logo boarder in the upper left corner
+  /* background-color: aquamarine; */
+  border: 2px solid yellow;
+}
+
+/*Class defined as "footer" which in contained within the class of "container.*/
+.footer {
+  clear: both;
+  margin-left: 151px;
+  font-size: 10px;
+  color: white;
+  position: relative;
+  width: auto;
+  height: 13px;
+  background-color: none;
+  /* border: 1px solid white; */
+  text-align: left;
+}
+
+/* Class defined as "nav_bar" which is contained within the Class "container".*/
+.nav_bar {
+  float: left;
+}
+
+/* Class defined as "logo-image" which is contained within the Class "container".  This manages the two UCD logos in the upper left hand corner.*/
+.logo-image {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+/* Class defined as "logo-image3" which is contained within the Class "container".  This manages the chart images on the right side of the web page.*/
+.logo-image3 {
+  clear: both;
+  float: right;
+  position: fixed;
+}
+
+/* Class defined as "bkgd-image-bg" which manages the background image on the web page.*/
+.bkgd-image-bg {
+  position: absolute;
+}
+
+/* Class defined as "image-bg" which manages the specific background image for the web page.*/
+.image-bg {
+  border: 1px solid yellow;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 400px;
+  height: 400px;
+}
+
+/* Class defined as "image3" which manages the specific image characteristics for the image to the right of the web page.*/
+.image3 {
+  border: 1px solid yellow;
+  top: 50px;
+  right: 50px;
+  position: fixed;
+  float: right;
+  width: 500px;
+}
+
+/* Class defined as "image1" which manages the specific image characteristics identified.*/
+.image1 {
+  position: absolute;
+  width: 150px;
+  top: 0;
+  left: 0;
+  border: 2px solid yellow;
+}
+
+/* Class defined as "image2" which manages the specific image characteristics identified.*/
+.image2 {
+  position: relative;
+  width: 150px;
+  top: 0;
+  left: 0;
+  border: 2px solid yellow;
+}
+
+/* Class defined as "overlay" which sets the default transparency to "invisible."*/
+.overlay {
+  opacity: 0;
+}
+
+/* This tag combines characteristics of "logo-image", "hover" and "overlay" so the second image is fully displayed.*/
+.logo-image:hover .overlay {
+  opacity: 1;
+  background-color: none;
+  position: relative;
+}
+
+/*  "Heading 2" Web Page Characteristics */
+h2 {
+  text-decoration-line: underline;
+  letter-spacing: 3px;
+  position: relative;
+  display: block;
+  text-align: right;
+  color: rgb(35, 35, 100);
+  margin-left: 232px;
+  margin-top: 35px;
+}
+
+h3 {
+  margin: 0 auto;
+  position: relative;
+}
