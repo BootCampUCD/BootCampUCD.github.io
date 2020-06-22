@@ -43,6 +43,10 @@ html.is-animating .tranisition-fade {
   position: absolute;
 }
 
+#dropdown {
+  color: blue;
+}
+
 #title {
   text-transform: uppercase;
   font-weight: 900;
