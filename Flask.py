@@ -54,7 +54,6 @@ from sklearn.feature_selection import RFE, RFECV
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 # import plotly.figure_factory as ff
-import plotly.chart_studio as py
 # import plotly.plotly as py
 from plotly.tools import FigureFactory as FF
 
@@ -106,7 +105,7 @@ data = pd.read_csv("Data/data1.csv")
 
 # Retrieve and load covid data
 
-covid = pd.read_csv("covid.csv")
+covid = pd.read_csv("Data/covid.csv")
 covid = covid.rename(columns={"Admin2": "County"})
 covid["FIPS"].fillna(999999999999, inplace=True)
 covid["FIPS"] = list(map(int, covid["FIPS"]))
@@ -124,14 +123,14 @@ def govdata(file, index):
 
 
 # Retriev data files from USDA data
-unemployment = govdata("unemployment.csv", 6)
-poverty = govdata("poverty.csv", 3)
-population = govdata("population.csv", 1)
-education = govdata("education.csv", 3)
+unemployment = govdata("Data/unemployment.csv", 6)
+poverty = govdata("Data/poverty.csv", 3)
+population = govdata("Data/population.csv", 1)
+education = govdata("Data/education.csv", 3)
 
 
 # Retrieve race data
-race = pd.read_csv("racial.csv")
+race = pd.read_csv("Data/racial.csv")
 
 # List FIPS values
 
@@ -215,7 +214,7 @@ cleaned_data = pd.DataFrame({
     "High School Diploma (%)": highschool, "Some College/Associate's Degree (%)": somecollege,
     "Bachelor's Degree or Higher (%)": bachelor
 })
-cleaned_data.to_csv('data2.csv')
+cleaned_data.to_csv('Data/data2.csv')
 
 # Min-Max normalizes/scales any list
 
