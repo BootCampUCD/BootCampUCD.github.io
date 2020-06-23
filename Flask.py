@@ -355,14 +355,17 @@ def names():
     # return render_template("index.html")
 
 
+names = db.covid1a_db
+
+
 @app.route('/x', methods=['GET'])
 def toGeojson():
-    points = []
-    for db2 in db.covid1a_db.find({'type': 'State'}):
-        points.append({
+    stateData = []
+    for name in names.find({'type': 'LineString'}):
+        stateData.append({
             "type": "Feature",
             "geometry": {
-                "type": "State",
+                "type": "LineString",
             }
         })
     return jsonify(points)
