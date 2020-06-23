@@ -46,6 +46,10 @@ h3 {
   position: relative;
 }
 
+.well {
+  width: 200px;
+}
+
 .fade-in {
   animation: fadeIn 5s;
 }
