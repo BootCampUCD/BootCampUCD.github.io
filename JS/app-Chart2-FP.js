@@ -1,10 +1,19 @@
 // Pulling the data from a file via local web hosting.
 // Performing data manipulation within a function.
 
-d3.select("#demoInfodata").text(
-  "Each Year's Population Data Will Display Here After Choosing a Year to Compare."
-);
-location.reload();
+// d3.select("#demoInfodata").text(
+//   "Each Year's Population Data Will Display Here After Choosing a Year to Compare."
+// );
+x = 0;
+if ((x = 0)) {
+  x = x + 1;
+  d3.select("#demoInfodata").text(
+    "Each Year's Population Data Will Display Here After Choosing a Year to Compare."
+  );
+  location.reload();
+} else {
+  y = 1;
+}
 
 // var url = "http://127.0.0.1:5501/Python/app.py";
 
