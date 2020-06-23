@@ -1,6 +1,6 @@
 // Pulling the data from a file via local web hosting.
 // Performing data manipulation within a function.
-location.reload();
+
 d3.select("#demoInfodata").text(
   "Each Year's Population Data Will Display Here After Choosing a Year to Compare."
 );
