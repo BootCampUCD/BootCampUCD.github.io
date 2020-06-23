@@ -37,7 +37,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 import seaborn as sns
 from numpy import *
 import numpy as np
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 import pymongo
 import json
 import math
@@ -65,7 +65,7 @@ db = client.covid_new
 
 # (pandas read in csv)
 db.covid1a_db.drop()
-df = pd.read_csv("Data/data99.csv")
+df = pd.read_csv("Data/data1.csv")
 dfjson = json.loads(df.to_json(orient="records"))
 db.covid1a_db.insert_many(dfjson)
 
