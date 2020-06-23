@@ -75,8 +75,17 @@ db2 = client.covid1a_db
 # * * * ML Code * * *
 
 # Retrieve and load data
-
 data = pd.read_csv("Data/data1.csv")
+
+# *** PLTS REGRESS COVID ML CODE
+
+#(ML CODE)
+
+# *** END   PLTS REGRESS COVID ML CODE
+
+
+
+# *** COVID W SOCIO ECONOMIC ML CODE
 data_df = data.drop(["County", "Confirmed cases", "Confirmed Deaths"], axis=1)
 
 # Let’s plot the distribution of each feature
