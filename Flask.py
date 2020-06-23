@@ -69,6 +69,7 @@ df = pd.read_csv("Data/data1.csv")
 dfjson = json.loads(df.to_json(orient="records"))
 db.covid1a_db.insert_many(dfjson)
 
+# added for code on converting data to GeoJson format for mapping
 db2 = client.covid1a_db
 
 # * * * ML Code * * *
@@ -355,20 +356,19 @@ def names():
     # return render_template("index.html")
 
 
-names = db.covid1a_db
-
-
-@app.route('/x', methods=['GET'])
-def toGeojson():
-    stateData = []
-    for name in names.find({'type': 'LineString'}):
-        stateData.append({
-            "type": "Feature",
-            "geometry": {
-                "type": "LineString",
-            }
-        })
-    return jsonify(points)
+# working on converting to GeoJson format for plotting on a map
+# @app.route('/x', methods=['GET'])
+# def toGeojson():
+#     stateData = []
+#     for name in db2.find({"State: }):
+#         stateData.append({
+#             "type": "Feature",
+#             "State": {
+#                 "type": "LineString",
+#             }
+#         })
+#     return dumps(stateData)
+    # return jsonify(points)
 
 
 # starts the web server
