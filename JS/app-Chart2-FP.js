@@ -1,6 +1,8 @@
 // Pulling the data from a file via local web hosting.
 // Performing data manipulation within a function.
 
+location.reload();
+
 // var url = "http://127.0.0.1:5501/Python/app.py";
 
 data1 = "https://BootCampUCD.github.io/Data/P3-State-Lat-Long.geojson";
