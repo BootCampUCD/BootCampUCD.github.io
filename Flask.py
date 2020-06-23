@@ -69,6 +69,8 @@ df = pd.read_csv("Data/data1.csv")
 dfjson = json.loads(df.to_json(orient="records"))
 db.covid1a_db.insert_many(dfjson)
 
+db2 = client.covid1a_db
+
 # * * * ML Code * * *
 
 # Retrieve and load data
@@ -351,6 +353,19 @@ def names():
 
     # display the web page index.html with the data
     # return render_template("index.html")
+
+
+@app.route('/x', methods=['GET'])
+def toGeojson():
+    points = []
+    for db2 in db.covid1a_db.find({'type': 'State'}):
+        points.append({
+            "type": "Feature",
+            "geometry": {
+                "type": "State",
+            }
+        })
+    return jsonify(points)
 
 
 # starts the web server
