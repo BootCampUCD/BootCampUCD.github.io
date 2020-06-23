@@ -8,6 +8,8 @@ data1 = "https://BootCampUCD.github.io/Data/P3-State-Lat-Long.geojson";
 // data3 = "http://127.0.0.1:5432/Data/P3-State-Lat-Long.geojson".then();
 // data4 = "https://BootCampUCD.github.io/Data/data.csv";
 
+console.log(data1);
+
 function commas(x) {
   return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
 }
