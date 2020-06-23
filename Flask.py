@@ -53,7 +53,10 @@ from sklearn.svm import SVR
 from sklearn.feature_selection import RFE, RFECV
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-import plotly.figure_factory as ff
+# import plotly.figure_factory as ff
+import plotly.chart_studio as py
+# import plotly.plotly as py
+from plotly.tools import FigureFactory as FF
 
 # %matplotlib inline
 
@@ -251,17 +254,19 @@ def plotMap(input_data):
 plotMap(mortality_list)
 
 
-#Create a linear regression line 
+# Create a linear regression line
 def regLine(x, y):
     coeff = np.polyfit(x, y, 1)
     return [((coeff[0] * x[i]) + coeff[1]) for i in range(len(x))]
 
-#correlation coefficient 
+# correlation coefficient
+
+
 def coeff(x, y):
     return np.corrcoef(x, y)[0][1]
 
 
-#Plotting the confirmed cases per 100k people against mortality rate
+# Plotting the confirmed cases per 100k people against mortality rate
 plt.rcParams["figure.figsize"] = (10, 7)
 
 plt.xlabel("Confirmed cases per 100K people")
@@ -271,38 +276,38 @@ plt.plot(confirmed_pop_list, regLine(confirmed_pop_list, mortality_list))
 plt.savefig("Images/pop_vs_mort.png")
 plt.show()
 
-print("Correlation coefficient: " + str(coeff(confirmed_pop_list, mortality_list)))
+print("Correlation coefficient: " +
+      str(coeff(confirmed_pop_list, mortality_list)))
 
 
 # Plot shows confirmed cases per 100K people by county
 plotMap(confirmed_pop_list)
 
 
+# The mortality map shows a general pattern of 4 clusters where the proportion of people that have contracted COVID-19 and who died:
 
-#The mortality map shows a general pattern of 4 clusters where the proportion of people that have contracted COVID-19 and who died:
-
-#North_East
-#South_East
-#Midwest
-#South_West
-#This analysis can also stipulate that these counties' healthcare system are most likely overwhelmed by COVID-19 patients and the high number of deaths means that some patients cannot get the healthcare they require.
-#Although the coefficient of correlation is positie, it is very weak.
+# North_East
+# South_East
+# Midwest
+# South_West
+# This analysis can also stipulate that these counties' healthcare system are most likely overwhelmed by COVID-19 patients and the high number of deaths means that some patients cannot get the healthcare they require.
+# Although the coefficient of correlation is positie, it is very weak.
 
 
 # Plot shows deaths per 100K people by county
 plotMap(death_pop_list)
 
 
-#The deaths per 100K people map coincides almost perfectly with the confirmed cases per 100K people, but this makes sense because the higher the number of confirmed cases, the higher number of deaths as well.
-#The below analysis compare non-pandemic factors with COVID-19 deaths per 100K people.
-#A. Economic Factors This section focuses on economic health and stability such as median household income, poverty and unemployment.
+# The deaths per 100K people map coincides almost perfectly with the confirmed cases per 100K people, but this makes sense because the higher the number of confirmed cases, the higher number of deaths as well.
+# The below analysis compare non-pandemic factors with COVID-19 deaths per 100K people.
+# A. Economic Factors This section focuses on economic health and stability such as median household income, poverty and unemployment.
 
 
 # Plot shows poverty rate by county
 plotMap(poverty_list)
 
 
-#plot to show correlation of Poverty rate against deaths per 100K people
+# plot to show correlation of Poverty rate against deaths per 100K people
 plt.rcParams["figure.figsize"] = (8, 8)
 
 x, y = (unemp_list), (death_pop_list)
@@ -332,11 +337,11 @@ plt.show()
 
 print("Correlation coefficient: " + str(coeff(x, y)))
 
-#Based on the unemployment map above, there are three geographical regions from the deaths per 100K people map that coincide with this one - the South-West, the South-East, and the Midwest.
-#The South has both high poverty rate and high unemployment rate; the same goes for the South-West.
+# Based on the unemployment map above, there are three geographical regions from the deaths per 100K people map that coincide with this one - the South-West, the South-East, and the Midwest.
+# The South has both high poverty rate and high unemployment rate; the same goes for the South-West.
 
 
-#Plot shows median household income by county
+# Plot shows median household income by county
 plotMap(income_list)
 
 # Show correlation of median household income with deaths per 100K people
@@ -352,8 +357,8 @@ plt.savefig("Images/Income_vs_death_100K")
 plt.show()
 
 print("Correlation coefficient: " + str(coeff(x, y)))
-#There is a positive correlation between median income and deaths per 100k people.  The map shows that midwest and northeast have higher median income, however, the death per 100k people map also shows these areas to have higher deaths.
-#I believe it might be due to higher population density in these regions.
+# There is a positive correlation between median income and deaths per 100k people.  The map shows that midwest and northeast have higher median income, however, the death per 100k people map also shows these areas to have higher deaths.
+# I believe it might be due to higher population density in these regions.
 
 # Plot correlation of races with deaths per 100K people
 plt.rcParams["figure.figsize"] = (18, 8)
@@ -404,7 +409,7 @@ print("Correlation coefficient of Asian: " + str(coeff(asian, death_pop_list)))
 print("Correlation coefficient of Hispanic: " +
       str(coeff(hispanic, death_pop_list)))
 
-#The racial analysis focuses on the racial makeup of a county's population.
+# The racial analysis focuses on the racial makeup of a county's population.
 
 
 # Plot correlation of education with deaths per 100K people
@@ -450,7 +455,7 @@ print("Correlation coefficient of Bachelor's Degree: " +
       str(coeff(bachelor, death_pop_list)))
 # The educational analysis focuses on different types of educational backgrounds in a population.
 
-#The analysis below shows correlation between different socio-economic factors without considering COVID-19 data.# Plotting relationships between economic factors
+# The analysis below shows correlation between different socio-economic factors without considering COVID-19 data.# Plotting relationships between economic factors
 plt.rcParams["figure.figsize"] = (18, 8)
 
 plt.subplot(1, 3, 1)
@@ -470,7 +475,7 @@ plt.scatter(poverty_list, unemp_list)
 plt.savefig("Images/socio_economic.png")
 plt.show()
 
-# Plotting other relationships 
+# Plotting other relationships
 
 plt.rcParams["figure.figsize"] = (18, 8)
 
@@ -532,15 +537,16 @@ plt.savefig("Images/other_rel.png")
 plt.show()
 
 # show joint plot between unemployment and poverty
-sns.jointplot(x='Unemployment Rate 2018 (%)',y='Poverty Rate 2018 (%)',data = cleaned_data)
+sns.jointplot(x='Unemployment Rate 2018 (%)',
+              y='Poverty Rate 2018 (%)', data=cleaned_data)
 plt.savefig("Images/unemp_pov.png")
 
-#Final Analysis combines all the socio_economic factors and correlates it with the deaths per 100K people to show the big picture.
+# Final Analysis combines all the socio_economic factors and correlates it with the deaths per 100K people to show the big picture.
 # Plotting combined index against deaths per 100,000 people
 plt.rcParams["figure.figsize"] = (16, 8)
 
 lists = [poverty_list, unemp_list, income_list, white, black,
-    hispanic, asian, native, less_high, highschool, somecollege, bachelor]
+         hispanic, asian, native, less_high, highschool, somecollege, bachelor]
 coeffs = []
 
 
@@ -570,27 +576,27 @@ plt.show()
 
 
 # *** COVID W SOCIO ECONOMIC ML CODE
-data_df=data.drop(["County", "Confirmed cases", "Confirmed Deaths"], axis=1)
+data_df = data.drop(["County", "Confirmed cases", "Confirmed Deaths"], axis=1)
 
 # Let’s plot the distribution of each feature
 
 
 def plot_distribution(data_df, cols=5, width=20, height=15, hspace=0.2, wspace=0.5):
     plt.style.use('seaborn-whitegrid')
-    fig=plt.figure(figsize=(width, height))
+    fig = plt.figure(figsize=(width, height))
     fig.subplots_adjust(left=None, bottom=None, right=None,
                         top=None, wspace=wspace, hspace=hspace)
-    rows=math.ceil(float(data_df.shape[1]) / cols)
+    rows = math.ceil(float(data_df.shape[1]) / cols)
     for i, column in enumerate(data_df.columns):
-        ax=fig.add_subplot(rows, cols, i + 1)
+        ax = fig.add_subplot(rows, cols, i + 1)
         ax.set_title(column)
         if data_df.dtypes[column] == np.object:
-            g=sns.countplot(y=column, data=data_df)
-            substrings=[s.get_text()[:18] for s in g.get_yticklabels()]
+            g = sns.countplot(y=column, data=data_df)
+            substrings = [s.get_text()[:18] for s in g.get_yticklabels()]
             g.set(yticklabels=substrings)
             plt.xticks(rotation=25)
         else:
-            g=sns.distplot(data_df[column])
+            g = sns.distplot(data_df[column])
             plt.xticks(rotation=25)
 
 
@@ -608,19 +614,19 @@ def normalize(input_data):
 
 
 # One Hot Encodes all labels before Machine Learning
-one_hot_cols=data_df.columns.tolist()
+one_hot_cols = data_df.columns.tolist()
 one_hot_cols.remove('State')
-data_enc=pd.get_dummies(data_df, columns=one_hot_cols)
+data_enc = pd.get_dummies(data_df, columns=one_hot_cols)
 
 # Encode strings to integers using Label Encoding
-le=LabelEncoder()
-cols=['State', 'FIPS', 'Population_2018', 'Median Household Income 2018 ($)', 'Unemployment Rate 2018 (%)', 'Poverty Rate 2018 (%)',
+le = LabelEncoder()
+cols = ['State', 'FIPS', 'Population_2018', 'Median Household Income 2018 ($)', 'Unemployment Rate 2018 (%)', 'Poverty Rate 2018 (%)',
         'Confirmed cases per 100K people', 'Deaths per 100K people', 'Mortality Rate (%)', 'White (%)', 'Black (%)', 'Native American (%)', 'Asian (%)', 'Hispanic (%)', 'Dropout (%)', 'High School Diploma (%)', 'Some College_Associate Degree (%)', 'Bachelor Degree or Higher (%)']
 for col in cols:
-    data_df[col]=le.fit_transform(data_df[col])
+    data_df[col] = le.fit_transform(data_df[col])
 
 # Correlation among attributes
-corr=data_df.corr()
+corr = data_df.corr()
 plt.figure(figsize=(20, 10))
 sns.heatmap(corr, annot=True)
 plt.savefig("Images/corr_attr.png")
@@ -629,12 +635,12 @@ plt.savefig("Images/corr_attr.png")
 # Feature Importance: Random forest consists of a number of decision trees. Every node in the decision trees is a condition on a single feature, designed to split the dataset into two so that similar response values end up in the same set. The measure based on which the (locally) optimal condition is chosen is called impurity. When training a tree, it can be computed how much each feature decreases the weighted impurity in a tree. For a forest, the impurity decrease from each feature can be averaged and the features are ranked according to this measure. This is the feature importance measure exposed in sklearn’s Random Forest implementations.
 
 # Using Random Forest to gain an insight on Feature Importance
-feats=RandomForestClassifier()
+feats = RandomForestClassifier()
 feats.fit(data_df.drop('State', axis=1), data_df['State'])
 
 plt.style.use('seaborn-whitegrid')
-importance=feats.feature_importances_
-importance=pd.DataFrame(importance, index=data_df.drop(
+importance = feats.feature_importances_
+importance = pd.DataFrame(importance, index=data_df.drop(
     'State', axis=1).columns, columns=["Importance"])
 importance.sort_values(by='Importance', ascending=True).plot(
     kind='barh', figsize=(20, len(importance)/2))
@@ -647,22 +653,22 @@ plt.savefig("Images/random_forest_feat.png")
 
 # PCA's components graphed in 2D and 3D
 # Apply Scaling
-std_scaling=preprocessing.StandardScaler().fit(data_df.drop('State', axis=1))
-X=std_scaling.transform(data_df.drop('State', axis=1))
-y=data_df['State']
+std_scaling = preprocessing.StandardScaler().fit(data_df.drop('State', axis=1))
+X = std_scaling.transform(data_df.drop('State', axis=1))
+y = data_df['State']
 
 # Formatting
-targets=[0, 1]
-colors=['blue', 'red']
-lw=2
-alpha=0.3
+targets = [0, 1]
+colors = ['blue', 'red']
+lw = 2
+alpha = 0.3
 # 2 Components PCA
 plt.style.use('seaborn-whitegrid')
 plt.figure(2, figsize=(20, 8))
 
 plt.subplot(1, 2, 1)
-pca=PCA(n_components=2)
-X_r=pca.fit(X).transform(X)
+pca = PCA(n_components=2)
+X_r = pca.fit(X).transform(X)
 for color, i, target in zip(colors, [0, 1], targets):
     plt.scatter(X_r[y == i, 0], X_r[y == i, 1],
                 color=color,
@@ -673,10 +679,10 @@ plt.legend(loc='best', shadow=False, scatterpoints=1)
 plt.title('1st 2 PCA directions')
 
 # 3 Components PCA
-ax=plt.subplot(1, 2, 2, projection='3d')
+ax = plt.subplot(1, 2, 2, projection='3d')
 
-pca=PCA(n_components=3)
-X_reduced=pca.fit(X).transform(X)
+pca = PCA(n_components=3)
+X_reduced = pca.fit(X).transform(X)
 for color, i, target_name in zip(colors, [0, 1], targets):
     ax.scatter(X_reduced[y == i, 0], X_reduced[y == i, 1], X_reduced[y == i, 2],
                color=color,
@@ -699,27 +705,27 @@ plt.savefig("Images/PCA.png")
 
 # Change the dataset to test how would the algorithms perform under a differently encoded dataset.
 
-selected_data=data_df
+selected_data = data_df
 
 # Splitting Data into Training and Testing Datasets: We need to split the data back into the training and testing datasets.
 
 # Splitting the Training and Test data sets
-train=selected_data.loc[0:2959, :]
-test=selected_data.loc[17:, :]
+train = selected_data.loc[0:2959, :]
+test = selected_data.loc[17:, :]
 
 # Removing Samples with Missing data: We could have removed rows with missing data during feature cleaning, but we're choosing to do it at this point. It's easier to do it this way, right after we split the data into Training and Testing. Otherwise we would have had to keep track of the number of deleted rows in our data and take that into account when deciding on a splitting boundary for our joined data.
 
 # Given missing fields are a small percentange of the overall dataset,
 # we have chosen to delete them.
-train=train.dropna(axis=0)
-test=test.dropna(axis=0)
+train = train.dropna(axis=0)
+test = test.dropna(axis=0)
 
 # Rename datasets before we conduct machine learning algorithims
-X_train_w_label=train
-X_train=train.drop(['State'], axis=1)
-y_train=train['State'].astype('int64')
-X_test=test.drop(['State'], axis=1)
-y_test=test['State'].astype('int64')
+X_train_w_label = train
+X_train = train.drop(['State'], axis=1)
+y_train = train['State'].astype('int64')
+X_test = test.drop(['State'], axis=1)
+y_test = test['State'].astype('int64')
 
 # Machine Learning Algorithms: Data Review: Let's take one last peek at our data before we start running the Machine Learning algorithms.
 X_train.shape
@@ -736,27 +742,27 @@ random.seed(1)
 # KNN Logistic Regression Random Forest Naive Bayes Decision Tree
 # Function that runs the requested algorithm and returns the accuracy metrics
 def fit_ml_algo(algo, X_train, y_train, X_test, cv):
-    model=algo.fit(X_train, y_train)
-    test_pred=model.predict(X_test)
+    model = algo.fit(X_train, y_train)
+    test_pred = model.predict(X_test)
     if (isinstance(algo, (LogisticRegression,
                           KNeighborsClassifier,
                           GaussianNB,
                           DecisionTreeClassifier,
                           RandomForestClassifier))):
-        probs=model.predict_proba(X_test)[:, 1]
+        probs = model.predict_proba(X_test)[:, 1]
     else:
-        probs="Not Available"
-    acc=round(model.score(X_test, y_test) * 100, 2)
-    train_pred=model_selection.cross_val_predict(algo,
+        probs = "Not Available"
+    acc = round(model.score(X_test, y_test) * 100, 2)
+    train_pred = model_selection.cross_val_predict(algo,
                                                    X_train,
                                                    y_train,
                                                    cv=cv,
                                                    n_jobs=-1)
-    acc_cv=round(metrics.accuracy_score(y_train, train_pred) * 100, 2)
+    acc_cv = round(metrics.accuracy_score(y_train, train_pred) * 100, 2)
     return train_pred, test_pred, acc, acc_cv, probs
 
 
-model=LogisticRegression(solver='liblinear', C=0.05,
+model = LogisticRegression(solver='liblinear', C=0.05,
                            multi_class='ovr', random_state=0)
 
 model.fit(X_train, y_train)
@@ -767,7 +773,7 @@ model.fit(X_train, y_train)
 # Logistic Regression - Random Search for Hyperparameters
 def report(results, n_top=5):
     for i in range(1, n_top + 1):
-        samples=np.flatnonzero(results['rank_test_score'] == i)
+        samples = np.flatnonzero(results['rank_test_score'] == i)
         for sample in samples:
             print("Model with rank: {0}".format(i))
             print("Mean validation score: {0:.3f} (std: {1:.3f})".format(
@@ -777,24 +783,24 @@ def report(results, n_top=5):
 
 
 # Logistic Regression
-train_pred_log, test_pred_log, acc_log, acc_cv_log, probs_log=fit_ml_algo(
+train_pred_log, test_pred_log, acc_log, acc_cv_log, probs_log = fit_ml_algo(
     LogisticRegression(n_jobs=-1), X_train, y_train, X_test, 10)
 
 
 # K-Nearest Neighbors
-train_pred_knn, test_pred_knn, acc_knn, acc_cv_knn, probs_knn=fit_ml_algo(
+train_pred_knn, test_pred_knn, acc_knn, acc_cv_knn, probs_knn = fit_ml_algo(
     KNeighborsClassifier(n_neighbors=3, n_jobs=-1), X_train, y_train, X_test, 10)
 
 # Specifying a variable to KNeighborsClassifier
-knc=KNeighborsClassifier()
+knc = KNeighborsClassifier()
 
 # Ploting and checking error rate for different neighbors
-error_rate=[]
+error_rate = []
 
 for i in range(1, 40):
-    knc=KNeighborsClassifier(n_neighbors=i)
+    knc = KNeighborsClassifier(n_neighbors=i)
     knc.fit(X_train, y_train)
-    pred_i=knc.predict(X_test)
+    pred_i = knc.predict(X_test)
     error_rate.append(np.mean(pred_i != y_test))
 
 plt.figure(figsize=(10, 6))
@@ -802,7 +808,7 @@ plt.plot(range(1, 40), error_rate)
 plt.savefig("Images/KNN_err.png")
 
 # Decision Tree Classifier
-train_pred_dt, test_pred_dt, acc_dt, acc_cv_dt, probs_dt=fit_ml_algo(
+train_pred_dt, test_pred_dt, acc_dt, acc_cv_dt, probs_dt = fit_ml_algo(
     DecisionTreeClassifier(), X_train, y_train, X_test, 10)
 
 # Random Forest Classifier - Random Search for Hyperparameters
@@ -812,7 +818,7 @@ train_pred_dt, test_pred_dt, acc_dt, acc_cv_dt, probs_dt=fit_ml_algo(
 
 def report(results, n_top=5):
     for i in range(1, n_top + 1):
-        samples=np.flatnonzero(results['rank_test_score'] == i)
+        samples = np.flatnonzero(results['rank_test_score'] == i)
         for sample in samples:
             print("Model with rank: {0}".format(i))
             print("Mean validation score: {0:.3f} (std: {1:.3f})".format(
@@ -822,9 +828,9 @@ def report(results, n_top=5):
 
 
 # Random Forest Classifier
-rfc=RandomForestClassifier(n_estimators=10, min_samples_leaf=2,
+rfc = RandomForestClassifier(n_estimators=10, min_samples_leaf=2,
                              min_samples_split=17, criterion='gini', max_features=8)
-train_pred_rf, test_pred_rf, acc_rf, acc_cv_rf, probs_rf=fit_ml_algo(
+train_pred_rf, test_pred_rf, acc_rf, acc_cv_rf, probs_rf = fit_ml_algo(
     rfc, X_train, y_train, X_test, 50)
 
 # END of ML Code
@@ -833,7 +839,7 @@ train_pred_rf, test_pred_rf, acc_rf, acc_cv_rf, probs_rf=fit_ml_algo(
 @app.route("/")
 def index():
     "Still WORKING!!!"
-    object=list(db.covid_new.find())
+    object = list(db.covid_new.find())
     return render_template("indexFP.html", object=object)
 
 # identifying the path to the web page
@@ -841,7 +847,7 @@ def index():
 
 @app.route("/COVID", methods=["GET"])
 def names():
-    object=list(db.covid1a_db.find())
+    object = list(db.covid1a_db.find())
     return dumps(object)
     # return render_template("indexPF.html", object=object)
 
