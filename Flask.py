@@ -53,6 +53,8 @@ from sklearn.svm import SVR
 from sklearn.feature_selection import RFE, RFECV
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
+import plotly.figure_factory as ff
+
 # %matplotlib inline
 
 # Feature Selection and Encoding
@@ -249,49 +251,71 @@ def plotMap(input_data):
 plotMap(mortality_list)
 
 
-def plot_hbar(input_data, col, n, hover_data=[]):
-    fig = px.bar(df.sort_values(col).tail(n),
-                 x=col, y="State", color='green',
-                 text=col, orientation='h', width=700, hover_data=hover_data,
-                 color_discrete_sequence=px.colors.qualitative.Dark2)
-
-    fig.show()
-
-
-# Plot shows confirmed cases per 100K people by county
-plotMap(confirmed_pop_list)
-
-# Create a linear regression line
-
-
+#Create a linear regression line 
 def regLine(x, y):
     coeff = np.polyfit(x, y, 1)
     return [((coeff[0] * x[i]) + coeff[1]) for i in range(len(x))]
 
-# correlation coefficient
-
-
+#correlation coefficient 
 def coeff(x, y):
     return np.corrcoef(x, y)[0][1]
 
 
-# Plotting the confirmed cases per 100k people against mortality rate
+#Plotting the confirmed cases per 100k people against mortality rate
 plt.rcParams["figure.figsize"] = (10, 7)
 
 plt.xlabel("Confirmed cases per 100K people")
 plt.ylabel("Mortality Rate (%)")
 plt.scatter(confirmed_pop_list, mortality_list, 1)
 plt.plot(confirmed_pop_list, regLine(confirmed_pop_list, mortality_list))
+plt.savefig("Images/pop_vs_mort.png")
 plt.show()
 
-print("Correlation coefficient: " +
-      str(coeff(confirmed_pop_list, mortality_list)))
+print("Correlation coefficient: " + str(coeff(confirmed_pop_list, mortality_list)))
+
+
+# Plot shows confirmed cases per 100K people by county
+plotMap(confirmed_pop_list)
+
+
+
+#The mortality map shows a general pattern of 4 clusters where the proportion of people that have contracted COVID-19 and who died:
+
+#North_East
+#South_East
+#Midwest
+#South_West
+#This analysis can also stipulate that these counties' healthcare system are most likely overwhelmed by COVID-19 patients and the high number of deaths means that some patients cannot get the healthcare they require.
+#Although the coefficient of correlation is positie, it is very weak.
+
 
 # Plot shows deaths per 100K people by county
 plotMap(death_pop_list)
 
+
+#The deaths per 100K people map coincides almost perfectly with the confirmed cases per 100K people, but this makes sense because the higher the number of confirmed cases, the higher number of deaths as well.
+#The below analysis compare non-pandemic factors with COVID-19 deaths per 100K people.
+#A. Economic Factors This section focuses on economic health and stability such as median household income, poverty and unemployment.
+
+
 # Plot shows poverty rate by county
 plotMap(poverty_list)
+
+
+#plot to show correlation of Poverty rate against deaths per 100K people
+plt.rcParams["figure.figsize"] = (8, 8)
+
+x, y = (unemp_list), (death_pop_list)
+plt.xlabel("Poverty Rate (%)")
+plt.ylabel("Deaths per 100K people")
+plt.scatter(x, y)
+plt.plot(x, regLine(x, y))
+plt.savefig("Images/pov_vs_death_100K.png")
+plt.show()
+
+print("Correlation coefficient: " + str(coeff(x, y)))
+
+# The graphs above show that there is positive correlation between poverty and deaths per 100K people.  Because the relation is weak, the poverty level can be explained by the fact that people in poor counties can't afford healthcare or they can't afford to stay at home, as such, they are more exposed to the virus when they are at work.
 
 # Plot shows unemployment rate by county
 plotMap(unemp_list)
@@ -308,7 +332,11 @@ plt.show()
 
 print("Correlation coefficient: " + str(coeff(x, y)))
 
-# Plot shows median household income by county
+#Based on the unemployment map above, there are three geographical regions from the deaths per 100K people map that coincide with this one - the South-West, the South-East, and the Midwest.
+#The South has both high poverty rate and high unemployment rate; the same goes for the South-West.
+
+
+#Plot shows median household income by county
 plotMap(income_list)
 
 # Show correlation of median household income with deaths per 100K people
@@ -316,16 +344,21 @@ plt.rcParams["figure.figsize"] = (8, 8)
 
 x, y = (income_list), (death_pop_list)
 plt.xlabel("Deaths per 100K people")
-plt.ylabel("Unemployment Rate (%)")
+plt.ylabel("Median Household Income ($)")
 plt.scatter(x, y)
 plt.plot(x, regLine(x, y))
+plt.savefig("Images/Income_vs_death_100K")
+
 plt.show()
 
 print("Correlation coefficient: " + str(coeff(x, y)))
+#There is a positive correlation between median income and deaths per 100k people.  The map shows that midwest and northeast have higher median income, however, the death per 100k people map also shows these areas to have higher deaths.
+#I believe it might be due to higher population density in these regions.
 
 # Plot correlation of races with deaths per 100K people
 plt.rcParams["figure.figsize"] = (18, 8)
 
+# show for white
 plt.subplot(1, 5, 1)
 plt.xlabel("White (%)")
 plt.ylabel("Deaths per 100K people")
@@ -339,26 +372,27 @@ plt.ylabel("Deaths per 100K people")
 plt.scatter(black, death_pop_list)
 plt.plot(black, regLine(black, death_pop_list))
 
-
+# show for Asian
 plt.subplot(1, 5, 3)
 plt.xlabel("Asian (%)")
 plt.ylabel("Deaths per 100K people")
 plt.scatter(asian, death_pop_list)
 plt.plot(asian, regLine(asian, death_pop_list))
 
-
+# show for Native American
 plt.subplot(1, 5, 4)
 plt.xlabel("Native American (%)")
 plt.ylabel("Deaths per 100K people")
 plt.scatter(native, death_pop_list)
 plt.plot(native, regLine(native, death_pop_list))
 
-
+# show for Hispanic
 plt.subplot(1, 5, 5)
 plt.xlabel("Hispanic (%)")
 plt.ylabel("Deaths per 100K people")
 plt.scatter(hispanic, death_pop_list)
 plt.plot(hispanic, regLine(hispanic, death_pop_list))
+plt.savefig("Images/race_vs_death_100K.png")
 
 plt.show()
 
@@ -369,6 +403,8 @@ print("Correlation coefficient of Native American: " +
 print("Correlation coefficient of Asian: " + str(coeff(asian, death_pop_list)))
 print("Correlation coefficient of Hispanic: " +
       str(coeff(hispanic, death_pop_list)))
+
+#The racial analysis focuses on the racial makeup of a county's population.
 
 
 # Plot correlation of education with deaths per 100K people
@@ -400,6 +436,7 @@ plt.xlabel("Bachelor's Degree or Higher (%)")
 plt.ylabel("Deaths per 100K people")
 plt.scatter(native, death_pop_list)
 plt.plot(native, regLine(native, death_pop_list))
+plt.savefig("Images/edu_vs_death_per_100K.png")
 
 plt.show()
 
@@ -411,8 +448,9 @@ print("Correlation coefficient of Some College/Associate's Degree: " +
       str(coeff(somecollege, death_pop_list)))
 print("Correlation coefficient of Bachelor's Degree: " +
       str(coeff(bachelor, death_pop_list)))
+# The educational analysis focuses on different types of educational backgrounds in a population.
 
-# Plotting relationships between economic factors
+#The analysis below shows correlation between different socio-economic factors without considering COVID-19 data.# Plotting relationships between economic factors
 plt.rcParams["figure.figsize"] = (18, 8)
 
 plt.subplot(1, 3, 1)
@@ -429,12 +467,12 @@ plt.subplot(1, 3, 3)
 plt.xlabel("Poverty Rate (%)")
 plt.ylabel("Unemployment Rate (%)")
 plt.scatter(poverty_list, unemp_list)
-
+plt.savefig("Images/socio_economic.png")
 plt.show()
 
-# Plotting other relationships (only significant ones plotted)
+# Plotting other relationships 
 
-plt.rcParams["figure.figsize"] = (18, 28)
+plt.rcParams["figure.figsize"] = (18, 8)
 
 plt.subplot(4, 3, 1)
 plt.xlabel("Poverty Rate (%)")
@@ -490,26 +528,31 @@ plt.subplot(4, 3, 11)
 plt.xlabel("Asian (%)")
 plt.ylabel("Bachelor's degrees or higher (%)")
 plt.scatter(asian, bachelor)
-
+plt.savefig("Images/other_rel.png")
 plt.show()
 
+# show joint plot between unemployment and poverty
+sns.jointplot(x='Unemployment Rate 2018 (%)',y='Poverty Rate 2018 (%)',data = cleaned_data)
+plt.savefig("Images/unemp_pov.png")
+
+#Final Analysis combines all the socio_economic factors and correlates it with the deaths per 100K people to show the big picture.
 # Plotting combined index against deaths per 100,000 people
 plt.rcParams["figure.figsize"] = (16, 8)
 
-allLists = [poverty_list, unemp_list, income_list, white, black,
+lists = [poverty_list, unemp_list, income_list, white, black,
     hispanic, asian, native, less_high, highschool, somecollege, bachelor]
-allCoeff = []
+coeffs = []
 
 
 # All 2959 counties combined index against natural log of number of deaths per 100,000 people
 y = ma.log(death_pop_list)
-allCoeff.clear()
-for i in range(len(allLists)):
-    allCoeff.append(coeff(normalize(allLists[i]), y))
+coeffs.clear()
+for i in range(len(lists)):
+    coeffs.append(coeff(normalize(lists[i]), y))
 
 combinedIndex = np.array([0 for i in range(len(y))])
-for i in range(len(allLists)):
-    combinedIndex = combinedIndex + (allCoeff[i] * normalize(allLists[i]))
+for i in range(len(lists)):
+    combinedIndex = combinedIndex + (coeffs[i] * normalize(lists[i]))
 
 plt.subplot(1, 2, 2)
 plt.xlabel("Combined Socio-Economic Index")
@@ -519,120 +562,8 @@ plt.title("Correlation coefficient for all lists: " +
 plt.scatter(combinedIndex, y)
 plt.plot(combinedIndex, regLine(combinedIndex, y))
 
-
+plt.savefig("Images/all.png")
 plt.show()
-
-
-# importing all the required ML packages
-
-# Feature Selection and Encoding
-
-
-df_encode = cleaned_data.apply(LabelEncoder().fit_transform)
-
-drop_elements = ['State', 'FIPS', 'County', 'Confirmed cases',
-    'Confirmed Deaths', 'Deaths per 100K people']
-y = df_encode["Deaths per 100K people"]
-X = df_encode.drop(drop_elements, axis=1)
-
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=2)
-
-print("## 1.5. Correlation Matrix")
-display(cleaned_data.corr())
-print("we see that some columns are highly correlated.")
-
-sc = StandardScaler()
-X_train_std = sc.fit_transform(X_train)
-pca = PCA(n_components=None)
-x_train_pca = pca.fit_transform(X_train_std)
-a = pca.explained_variance_ratio_
-a_running = a.cumsum()
-a_running
-
-# Classification Model
-# Perceptron Method
-ppn = Perceptron(eta0=1, random_state=1)
-ppn.fit(X_train, y_train)
-
-
-y_pred = ppn.predict(X_test)
-accuracy_score(y_pred, y_test)
-
-score_ppn = cross_val_score(ppn, X, y, cv=5)
-score_ppn.mean()
-
-gaussian = GaussianNB()
-gaussian.fit(X_train, y_train)
-# y_pred = gaussian.predict(X_test)
-score_gaussian = gaussian.score(X_test, y_test)
-print('The accuracy of Gaussian Naive Bayes is', score_gaussian)
-
-# Support Vector Classifier (SVM/SVC)
-svc = SVC(gamma=scale)
-svc.fit(X_train, y_train)
-# y_pred = logreg.predict(X_test)
-score_svc = svc.score(X_test, y_test)
-print('The accuracy of SVC is', score_svc
-
-svc_radical=svm.SVC(kernel='rbf', C=1, gamma=auto)
-svc_radical.fit(X_train, y_train.values.ravel())
-score_svc_radical=svc_radical.score(X_test, y_test)
-print('The accuracy of Radical SVC Model is', score_svc_radical)
-
-# Logistic Regression
-logreg=LogisticRegression()
-logreg.fit(X_train, y_train)
-# y_pred = logreg.predict(X_test)
-score_logreg=logreg.score(X_test, y_test)
-print('The accuracy of the Logistic Regression is', score_logreg)
-
-# Random Forest Classifier
-randomforest=RandomForestClassifier()
-randomforest.fit(X_train, y_train)
-# y_pred = randomforest.predict(X_test)
-score_randomforest=randomforest.score(X_test, y_test)
-print('The accuracy of the Random Forest Model is', score_randomforest)
-
-
-# K-Nearest Neighbors
-knn=KNeighborsClassifier()
-knn.fit(X_train, y_train)
-# y_pred = knn.predict(X_test)
-score_knn=knn.score(X_test, y_test)
-print('The accuracy of the KNN Model is', score_knn)
-
-# cross validation
-from sklearn.model_selection import KFold  # for K-fold cross validation
-from sklearn.model_selection import cross_val_score  # score evaluation
-from sklearn.model_selection import cross_val_predict  # prediction
-# k=10, split the data into 10 equal parts
-kfold=KFold(n_splits=10, random_state=22)
-xyz=[]
-accuracy=[]
-std=[]
-classifiers=['Naive Bayes', 'Linear Svm', 'Radial Svm',
-    'Logistic Regression', 'Decision Tree', 'KNN', 'Random Forest']
-models=[GaussianNB(), svm.SVC(kernel='linear'), svm.SVC(kernel='rbf'), LogisticRegression(), DecisionTreeClassifier(),
-        KNeighborsClassifier(n_neighbors=9), RandomForestClassifier(n_estimators=100)]
-for i in models:
-    model=i
-    cv_result=cross_val_score(model, X, y, cv=kfold, scoring="accuracy")
-    cv_result=cv_result
-    xyz.append(cv_result.mean())
-    std.append(cv_result.std())
-    accuracy.append(cv_result)
-models_dataframe=pd.DataFrame({'CV Mean': xyz, 'Std': std}, index=classifiers)
-models_dataframe
-
-
-
-
-
-
-
-
-
 
 
 # *** END   PLTS REGRESS COVID ML CODE
