@@ -53,7 +53,7 @@ from sklearn.svm import SVR
 from sklearn.feature_selection import RFE, RFECV
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-%matplotlib inline
+# %matplotlib inline
 
 # Feature Selection and Encoding
 
