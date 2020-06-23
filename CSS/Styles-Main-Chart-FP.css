@@ -35,10 +35,10 @@ h2 {
   letter-spacing: 3px;
   position: relative;
   display: block;
-  text-align: right;
+  text-align: center;
   color: rgb(35, 35, 100);
-  margin-left: 232px;
-  margin-top: 35px;
+  /* margin-left: 232px; */
+  /* margin-top: 35px; */
 }
 
 h3 {
