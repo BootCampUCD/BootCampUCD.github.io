@@ -90,6 +90,10 @@ html.is-animating .tranisition-fade {
   margin: 0;
 }
 
+#demoInfodata {
+  width: 200;
+}
+
 /*  "nav ul" Tag Characteristics */
 nav ul {
   position: absolute;
