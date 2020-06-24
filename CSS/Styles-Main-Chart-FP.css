@@ -167,7 +167,7 @@ nav a:hover {
 }
 
 /*  Paragraph Web Page characteristics.*/
-/* p {
+p {
   margin: 0 auto;
   position: relative;
   text-align: left;
@@ -182,7 +182,7 @@ nav a:hover {
   background-size: cover;
   background-position: center;
   padding: 25px;
-} */
+}
 
 /* Class definition called "container".  Large area within other groups (e.g. paragraphs, footer, images,...etc.) will be managed.*/
 .container {
