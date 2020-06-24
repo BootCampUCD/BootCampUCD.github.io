@@ -80,7 +80,17 @@
         </div>
         <div class="content" class="fade-in">
           <p>
-            X-New ML text.<br /><br /><br /><br /><br /><br /><br /><br /><br />
+            Feature Importance: Random forest consists of a number of decision
+            trees. Every node in the decision trees is a condition on a single
+            feature, designed to split the dataset into two so that similar
+            response values end up in the same set. The measure based on which
+            the (locally) optimal condition is chosen is called impurity. When
+            training a tree, it can be computed by how much each feature
+            decreases the weighted impurity in a tree. For a forest, the
+            impurity decrease from each feature that can be averaged and the
+            features that are ranked according to this measure. This is the
+            feature importance measure exposed in sklearn’s Random Forest
+            implementations.<br /><br /><br /><br />
           </p>
           <!-- <br />
           <p>
