@@ -161,7 +161,7 @@ h1 {
 
 /* Class definition called "content".  Small area contained within a "container" class.*/
 .content {
-  float: center;
+  /* float: center; */
   clear: both;
   width: auto;
   /* padding: 25px; */
