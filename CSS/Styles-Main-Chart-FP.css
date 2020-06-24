@@ -186,7 +186,7 @@ p {
 }
 
 #chartArea {
-  position: relative;
+  position: auto;
   margin-left: 200px;
 }
 
