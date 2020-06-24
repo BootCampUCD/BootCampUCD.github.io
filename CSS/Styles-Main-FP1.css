@@ -169,6 +169,21 @@ h1 {
   margin-top: 142px; /* fixed to align boarder with logo boarder in the upper left corner
   /* background-color: aquamarine; */
   border: 2px solid yellow;
+  /*section*/
+  margin: 0 auto;
+  position: relative;
+  text-align: left;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-size: 35px;
+  word-wrap: break-word;
+  text-indent: 40px;
+  background-color: #cccccc;
+  background-image: url(https://BootCampUCD.github.io/Images/Globe7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
 }
 
 /*Class defined as "footer" which in contained within the class of "container.*/
