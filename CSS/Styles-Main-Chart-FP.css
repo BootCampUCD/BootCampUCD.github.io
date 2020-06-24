@@ -170,7 +170,7 @@ nav a:hover {
 p {
   margin: 0 auto;
   position: relative;
-  text-align: left;
+  text-align: center;
   color: darkblue;
   text-shadow: 1px 1px 2px blue, 0 0 25px white, 0 0 5px white;
   font-size: 35px;
