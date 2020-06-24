@@ -46,6 +46,10 @@ h3 {
   position: relative;
 }
 
+h4 {
+  width: 200px;
+}
+
 .well {
   width: 200px;
 }
