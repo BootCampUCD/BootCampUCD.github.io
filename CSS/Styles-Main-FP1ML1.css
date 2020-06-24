@@ -104,8 +104,8 @@ nav a:hover {
   color: white;
 }
 
-h1 a {
-  color: teal;
+h1 a:hover {
+  color: white;
 }
 
 /*  Paragraph Web Page characteristics.*/
@@ -127,13 +127,13 @@ p {
 }
 
 /*  "Heading 1" Web Page Characteristics.*/
-h1 {
+/* h1 {
   text-transform: capitalize;
   font-size: 18px;
   color: teal;
   font-style: oblique;
   font-weight: 700;
-}
+} */
 
 /* Class definition called "container".  Large area within other groups (e.g. paragraphs, footer, images,...etc.) will be managed.*/
 .container {
