@@ -94,7 +94,7 @@ html.is-animating .tranisition-fade {
   margin: 0;
 }
 
-#demoInfodata {
+.panel-body {
   width: 200px;
 }
 
