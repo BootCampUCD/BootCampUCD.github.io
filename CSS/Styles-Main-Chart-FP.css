@@ -187,7 +187,7 @@ p {
 
 #chartArea {
   position: relative;
-  margin-left: 700px;
+  margin-left: 200px;
 }
 
 /* Class definition called "container".  Large area within other groups (e.g. paragraphs, footer, images,...etc.) will be managed.*/
