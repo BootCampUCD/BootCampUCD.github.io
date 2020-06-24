@@ -196,8 +196,8 @@ d3.json(data1).then(function (datax) {
       // var data2 = [trace2];
       // console.log(data);
       var layout1 = {
-        height: 300,
-        width: 700,
+        height: 500,
+        width: 900,
         showlegend: true,
         legend: {
           text: "titleX",
