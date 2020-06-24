@@ -217,8 +217,8 @@ h1 a {
 
 /* Class defined as "image3" which manages the specific image characteristics for the image to the right of the web page.*/
 .image3 {
-  border: 1px solid yellow;
-  top: 150px;
+  border: 2px solid yellow;
+  top: 250px;
   right: 50px;
   position: fixed;
   float: right;
