@@ -217,25 +217,25 @@ d3.json(data1).then(function (datax) {
       };
       console.log("Layout1:", layout1);
 
-      var layout2 = {
-        height: 300,
-        width: 700,
-        showlegend: true,
-        legend: {
-          side: "left",
-        },
-        title: " XYZ Subject's Samples Data",
-        xaxis2: {
-          title: {
-            text: "x Axis",
-          },
-        },
-        yaxis2: {
-          title: {
-            text: "y axis",
-          },
-        },
-      };
+      // var layout2 = {
+      //   height: 300,
+      //   width: 700,
+      //   showlegend: true,
+      //   legend: {
+      //     side: "left",
+      //   },
+      //   title: " XYZ Subject's Samples Data",
+      //   xaxis2: {
+      //     title: {
+      //       text: "x Axis",
+      //     },
+      //   },
+      //   yaxis2: {
+      //     title: {
+      //       text: "y axis",
+      //     },
+      //   },
+      // };
 
       var layout = [layout1, layout2];
       Plotly.newPlot(
