@@ -132,6 +132,11 @@ p {
   padding: 25px;
 }
 
+h1 a {
+  font-size: 18px;
+  color: teal;
+}
+
 /*  "Heading 1" Web Page Characteristics.*/
 /* h1 {
   text-transform: capitalize;
