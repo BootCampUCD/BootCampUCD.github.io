@@ -50,6 +50,10 @@ h3 {
   width: 200px;
 }
 
+.panel-title {
+  width: 200px;
+}
+
 .fade-in {
   animation: fadeIn 5s;
 }
