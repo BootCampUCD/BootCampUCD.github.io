@@ -57,6 +57,13 @@ html.is-animating .tranisition-fade {
 }
 
 ul {
+  margin: 0 auto;
+  position: relative;
+  text-align: left;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-size: 35px;
+  word-wrap: break-word;
   text-indent: 40px;
   background-color: #cccccc;
   background-image: url(https://BootCampUCD.github.io/Images/Globe7.jpg);
