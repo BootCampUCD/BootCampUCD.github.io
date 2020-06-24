@@ -46,8 +46,9 @@ h3 {
   position: relative;
 }
 
-h4 {
-  width: 500px;
+h5 {
+  width: 200px;
+  color: white;
 }
 
 .well {
