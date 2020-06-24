@@ -104,6 +104,10 @@ nav a:hover {
   color: white;
 }
 
+h1 a {
+  color: teal;
+}
+
 /*  Paragraph Web Page characteristics.*/
 p {
   margin: 0 auto;
