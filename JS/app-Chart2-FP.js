@@ -219,7 +219,7 @@ d3.json(data1).then(function (datax) {
 
       var layout2 = {
         height: 300,
-        width: 400,
+        width: 700,
         showlegend: true,
         legend: {
           side: "left",
