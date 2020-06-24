@@ -81,7 +81,7 @@ nav a {
   text-align: center;
   background-color: none;
   font-weight: bold;
-  color: white;
+  color: teal;
   padding-right: 10px;
   position: relative;
   top: 0;
@@ -104,8 +104,14 @@ nav a:hover {
   color: white;
 }
 
-h1 a:hover {
-  color: white;
+h1 a:hover::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 90%;
+  background-color: blue;
+  position: absolute;
+  bottom: 0;
 }
 
 /*  Paragraph Web Page characteristics.*/
