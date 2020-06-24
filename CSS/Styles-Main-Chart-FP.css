@@ -184,6 +184,10 @@ p {
   padding: 25px;
 }
 
+#chartArea {
+  position: relative;
+}
+
 /* Class definition called "container".  Large area within other groups (e.g. paragraphs, footer, images,...etc.) will be managed.*/
 .container {
   position: absolute;
