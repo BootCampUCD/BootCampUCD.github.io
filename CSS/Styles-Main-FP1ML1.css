@@ -76,7 +76,7 @@ nav ul li {
 /*  "nav a" Tag Characteristics */
 nav a {
   text-decoration: none;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 18px;
   text-align: center;
   background-color: none;
