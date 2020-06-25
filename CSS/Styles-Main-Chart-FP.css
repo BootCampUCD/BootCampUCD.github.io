@@ -206,7 +206,7 @@ p {
   clear: both;
   width: auto;
   /* padding: 25px; */
-  margin-left: 151px; /* fixed to align boarder with logo boarder in the upper left corner*/
+  /* margin-left: 151px; fixed to align boarder with logo boarder in the upper left corner */
   margin-top: 142px; /* fixed to align boarder with logo boarder in the upper left corner
   /* background-color: aquamarine; */
   border: 2px solid yellow;
