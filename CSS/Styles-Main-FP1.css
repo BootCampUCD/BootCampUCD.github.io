@@ -163,7 +163,7 @@ h1 {
 .content {
   /* float: center; */
   clear: both;
-  width: 500px;
+  width: auto;
   /* padding: 25px; */
   margin-left: 151px; /* fixed to align boarder with logo boarder in the upper left corner*/
   margin-top: 143px; /* fixed to align boarder with logo boarder in the upper left corner
