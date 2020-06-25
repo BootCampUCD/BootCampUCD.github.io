@@ -186,7 +186,7 @@ p {
 }
 
 #demoInfodata {
-  position: auto;
+  position: relative;
   margin-left: auto;
 }
 
