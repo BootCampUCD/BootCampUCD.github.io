@@ -187,7 +187,7 @@ p {
 
 #demoInfodata {
   position: auto;
-  margin-left: 200px;
+  margin-left: auto;
 }
 
 /* Class definition called "container".  Large area within other groups (e.g. paragraphs, footer, images,...etc.) will be managed.*/
