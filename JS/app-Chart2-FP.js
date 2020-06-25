@@ -3,7 +3,7 @@
 
 // var url = "http://127.0.0.1:5501/Python/app.py";
 
-data1 = "https://BootCampUCD.github.io/P3-State-Lat-Long.geojson";
+data1 = "https://BootCampUCD.github.io/Data/P3-State-Lat-Long.geojson";
 // data2 = "http://127.0.0.1:5501/Data/P3-unemployment.json";
 
 function commas(x) {
